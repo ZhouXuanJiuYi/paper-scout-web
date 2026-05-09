@@ -491,3 +491,40 @@ function runScout() {
 window.runScout = runScout;
 
 document.addEventListener('DOMContentLoaded', initRunBtn);
+
+// ── 下次刷新倒计时（每天 09:00）────────────────────────────────────────────
+function updateNextRefresh() {
+  const el = document.getElementById('next-refresh-text');
+  if (!el) return;
+
+  const now = new Date();
+  const next = new Date(now);
+  next.setHours(9, 0, 0, 0);
+  if (now >= next) next.setDate(next.getDate() + 1);
+
+  const diffMs = next - now;
+  const totalSec = Math.floor(diffMs / 1000);
+  const h = Math.floor(totalSec / 3600);
+  const m = Math.floor((totalSec % 3600) / 60);
+  const s = totalSec % 60;
+
+  let text;
+  if (h > 0) {
+    text = `距下次刷新 ${h} 小时 ${m} 分`;
+  } else if (m > 0) {
+    text = `距下次刷新 ${m} 分 ${s} 秒`;
+  } else {
+    text = `距下次刷新 ${s} 秒`;
+  }
+  el.textContent = text;
+
+  const badge = document.getElementById('next-refresh-badge');
+  if (badge) {
+    badge.classList.toggle('refresh-soon', h === 0 && m < 30);
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  updateNextRefresh();
+  setInterval(updateNextRefresh, 1000);
+});
