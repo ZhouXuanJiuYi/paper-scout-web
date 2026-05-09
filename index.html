@@ -11,7 +11,7 @@
   <header id="header">
     <div class="header-left">
       <span class="logo">PAPER SCOUT</span>
-      <span class="logo-sub">量子材料实验室 · 复旦大学</span>
+      <span class="logo-sub">复杂量子材料实验室 · 复旦大学</span>
     </div>
     <div class="header-right">
       <button id="run-btn" class="run-btn" style="display:none" onclick="runScout()">运行今日</button>
@@ -108,6 +108,92 @@
         </div>
       </div>
     </main>
+
+    <!-- 右侧信息面板 -->
+    <aside id="right-panel">
+      <!-- 搜索范围：期刊 -->
+      <div class="rp-section">
+        <div class="rp-title">搜索范围</div>
+
+        <div class="rp-group-label">重点期刊 <span class="rp-star">⭐</span></div>
+        <ul class="rp-list">
+          <li>Nature</li>
+          <li>Nature Physics</li>
+          <li>Nature Materials</li>
+          <li>npj Quantum Mater.</li>
+          <li>Science</li>
+          <li>PRL</li>
+          <li>PRB</li>
+          <li>PRX</li>
+          <li>Physical Review Research</li>
+        </ul>
+
+        <div class="rp-group-label" style="margin-top:10px">扩展期刊</div>
+        <ul class="rp-list">
+          <li>Nano Letters</li>
+          <li>ACS Nano</li>
+          <li>Small</li>
+          <li>Advanced Materials</li>
+          <li>Nanoscale</li>
+          <li>2D Materials</li>
+          <li>Supercond. Sci. Technol.</li>
+          <li>J. Phys.: Cond. Mat.</li>
+        </ul>
+
+        <div class="rp-group-label" style="margin-top:10px">arXiv 分类</div>
+        <ul class="rp-list">
+          <li><span class="rp-tag rp-tag-green">cond-mat.supr-con</span> 超导</li>
+          <li><span class="rp-tag rp-tag-blue">cond-mat.str-el</span> 强关联</li>
+          <li><span class="rp-tag rp-tag-purple">cond-mat.mes-hall</span> 介观/拓扑</li>
+        </ul>
+      </div>
+
+      <!-- 评分关键词 -->
+      <div class="rp-section">
+        <div class="rp-title">评分关键词</div>
+        <ul class="rp-score-list">
+          <li>
+            <span class="rp-score rp-score-high">+3</span>
+            <span class="rp-kw">FeSe薄膜 · vortex · vortex core · vortex bound state</span>
+          </li>
+          <li>
+            <span class="rp-score rp-score-mid">+2</span>
+            <span class="rp-kw">STM · STS · scanning tunneling</span>
+          </li>
+          <li>
+            <span class="rp-score rp-score-mid">+2</span>
+            <span class="rp-kw">铁基超导 · FeSe · FeTe · FeAs · 1111/122/11型</span>
+          </li>
+          <li>
+            <span class="rp-score rp-score-mid">+2</span>
+            <span class="rp-kw">拓扑超导 · Majorana · topological superconductor</span>
+          </li>
+          <li>
+            <span class="rp-score rp-score-mid">+2</span>
+            <span class="rp-kw">Josephson STM · SJSTM · 超导探针</span>
+          </li>
+          <li>
+            <span class="rp-score rp-score-low">+1</span>
+            <span class="rp-kw">重费米子超导 · CeCoIn5 · URu2Si2</span>
+          </li>
+          <li>
+            <span class="rp-score rp-score-low">+1</span>
+            <span class="rp-kw">异质结 · thin film · 薄膜 · 界面</span>
+          </li>
+          <li>
+            <span class="rp-score rp-score-low">+1</span>
+            <span class="rp-kw">量子相变 · quantum critical</span>
+          </li>
+        </ul>
+
+        <div class="rp-group-label" style="margin-top:10px">STM 强制收录</div>
+        <ul class="rp-list rp-stm-list">
+          <li>scanning tunneling microscopy/spectroscopy</li>
+          <li>STM · STS</li>
+          <li>tunneling spectroscopy/microscopy</li>
+        </ul>
+      </div>
+    </aside>
   </div>
 
   <div id="run-toast"></div>

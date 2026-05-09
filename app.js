@@ -485,7 +485,7 @@ function runScout() {
     })
     .catch(() => {
       setRunBtn('连接失败', false, 'state-error');
-      showLogPanel('当前页面是静态共享版本，不能从网页端触发今日运行。', '运行日志 · 连接失败');
+      showLogPanel('无法连接服务器；静态共享版本不支持从网页端触发今日运行。', '运行日志 · 连接失败');
     });
 }
 window.runScout = runScout;
