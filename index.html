@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paper Scout · 量子材料实验室</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 顶部导航 -->
+  <header id="header">
+    <div class="header-left">
+      <span class="logo">PAPER SCOUT</span>
+      <span class="logo-sub">量子材料实验室 · 复旦大学</span>
+    </div>
+    <div class="header-right">
+      <button id="run-btn" class="run-btn" style="display:none" onclick="runScout()">运行今日</button>
+      <div class="search-wrap">
+        <input type="text" id="search-input" placeholder="搜索标题、作者、摘要…" autocomplete="off">
+        <span class="search-icon">⌕</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <!-- 左侧边栏 -->
+    <aside id="sidebar">
+      <div class="sidebar-section">
+        <div class="sidebar-title">日期</div>
+        <ul id="date-list"></ul>
+      </div>
+      <div class="sidebar-section" id="source-stats-section">
+        <div class="sidebar-title">来源</div>
+        <ul id="source-stats"></ul>
+      </div>
+    </aside>
+
+    <!-- 主内容区 -->
+    <main id="main">
+      <!-- 无数据提示 -->
+      <div id="no-data" class="no-data hidden">
+        <p>暂无数据。请先运行 <code>python daily_scout.py --force</code> 生成数据。</p>
+      </div>
+
+      <!-- 搜索结果覆盖层 -->
+      <div id="search-results" class="hidden">
+        <div class="day-header">
+          <h2 id="search-result-title">搜索结果</h2>
+        </div>
+        <div id="search-result-list"></div>
+      </div>
+
+      <!-- 日报主视图 -->
+      <div id="day-view">
+        <div class="day-header">
+          <h2 id="day-title"></h2>
+          <div id="day-meta" class="day-meta"></div>
+        </div>
+
+        <!-- Tab 栏 -->
+        <div class="tab-bar">
+          <button class="tab active" data-tab="curated">精选 <span id="tab-curated-count" class="count"></span></button>
+          <button class="tab" data-tab="all">全部 <span id="tab-all-count" class="count"></span></button>
+          <button class="tab" data-tab="stats">统计</button>
+        </div>
+
+        <!-- 精选 Tab -->
+        <div id="tab-curated" class="tab-content">
+          <div id="curated-list"></div>
+          <div id="curated-empty" class="empty-hint hidden">今日没有符合阈值的论文。</div>
+        </div>
+
+        <!-- 全部 Tab -->
+        <div id="tab-all" class="tab-content hidden">
+          <div class="all-toolbar">
+            <label class="toolbar-label">
+              最低分
+              <input type="range" id="score-filter" min="0" max="10" value="0" step="1">
+              <span id="score-filter-val">≥ 0</span>
+            </label>
+            <label class="toolbar-label">
+              排序
+              <select id="sort-select">
+                <option value="score">评分 ↓</option>
+                <option value="date">日期 ↓</option>
+                <option value="source">来源</option>
+              </select>
+            </label>
+          </div>
+          <div id="no-raw-warning" class="no-raw hidden">
+            该日期早于原始数据存储功能上线，仅显示精选文章。
+          </div>
+          <div id="all-list"></div>
+        </div>
+
+        <!-- 统计 Tab -->
+        <div id="tab-stats" class="tab-content hidden">
+          <div class="stats-grid">
+            <div class="stats-card">
+              <div class="stats-card-title">来源分布</div>
+              <div id="source-chart"></div>
+            </div>
+            <div class="stats-card">
+              <div class="stats-card-title">评分分布</div>
+              <div id="score-chart"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <div id="run-toast"></div>
+
+  <!-- 运行日志面板 -->
+  <div id="log-panel">
+    <div class="log-panel-header">
+      <span id="log-panel-title">运行日志</span>
+      <button class="log-close-btn" onclick="closeLogPanel()">✕</button>
+    </div>
+    <pre id="log-content"></pre>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
