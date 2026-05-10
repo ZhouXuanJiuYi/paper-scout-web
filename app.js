@@ -9,6 +9,14 @@ let currentDate = null;
 let currentTab  = 'curated';
 let allDates    = [];
 
+function onReady(fn) {
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', fn);
+  } else {
+    fn();
+  }
+}
+
 // ── 工具函数 ──────────────────────────────────────────────────────────────
 function scoreClass(score) {
   if (score >= SCORE_HIGH) return 'score-high';
@@ -380,7 +388,7 @@ function init() {
   selectDate(allDates[0]);
 }
 
-document.addEventListener('DOMContentLoaded', init);
+onReady(init);
 
 // ── 运行按钮 & 日志面板 ───────────────────────────────────────────────────
 let _pollTimer  = null;
@@ -490,7 +498,7 @@ function runScout() {
 }
 window.runScout = runScout;
 
-document.addEventListener('DOMContentLoaded', initRunBtn);
+onReady(initRunBtn);
 
 // ── 下次刷新倒计时（每天 09:00）────────────────────────────────────────────
 function updateNextRefresh() {
@@ -524,7 +532,7 @@ function updateNextRefresh() {
   }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+onReady(() => {
   updateNextRefresh();
   setInterval(updateNextRefresh, 1000);
 });
