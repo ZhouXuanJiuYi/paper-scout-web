@@ -213,7 +213,7 @@
 
   <script>
     (function() {
-      const v = new Date().toISOString().slice(0, 10).replace(/-/g, '');
+      const v = new Date().toISOString().slice(0, 16).replace(/[-:T]/g, '');
       const scriptParent = document.currentScript.parentNode;
       function loadScript(src, onload) {
         const s = document.createElement('script');
