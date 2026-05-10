@@ -214,11 +214,12 @@
   <script>
     (function() {
       const v = new Date().toISOString().slice(0, 10).replace(/-/g, '');
+      const scriptParent = document.currentScript.parentNode;
       function loadScript(src, onload) {
         const s = document.createElement('script');
         s.src = src + '?v=' + v;
         s.onload = onload;
-        document.currentScript.parentNode.appendChild(s);
+        scriptParent.appendChild(s);
       }
       loadScript('data.js', function() {
         loadScript('app.js');
