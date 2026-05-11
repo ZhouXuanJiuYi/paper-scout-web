@@ -435,24 +435,36 @@ function setRunBtn(text, disabled, stateClass) {
   btn.className = 'run-btn' + (stateClass ? ` ${stateClass}` : '');
 }
 
+function setRerunBtn(disabled) {
+  const btn = document.getElementById('rerun-btn');
+  if (!btn) return;
+  btn.disabled = disabled;
+  btn.className = 'run-btn rerun-btn' + (disabled ? '' : '');
+}
+
 function applyStatus(data) {
   clearTimeout(_pollTimer);
   if (data.status === 'running') {
     setRunBtn('运行中…', true, 'state-running');
+    setRerunBtn(true);
     showLogPanel(data.log_tail || '正在启动…', '运行日志 · 进行中');
     _pollTimer = setTimeout(fetchStatus, 2000);
   } else if (data.status === 'done') {
     setRunBtn('今日已完成', true, 'state-done');
+    setRerunBtn(false);
     showLogPanel(data.log_tail || '', '运行日志 · 已完成');
     showToast('完成！请刷新页面查看今日文献。', 8000);
   } else if (data.report_exists) {
     setRunBtn('今日已完成', true, 'state-done');
+    setRerunBtn(false);
     if (_logVisible && data.log_tail) showLogPanel(data.log_tail, '运行日志 · 已完成');
   } else if (data.status === 'error') {
     setRunBtn('出错，重试', false, 'state-error');
+    setRerunBtn(false);
     showLogPanel(data.log_tail || '', '运行日志 · 出错');
   } else {
     setRunBtn('运行今日', false, '');
+    setRerunBtn(false);
   }
 }
 
@@ -469,6 +481,7 @@ function initRunBtn() {
     .then(r => r.json())
     .then(data => {
       document.getElementById('run-btn').style.display = '';
+      document.getElementById('rerun-btn').style.display = '';
       applyStatus(data);
     })
     .catch(() => {});
@@ -497,6 +510,30 @@ function runScout() {
     });
 }
 window.runScout = runScout;
+
+function rerunScout() {
+  const btn = document.getElementById('rerun-btn');
+  if (!btn || btn.disabled) return;
+  if (!confirm('将删除今日已有报告并重新抓取，确定继续？')) return;
+  setRerunBtn(true);
+  setRunBtn('运行中…', true, 'state-running');
+  showLogPanel('正在连接服务器…', '运行日志 · 重新生成中');
+  fetch('/api/rerun', { method: 'POST' })
+    .then(r => r.json())
+    .then(data => {
+      if (data.status === 'started') {
+        applyStatus({ status: 'running', log_tail: '' });
+      } else {
+        applyStatus({ status: 'error', log_tail: data.error || '' });
+      }
+    })
+    .catch(() => {
+      setRunBtn('连接失败', false, 'state-error');
+      setRerunBtn(false);
+      showLogPanel('无法连接服务器。', '运行日志 · 连接失败');
+    });
+}
+window.rerunScout = rerunScout;
 
 onReady(initRunBtn);
 

@@ -128,6 +128,13 @@ code {
 .run-btn:disabled { opacity: 0.65; cursor: default; }
 .run-btn.state-done  { background: var(--green); }
 .run-btn.state-error { background: var(--red); }
+.run-btn.rerun-btn {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+.run-btn.rerun-btn:hover:not(:disabled) { background: var(--accent); color: #fff; }
+.run-btn.rerun-btn:disabled { border-color: currentColor; }
 
 /* toast 通知条 */
 #run-toast {
