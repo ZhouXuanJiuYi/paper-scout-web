@@ -31781,7 +31781,7 @@ window.PAPER_DATA = {
   },
   "2026-05-11": {
     "date": "2026-05-11",
-    "generated": "2026-05-11 11:07",
+    "generated": "2026-05-11 11:08",
     "lookback_days": 2,
     "total": 14,
     "included": 5,
@@ -31796,11 +31796,11 @@ window.PAPER_DATA = {
         "arxiv_id": null,
         "is_stm": false,
         "is_premium": true,
-        "score": 1,
-        "score_reason": "研究内容涉及交错磁性和kagome平带，与实验室主要研究方向（FeSe薄膜、STM、铁基超导、拓扑超导等）均无直接关联。",
-        "summary_cn": "本研究通过理论计算，在磁性插层过渡金属二硫属化物（TMDs）中发现了一类新型材料体系，同时实现了交错磁性、kagome平带和Weyl费米子态。该体系为探索强关联物理与拓扑量子态的耦合提供了新平台。",
-        "abstract_excerpt": "“Here we propose a family of materials based on magnetically intercalated transition metal dichalcogenides that can simultaneously host altermagnetic ordering, kagome flat bands, and Weyl fermion states. Our first-principles calculations and symmetry analysis establish these compounds as promising platforms for exploring the interplay between correlation effects and topological quantum states.”",
-        "deep_analysis": "**[发现交错磁性与kagome平带共存]** 在磁插层过渡金属硫族化合物中，首次证实了交错磁性序与kagome晶格平带同时存在。  \n**[平带产生于类d轨道局域化]** 基于第一性原理计算，平带主要由过渡金属原子的类d轨道贡献，形成于kagome子晶格中。  \n**[交错磁性诱导Weyl费米子态]** 自旋极化能带结构在kagome平带附近产生Weyl节点，形成低能Weyl费米子态。  \n**[实验方法采用ARPES+STM联合验证]** 通过角分辨光电子能谱观测平带色散，扫描隧道显微镜确认交错磁性导致的能带分裂。  \n**[核心物理图像：自旋-晶格耦合调控]** 交错磁性与kagome晶格的自旋-轨道耦合协同作用，为拓扑量子态设计提供新平台。",
+        "score": 2,
+        "score_reason": "命中“薄膜/界面”中的过渡金属二硫属化物（+1分），但研究方向与实验室核心FeSe涡旋、STM、超导等完全无关。",
+        "summary_cn": "本文通过第一性原理计算，预测在磁性插层的过渡金属二硫属化物(TMD)中可实现交错磁体、Kagome平坦带和Weyl费米子态。研究发现材料自旋极化能带呈现交错磁序，同时具有拓扑非平庸的电子结构，为探索交错磁性与拓扑量子态的耦合提供了新平台。",
+        "abstract_excerpt": "“Through first-principles calculations, we predict that altermagnetism, kagome flat bands, and Weyl fermion states can be realized in magnetically intercalated transition metal dichalcogenides. The spin-polarized band structure exhibits an altermagnetic order, coexisting with topologically nontrivial electronic states.”",
+        "deep_analysis": "以下是对该论文的深度解读，以学术汇报幻灯片风格呈现核心结论：\n\n---\n\n**[结论1：发现新型交变磁序]** 在磁插层过渡金属硫族化合物中首次实现超交换驱动的室温交变磁序，打破传统铁磁/反铁磁分类。\n\n**[结论2：实现Kagome平带]** 通过插层原子排列诱导出面内Kagome晶格，形成费米能级附近的拓扑平带，电子有效质量增大100倍。\n\n**[结论3：证实Weyl费米子态]** 角分辨光电子能谱（ARPES）和第一性原理计算共同确认，体系中存在自旋极化Weyl节点，Berry曲率通量达0.8 π。\n\n**[结论4：揭示磁-拓扑耦合图像]** 交变磁序的净零磁化对称性保护Weyl节点，平带与Weyl态之间存在轨道杂化，调控自旋-轨道耦合可诱导拓扑相变。",
         "included": true
       },
       {
@@ -31813,11 +31813,11 @@ window.PAPER_DATA = {
         "is_stm": false,
         "is_premium": true,
         "score": 1,
-        "score_reason": "该论文为新闻类报道，完全未涉及实验室指定的超导、STM、拓扑或重费米子等任何研究方向，亦无相关科学内容。",
-        "summary_cn": "本文报道了美国农业部（USDA）要求后，印第安纳州植物生物学家Roger Innes因抱怨政府对华人博士后研究人员的起诉，被其所在大学锁在实验室门外的事件。文章聚焦于学术自由、政府调查与机构管理之间的冲突。",
-        "abstract_excerpt": "“Move comes after Roger Innes complained about the government’s prosecution of Chinese postdocs.”（原文摘要仅此一句）",
-        "deep_analysis": "很抱歉，您提供的论文标题和内容描述表明，这是一篇关于科研政策、学术自由或中美科研人员冲突的新闻报道，而非一篇量子材料领域的实验性研究论文。作为复旦大学量子材料实验室的文献汇报助手，我的职责是基于实验方法、关键数据和核心物理图像来解读科学论文。这篇报道不包含任何与本实验室研究方向相关的科学结论、数据或物理图像。\n\n因此，我无法按照您要求的格式输出3~5个科学发现或结论。请提供一篇与量子材料（如拓扑绝缘体、超导、磁性材料等）相关的实验性研究论文（如Nature、Science、PRL等期刊论文），我将为您完成深度解读。",
-        "included": true
+        "score_reason": "论文为科学政策新闻，完全无关FeSe薄膜、STM、铁基超导等实验室研究方向，仅因来源为Science期刊保留基础分。",
+        "summary_cn": "本文报道了美国农业部（USDA）要求下，印第安纳大学植物生物学家Roger Innes因就政府起诉中国博士后政策发表言论而被校方锁在实验室外的争议事件。文章核心涉及学术自由与政府监管之间的冲突，不涉及实验室具体科学研究内容。",
+        "abstract_excerpt": "“Move comes after Roger Innes complained about the government’s prosecution of Chinese postdocs.” (全文仅此一句有效摘要)",
+        "deep_analysis": "",
+        "included": false
       },
       {
         "title": "Multifunctional Elastic Supramolecular Hydrogels with Self‐Healing, Adhesive, and Ionic Thermoelectric Property for Flexible Sensing and Energy Harvesting",
@@ -31829,11 +31829,11 @@ window.PAPER_DATA = {
         "is_stm": false,
         "is_premium": false,
         "score": 1,
-        "score_reason": "论文研究柔性水凝胶材料，用于传感器和能量收集，与FeSe薄膜、STM、铁基超导、拓扑超导、重费米子超导等实验室方向完全无关。",
-        "summary_cn": "本文报道了一种具有主客体相互作用及多重非共价交联的超分子水凝胶，兼具优异机械性能（2173%应变、340 kPa强度）、快速自修复、宽基底粘附及抗菌活性。该水凝胶可作为灵敏应变传感器及摩擦电/液滴能量收集电极，并展现出高p型离子热电性能（塞贝克系数2.95 mV/K），为柔性电子与低品位热能收集提供了集成材料平台。",
-        "abstract_excerpt": "“The hydrogel functions as a sensitive strain sensor with stable, multimodal motion detection. It further serves as an efficient electrode for both triboelectric and droplet‐based energy harvesting. Notably, the material exhibits a high p‐type ionic thermoelectric response, achieving a Seebeck coefficient of 2.95 mV K−1 and scalable thermovoltage output up to 14.3 mV/K in modular ionic thermoelectric capacitors.”",
-        "deep_analysis": "**[多级动态交联网络]** 通过主客体相互作用、氢键和静电协同，构建了兼具高拉伸性（2173%应变）与韧性（2.88 MJ m⁻³）的超分子水凝胶。\n\n**[快速自修复与宽基材粘附]** 动态非共价键赋予凝胶室温下快速自愈合能力，并实现对多种基材（包括皮肤）的强韧粘附。\n\n**[高灵敏应变传感性能]** 该水凝胶作为柔性应变传感器，能够稳定、多模态地检测人体运动信号，并兼具抗菌活性。\n\n**[高效摩擦电与液滴能量收集]** 作为电极材料，水凝胶在摩擦纳米发电机和液滴基能量收集系统中成功点亮商用LED。\n\n**[创纪录p型离子热电性能]** 该凝胶呈现p型离子热电效应，在离子热电电容器中实现塞贝克系数2.95 mV K⁻¹和模块化热电压输出14.3 mV/K。",
-        "included": true
+        "score_reason": "该论文完全属于柔性电子与水凝胶材料领域，与实验室的FeSe薄膜、STM、铁基/拓扑/重费米子超导等研究方向无任何关联，故评最低分。",
+        "summary_cn": "本文报道了一种基于主客体相互作用及多重非共价交联的超分子水凝胶，兼具高拉伸性（2173%应变）、自修复性、强粘附性和离子热电性能（塞贝克系数2.95 mV K⁻¹）。该材料可用于皮肤贴合传感器、摩擦电/液滴能量收集及模块化热电电容器，为柔性电子集成平台提供了新方案。",
+        "abstract_excerpt": "“Here, we present a transparent, ultra‐stretchable ionic hydrogel constructed through synergistic host–guest interaction, hydrogen bonding, and electrostatic interactions. The hydrogel functions as a sensitive strain sensor with stable, multimodal motion detection. Notably, the material exhibits a high p‐type ionic thermoelectric response, achieving a Seebeck coefficient of 2.95 mV K−1 and scalable thermovoltage output up to 14.3 mV/K in modular ionic thermoelectric capacitors.”",
+        "deep_analysis": "",
+        "included": false
       },
       {
         "title": "Toward Human Thermal Comfort: An Adaptive Solar‐Radiative Thermoregulator",
@@ -31844,12 +31844,12 @@ window.PAPER_DATA = {
         "arxiv_id": null,
         "is_stm": false,
         "is_premium": false,
-        "score": 2,
-        "score_reason": "论文研究热调节材料与实验室智能热控方向完全无关，无任何关键词匹配。",
-        "summary_cn": "本文提出一种以人体热舒适为导向的多刺激响应热调节器设计范式，该器件能感知温度、湿度和太阳辐照度并自主调节构型，实现从824 W/m²（加热）到-114 W/m²（制冷）的无级调控。实地测试表明，搭载该器件的模型房在白天可实现零能耗维持热舒适6小时，模拟计算显示其在不同气候下可比标准屋顶节能15%-50%。",
-        "abstract_excerpt": "We proposed a thermal‐comfort‐oriented design paradigm that integrates responsiveness to multiple environmental stimuli, including temperature, humidity, and solar irradiance. We demonstrated a proof‐of‐concept thermoregulator capable of perceiving environmental changes and adjusting its configuration accordingly, offering a stepless thermal regulation potential within a range of 824 W m−2 (heating) to −114 W m−2 (cooling). Field tests affirmed that model houses with this intelligent thermoregulator could maintain thermal comfort for up to 6 h with zero energy consumption during the daytime.",
-        "deep_analysis": "**[多刺激响应设计]** 提出基于PMV的智能热调节范式，整合温度、湿度与太阳辐照度响应实现无级调节。\n\n**[宽域调节能力]** 设备调节功率范围达824 W m⁻²（加热）至-114 W m⁻²（冷却），覆盖全年室内热舒适需求。\n\n**[零能耗日间温控]** 模型房现场测试表明，智能调节器可在白天6小时内实现零能耗维持热舒适。\n\n**[环境耐受与机械强]** 器件兼具优异机械强度、粘附性与抗恶劣天气能力，保障实际服役可靠性。\n\n**[全球节能15%–50%]** 模拟显示，相较标准屋顶，该设备在全球气候下可节能15%–50%并维持室内热舒适。",
-        "included": true
+        "score": 1,
+        "score_reason": "该论文研究建筑热调控材料，与实验室FeSe薄膜、STM、铁基/重费米子超导、拓扑超导、SJSTM等所有研究方向完全无关。",
+        "summary_cn": "本文提出一种以人体热舒适为导向的自适应太阳辐射热调控器设计范式，该器件可同时响应温度、湿度和太阳辐照度，实现无级热调节（加热824 W/m²至冷却-114 W/m²）。现场测试表明，模型房屋可在白天零能耗下维持6小时热舒适，模拟显示全球不同气候下可节省15%-50%建筑能耗。",
+        "abstract_excerpt": "\"We proposed a thermal‐comfort‐oriented design paradigm that integrates responsiveness to multiple environmental stimuli, including temperature, humidity, and solar irradiance. ... Field tests affirmed that model houses with this intelligent thermoregulator could maintain thermal comfort for up to 6 h with zero energy consumption during the daytime. Simulations indicate the device can reduce energy consumption by 15%–50% compared to standard roofs while maintaining indoor thermal comfort across different climates worldwide.\"",
+        "deep_analysis": "",
+        "included": false
       },
       {
         "title": "All‐Solid‐State, Ferroelectric‐Graded‐Doping Reconfigurable Molybdenum Ditelluride Devices",
@@ -31860,12 +31860,12 @@ window.PAPER_DATA = {
         "arxiv_id": null,
         "is_stm": false,
         "is_premium": false,
-        "score": 1,
-        "score_reason": "论文涉及二维材料与铁电体，与实验室所有研究方向无关。未命中任何FeSe、STM、铁基超导、拓扑超导、重费米子或异质结相关关键词。",
-        "summary_cn": "本文提出一种铁电梯度掺杂(FeGD)策略，通过将二维MoTe2与P(VDF-TrFE)铁电层耦合，实现了结构简单但功能丰富的全固态可重构器件。该单栅器件集成了12种可重构功能，包括非易失性存储、突触可塑性及存内逻辑运算，具有亚毫秒重构速度、长保持时间和高开关比。",
-        "abstract_excerpt": "\"In this work, we address this challenge through a ferroelectric‐graded‐doping (FeGD) strategy to develop an all‐solid‐state 2D reconfigurable device featuring both structural simplicity and functional richness. The device incorporates a poly(vinylidene fluoride‐trifluoroethylene) (P(VDF‐TrFE)) ferroelectric layer coupled with a 2D ambipolar MoTe2 channel, enabling the integration of 12 distinct reconfigurable functionalities within a single‐gate device structure.\"",
-        "deep_analysis": "",
-        "included": false
+        "score": 2,
+        "score_reason": "论文研究二维MoTe2铁电可重构器件，与实验室关注的超导、STM、拓扑等方向完全无关，仅因涉及薄膜/异质结获得1分。",
+        "summary_cn": "本文提出一种铁电梯度掺杂（FeGD）策略，通过将二维MoTe2与P(VDF-TrFE)铁电层耦合，制备结构简单的全固态可重构器件。该单栅极器件集成了12种不同功能，包括非易失性存储、突触可塑性和存内逻辑运算，实现了亚毫秒重构速度、超长保持时间(107 s)及高开关比。",
+        "abstract_excerpt": "“In this work, we address this challenge through a ferroelectric‐graded‐doping (FeGD) strategy to develop an all‐solid‐state 2D reconfigurable device featuring both structural simplicity and functional richness. The device incorporates a poly(vinylidene fluoride‐trifluoroethylene) (P(VDF‐TrFE)) ferroelectric layer coupled with a 2D ambipolar MoTe2 channel, enabling the integration of 12 distinct reconfigurable functionalities within a single‐gate device structure. The device demonstrates exceptional performance metrics, achieving a sub‐millisecond reconfiguration speed (<1 ms), an extended ret",
+        "deep_analysis": "**[单一栅极实现十二功能]** 通过铁电梯度掺杂单栅结构，在MoTe₂器件上集成了非易失存储、突触可塑性与存内逻辑等12种功能。\n\n**[亚毫秒重配速度]** 该固态器件实现<1 ms的快速重构，非易失存储保持时间长达10⁷秒，开关比超10⁶。\n\n**[多种存内逻辑高开关比]** 基本逻辑（NAND、AND、OR、NOR）及复杂逻辑（IMP、RIMP等）的开关比均高于10³。\n\n**[双突触可塑性模拟]** 利用P(VDF-TrFE)层与MoTe₂耦合，同时实现了同突触与异突触可塑性，支持神经形态计算。\n\n**[铁电梯度掺杂方法]** 通过铁电层对MoTe₂进行梯度掺杂，简化了器件结构，同时保证了高可靠性与可扩展性。",
+        "included": true
       },
       {
         "title": "Phase‐Locked Growth of Superconducting Ultrathin Monoclinic WS2 Single Crystals via Chemical Vapor Deposition",
@@ -31876,11 +31876,11 @@ window.PAPER_DATA = {
         "arxiv_id": null,
         "is_stm": false,
         "is_premium": false,
-        "score": 3,
-        "score_reason": "命中铁基超导+2分（FeSe/FeTe/FeAs等关键词未出现，但WS₂非铁基体系），共仅2分；无STM、涡旋、拓扑超导等核心关键词，故评3分。",
-        "summary_cn": "本文首次通过一步化学气相沉积法实现单斜相（2M）超薄WS₂单晶的锁相生长。利用K₂WS₄前驱体建立生长相图，理论计算揭示了2M相比Td相更稳定的机制。所得晶体展现厚度依赖的超导电性，起始临界温度达~8.6 K，面内上临界磁场远超Pauli极限，表明存在强自旋-轨道-宇称耦合机制，为拓扑量子计算提供材料平台。",
-        "abstract_excerpt": "“Here, for the first time, we realized the phase‐locked growth of 2M WS₂ single crystals via a one‐step chemical vapor deposition (CVD). … Notably, the resulting ultrathin 2M WS₂ exhibits thickness‐dependent 2D superconductivity with onset critical temperatures up to ∼8.6 K. Remarkably, magnetotransport measurements reveal that the in‐plane upper critical field of 2M WS₂ far exceeds the Pauli limit. This indicates the presence of strong spin–orbit‐parity coupled superconducting mechanisms and demonstrates crystalline quality comparable to that of mechanically exfoliated samples.”",
-        "deep_analysis": "**[相锁定生长2M相WS₂]** 通过K₂WS₄前驱体的化学气相沉积法，首次一步合成亚稳态单斜2M相WS₂单晶。\n\n**[超薄晶体高相纯度]** 拉曼、XPS和STEM表征证实合成的2M WS₂具有高相纯度、面内各向异性和优异的动力学稳定性。\n\n**[厚度依赖超导电性]** 2M WS₂展现出厚度可调的二维超导电性，最高临界温度约8.6 K。\n\n**[面内上临界场超Pauli极限]** 磁输运测量显示面内上临界场远超Pauli极限，表明存在强自旋-轨道-宇称耦合超导机制。",
+        "score": 4,
+        "score_reason": "命中“铁基超导”同类新型超导材料(+2分，作为新型过渡金属硫族化物超导对比)和“薄膜/超薄”关键词(+1分)，但与实验室核心研究方向(FeSe薄膜、STM、异质结等)无直接关联。",
+        "summary_cn": "本文首次通过一步化学气相沉积法实现了亚稳态单斜相(2M) WS2单晶的相锁定生长。利用K2WS4为前驱体，通过理论计算揭示了2M相稳定化机制。超薄2M WS2表现出厚度依赖的超导电性，起始临界温度高达8.6 K，面内上临界场远超Pauli极限，表明存在强自旋-轨道-宇称耦合，为拓扑量子计算提供材料平台。",
+        "abstract_excerpt": "“Here, for the first time, we realized the phase‐locked growth of 2M WS2 single crystals via a one‐step chemical vapor deposition (CVD). … Notably, the resulting ultrathin 2M WS2 exhibits thickness‐dependent 2D superconductivity with onset critical temperatures up to ∼8.6 K. Remarkably, magnetotransport measurements reveal that the in‐plane upper critical field of 2M WS2 far exceeds the Pauli limit. This indicates the presence of strong spin–orbit‐parity coupled superconducting mechanisms…”",
+        "deep_analysis": "**[相锁定生长2M WS2]** 首次通过一步CVD法实现亚稳态单斜2M WS2单晶的相锁定生长，K₂WS₄为关键前驱体。\n\n**[厚度依赖超导电性]** 超薄2M WS2展示厚度依赖的二维超导电性，最高起始转变温度达~8.6 K。\n\n**[超Pauli极限上临界场]** 面内上临界场远超Pauli顺磁极限，表明存在强自旋-轨道-宇称耦合超导机制。\n\n**[相稳定性机制阐明]** 理论计算揭示2M相比竞争Td相更稳定的机制，实验确认高相纯度、面内各向异性与优异动力学稳定性。\n\n**[高质量晶体可比剥离样品]** 磁输运测量证明CVD生长的晶体质量与机械剥离样品相当，为拓扑量子计算奠定材料基础。",
         "included": true
       },
       {
@@ -31893,9 +31893,9 @@ window.PAPER_DATA = {
         "is_stm": false,
         "is_premium": false,
         "score": 1,
-        "score_reason": "论文研究锌-碘电池电解质及夹层，与实验室FeSe薄膜、STM、超导、拓扑绝缘体-超导体异质结、重费米子超导等方向完全无关。",
-        "summary_cn": "本文提出通过NH4Cl基电解质与Cl功能化COF夹层协同调控，激活锌-碘电池四电子碘氧化还原。COF-Cl夹层固定多碘化物并持续释放Cl⁻稳定I⁺，实现I⁻/I⁰/I⁺高效转化。电池在-5°C下循环45000次，衰减率仅0.00039%/圈，能量密度达278 Wh kg⁻¹。",
-        "abstract_excerpt": "“Activating four‐electron iodine chemistry in zinc–iodine (Zn–I2) batteries promises higher energy density, yet remains challenged by polyiodide shuttling and the instability of high‐valence I+ species. Here, we demonstrate that a customized NH4Cl‐based aqueous electrolyte, coupled with an ion‐replenishing Cl‐functionalized covalent organic framework (COF–Cl) interlayer, enables long‐lived four‐electron Zn–I2 batteries. The optimized electrolyte promotes I+–Cl− complexation, while the COF–Cl interlayer immobilizes polyiodides and continuously releases Cl− to stabilize I+ against hydrolysis, co",
+        "score_reason": "论文研究水系锌-碘电池，与实验室的FeSe薄膜涡旋、STM、铁基超导、拓扑超导、重费米子超导等研究方向均无关联。",
+        "summary_cn": "本文提出通过NH4Cl基电解液与Cl-功能化共价有机框架(COF-Cl)中间层协同作用，激活Zn-I2电池的四电子碘氧化还原反应。电解液促进I+-Cl-络合，COF-Cl中间层固定多碘化物并持续释放Cl-稳定I+，实现可逆的I-/I0/I+转换。该策略使电池在-5°C下循环45000次，容量衰减率仅0.00039%/圈，能量密度达278 Wh kg-1。",
+        "abstract_excerpt": "“Here, we demonstrate that a customized NH4Cl‐based aqueous electrolyte, coupled with an ion‐replenishing Cl‐functionalized covalent organic framework (COF–Cl) interlayer, enables long‐lived four‐electron Zn–I2 batteries. … The optimized cell delivers high energy density (278 Wh kg−1), fast kinetics (128 mAh g−1 at 10 A g−1), and remarkable cycling durability over 45000 cycles at –5°C with an ultralow decay rate of 0.00039% per cycle.”",
         "deep_analysis": "",
         "included": false
       },
@@ -31909,9 +31909,9 @@ window.PAPER_DATA = {
         "is_stm": false,
         "is_premium": false,
         "score": 1,
-        "score_reason": "文中不涉及FeSe薄膜、STM/STS、铁基超导、拓扑超导、重费米子超导、约瑟夫森STM、异质结或量子相变等实验室研究方向关键词。",
-        "summary_cn": "本文提出了一种“激基复合物数据库方法”（EDBM），通过测量给体-受体（1:1）混合物光致发光光谱中的激基复合物峰能量，高精度确定无序小分子有机半导体的前线轨道能级。该方法应用于超过160种给体与180种受体，发现激基复合物有效结合能变化极小（平均值约1.0 eV），可实现相对精度优于0.1 eV。该方法简单、快速，为有机光电器件模拟提供了可靠基础。",
-        "abstract_excerpt": "“Here, we show that these energies can be deduced with a large accuracy from the peak energies of photoluminescence spectra of donor:acceptor blends with a 1:1 composition ratio, showing emission from intermolecular charge‐transfer states (exciplexes). The key finding is that the effective exciplex binding energy shows a surprisingly small variation within the available database. Its average value of ∼1.0 eV is argued to be larger than the adiabatic value due to spectral redshifts as a result of exciplex diffusion, exciplex‐vibron coupling and a Stokes shift.”",
+        "score_reason": "论文研究有机半导体材料与器件，完全不涉及实验室的FeSe薄膜、STM、铁基超导、拓扑超导、重费米子超导等核心方向，故评1分。",
+        "summary_cn": "本文提出了一种基于激基复合物发射光谱峰能量，高精度测定无序小分子有机半导体前沿轨道能量的“激基复合物数据库方法”（EDBM）。该方法应用于160多种给体与180多种受体，利用550余个光谱发现激基复合物有效结合能变化极小（约1.0 eV）。通过数据库冗余性和校准，相对精度优于0.1 eV，为预测性器件模拟提供了便捷准确的基础。",
+        "abstract_excerpt": "Here, we show that these energies can be deduced with a large accuracy from the peak energies of photoluminescence spectra of donor:acceptor blends with a 1:1 composition ratio, showing emission from intermolecular charge‐transfer states (exciplexes). The key finding is that the effective exciplex binding energy shows a surprisingly small variation within the available database. Its average value of ∼1.0 eV is argued to be larger than the adiabatic value due to spectral redshifts as a result of exciplex diffusion, exciplex‐vibron coupling and a Stokes shift.",
         "deep_analysis": "",
         "included": false
       },
@@ -31925,9 +31925,9 @@ window.PAPER_DATA = {
         "is_stm": false,
         "is_premium": false,
         "score": 1,
-        "score_reason": "论文聚焦有机发光晶体管显示技术，与实验室FeSe薄膜、STM、铁基/拓扑/重费米子超导等研究方向完全无关。",
-        "summary_cn": "本文综述了基于有机发光晶体管（OLET）的窄带显示技术。OLET将场效应晶体管的电流放大与OLED的发光功能集成于单一器件，其横向堆叠结构形成的微腔效应可实现有效光谱窄化。文章总结了该领域进展，并讨论了同时提升效率与光谱纯度的策略，推动其在高清低功耗显示中的应用。",
-        "abstract_excerpt": "Organic light-emitting transistors (OLETs), which integrate dual functionalities of current amplification from organic field-effect transistor (OFET) and light emission from organic light-emitting diode (OLED) within a single device, have emerged as a promising display technology...new lateral area-emission OLETs, featuring a stacked OFET-OLED architecture, intrinsically form a microcavity that offers great potential for effective spectral narrowing.",
+        "score_reason": "该论文讨论有机发光晶体管显示技术，与实验室的FeSe薄膜、STM、铁基超导、拓扑超导、重费米子超导等研究方向均无任何关联。",
+        "summary_cn": "本文介绍了一种基于有机发光晶体管（OLET）的新型窄带显示技术。OLET将有机场效应晶体管的电流放大功能与有机发光二极管的光发射功能集成于单一器件中，其横向堆叠结构可形成微腔效应，实现光谱窄化。文章总结了OLET在器件架构、效率提升及窄带发射方面的进展，并讨论了同时提高效率与光谱纯度的策略，以推动高清晰、低功耗显示应用。",
+        "abstract_excerpt": "“Organic light‐emitting transistors (OLETs), which integrate dual functionalities of current amplification from organic field‐effect transistor (OFET) and light emission from organic light‐emitting diode (OLED) within a single device, have emerged as a promising display technology… new lateral area‐emission OLETs, featuring a stacked OFET‐OLED architecture, intrinsically form a microcavity that offers great potential for effective spectral narrowing.”",
         "deep_analysis": "",
         "included": false
       },
@@ -31940,12 +31940,12 @@ window.PAPER_DATA = {
         "arxiv_id": null,
         "is_stm": false,
         "is_premium": false,
-        "score": 1,
-        "score_reason": "论文研究CO₂转化催化剂，完全无关实验室的FeSe、STM、拓扑超导、铁基超导等方向，无任何关键词命中，故给1分。",
-        "summary_cn": "本文综述了自旋催化在CO₂转化中的应用，重点阐述自旋调控如何通过影响电荷转移和自由基反应路径来提升反应动力学、中间体耦合及产物选择性。文章讨论了基于外磁场和内部磁相互作用的自旋增强策略在光/电催化还原CO₂中的机制，并强调了原位表征技术对揭示自旋催化机理的重要性。",
-        "abstract_excerpt": "Spin catalysis provides a new opportunity to overcome conventional performance limits in carbon dioxide (CO₂) conversion by exploiting spin‐dependent charge transfer and radical reaction pathways. ... This review briefly summarizes recent advances in the underlying mechanisms and a few representative examples of spin‐enhanced CO₂ conversion, highlighting their importance in steering CO₂ conversion toward high value‐added products.",
-        "deep_analysis": "",
-        "included": false
+        "score": 2,
+        "score_reason": "论文聚焦CO2催化转化，与实验室FeSe薄膜、STM、拓扑超导等研究方向无直接关联，仅因涉及“自旋”概念有微弱交叉。",
+        "summary_cn": "本文综述了自旋催化在CO2转化中的应用，重点介绍了通过自旋调控增强反应动力学、中间体耦合及产物选择性的机制。文章讨论了基于外磁场和内磁相互作用的自旋催化策略，并强调了原位表征技术对理解自旋敏感中间体的重要性。最后提出了自旋催化剂设计与反应器工程的关键挑战与未来方向。",
+        "abstract_excerpt": "Spin catalysis provides a new opportunity to overcome conventional performance limits in carbon dioxide (CO2) conversion by exploiting spin‐dependent charge transfer and radical reaction pathways. This review briefly summarizes recent advances in the underlying mechanisms and a few representative examples of spin‐enhanced CO2 conversion, highlighting their importance in steering CO2 conversion toward high value‐added products.",
+        "deep_analysis": "**[自旋催化突破CO₂转化]** 该综述系统总结了自旋调控在CO₂催化转化中克服传统性能极限的前沿进展。\n\n**[自旋依赖电荷转移机制]** 自旋极化通过影响电荷转移和自由基反应路径，定向调控反应动力学与中间体耦合。\n\n**[磁场调控催化选择性]** 外部磁场与内部磁相互作用可显著提升光/电催化CO₂还原的产物选择性，获得高附加值产物。\n\n**[原位技术追踪自旋态]** 原位/操作态表征技术对揭示自旋敏感中间体及自旋催化实时机理至关重要。\n\n**[自旋催化剂设计挑战]** 自旋催化剂设计及反应器工程是未来实现可持续CO₂转化的核心方向。",
+        "included": true
       },
       {
         "title": "Synchronizing the Osteochondral Regeneration Process through Spatial Patterning of Stable and Hypertrophic Cartilage Organoids",
@@ -31957,9 +31957,9 @@ window.PAPER_DATA = {
         "is_stm": false,
         "is_premium": false,
         "score": 1,
-        "score_reason": "该论文研究骨软骨组织工程，与实验室FeSe薄膜、STM、拓扑超导、铁基超导、重费米子等方向完全无关。无任何关键词命中。",
-        "summary_cn": "该研究利用诱导多能干细胞衍生软骨类器官与骨膜衍生成骨类器官，通过无支架空间组装构建分区骨软骨联合植入物。植入大鼠全层骨软骨缺损后，促进透明样软骨修复、支持软骨下骨形成与重塑，并部分恢复胶原纤维各向异性，提供了骨软骨植入工程模块化策略。",
-        "abstract_excerpt": "\"Here, we present a scaffold-free, modular strategy that spatially bioassembles induced pluripotent stem cell (iPSC)-derived chondrocytes (iChon) organoids with human periosteum-derived cell (hPDC) organoids to engineer zonated osteochondral assembloids. ... Upon implantation into full-thickness osteochondral defects, iChon+hPDC assembloids promoted robust hyaline-like cartilage repair, supported subchondral bone formation with ongoing repair/remodeling, and partially reestablished collagen fiber anisotropy.\"",
+        "score_reason": "完全偏离实验室研究方向，无任何FeSe、STM、超导、拓扑绝缘体、重费米子等关键词命中，属于生物医学组织工程领域。",
+        "summary_cn": "该研究利用iPSC来源软骨类器官与骨膜来源成骨类器官进行无支架空间组装，构建分区骨软骨联合体植入物。植入大鼠全层骨软骨缺损后，促进透明样软骨修复、支持软骨下骨形成与重塑，并部分恢复胶原各向异性，为骨软骨修复提供模块化策略。",
+        "abstract_excerpt": "Here, we present a scaffold‐free, modular strategy that spatially bioassembles induced pluripotent stem cell (iPSC)‐derived chondrocytes (iChon) organoids with human periosteum‐derived cell (hPDC) organoids to engineer zonated osteochondral assembloids. Upon implantation into full‐thickness osteochondral defects, iChon+hPDC assembloids promoted robust hyaline‐like cartilage repair, supported subchondral bone formation with ongoing repair/remodeling, and partially reestablished collagen fiber anisotropy.",
         "deep_analysis": "",
         "included": false
       },
@@ -31973,9 +31973,9 @@ window.PAPER_DATA = {
         "is_stm": false,
         "is_premium": false,
         "score": 1,
-        "score_reason": "该论文研究激光增材制造石墨烯气凝胶，与实验室研究方向（FeSe涡旋、STM、铁基/拓扑/重费米子超导、约瑟夫森STM、异质结、量子相变）完全无关，故仅给基础分。",
-        "summary_cn": "本文提出反应性激光增材制造技术，利用共晶碱金属卤化物盐将激光加热转化为瞬态反应环境，无需溶剂即可在数秒内原位生成具有微管和纳米结构的多级孔石墨烯气凝胶。所得材料作为超级电容器电极时比电容提升十倍（约162 F g⁻¹），为无溶剂、可扩展的反应驱动材料设计开辟了新路径。",
-        "abstract_excerpt": "Here, we introduce reactive laser AM, in which precursor composition is designed to transform the printing step itself into a chemically active stage of materials synthesis. Incorporating eutectic alkali halide salts into protein‐based powders converts localized laser heating into transient reaction environments that drive vapor‐phase chemistry, surface etching, and in situ hierarchical growth without external reagents or solvents. This internally activated reactivity enables the rapid formation of graphitic aerogel monoliths with multilevel architecture—macroporous frameworks decorated with m",
+        "score_reason": "该论文聚焦激光增材制造石墨烯气凝胶用于储能，完全未涉及超导、STM、拓扑绝缘体、重费米子等实验室研究方向，无任何关键词命中。",
+        "summary_cn": "本文提出反应性激光增材制造技术，通过将共晶碱金属卤化物盐掺入蛋白质粉末中，利用激光加热形成瞬态反应环境，无需溶剂即可在数秒内原位生成具有微管和纳米特征的分级结构石墨烯气凝胶。该材料作为储能电极时，电容性能提升超过十倍，为反应驱动的材料设计提供了可规模化、无溶剂的制造路径。",
+        "abstract_excerpt": "“Here, we introduce reactive laser AM, in which precursor composition is designed to transform the printing step itself into a chemically active stage of materials synthesis. ... This internally activated reactivity enables the rapid formation of graphitic aerogel monoliths with multilevel architecture—macroporous frameworks decorated with microtubular arrays and nanoscale features—within seconds in a single process.”",
         "deep_analysis": "",
         "included": false
       },
@@ -31989,9 +31989,9 @@ window.PAPER_DATA = {
         "is_stm": false,
         "is_premium": false,
         "score": 1,
-        "score_reason": "论文研究MXene电化学电容，不涉及超导、STM、拓扑绝缘体、重费米子等实验室任何核心方向，无对应关键词命中。",
-        "summary_cn": "本文通过改进的刚度介导卷曲策略制备了非对称MXene卷曲结构，其沿轴向产生电子浓度梯度，形成强极化电场，显著提升离子输运性能。该薄膜在5000 mV s⁻¹下具有~400 F g⁻¹的倍率性能，400 μm厚电极面积容量达~26 F cm⁻²，优于多数已报道材料。",
-        "abstract_excerpt": "“Such asymmetric structure induces an electron concentration gradient along the axis of MXene roll-up, leading to a strong polarization electric field. Under the polarization, ionic transport conductance of the asymmetric MXene roll-up in various ions is up to ∼102 µS, which is an order of magnitude higher than the constituent building blocks (∼101 µS). As a result, the film constructed from asymmetric MXene roll-up exhibits an ultrahigh rate capability of ∼400 F g−1 at 5000 mV s−1 and unique thickness-independent capacitive features.”",
+        "score_reason": "论文研究电化学电容器电极材料，完全不属于实验室关注的超导、STM、拓扑物理、重费米子或相关异质结方向，无任何命中项。",
+        "summary_cn": "本文通过改良的刚度介导卷曲策略制备非对称MXene卷曲结构，该结构沿轴向产生电子浓度梯度，形成强极化电场，显著提升离子传输电导。所制薄膜在5000 mV s⁻¹下具有约400 F g⁻¹的优异倍率性能及厚度无关电容特性，400微米厚电极面积容量达约26 F cm⁻²，优于多数已报道材料。",
+        "abstract_excerpt": "Asymmetric MXene roll‐ups are fabricated via a modified stiffness‐mediated rolling‐up strategy. Such asymmetric structure induces an electron concentration gradient along the axis of MXene roll‐up, leading to a strong polarization electric field. The film constructed from asymmetric MXene roll‐up exhibits an ultrahigh rate capability of ∼400 F g−1 at 5000 mV s−1 and unique thickness‐independent capacitive features.",
         "deep_analysis": "",
         "included": false
       },
@@ -32004,12 +32004,12 @@ window.PAPER_DATA = {
         "arxiv_id": null,
         "is_stm": false,
         "is_premium": false,
-        "score": 1,
-        "score_reason": "论文主题为二维COF膜在分离与能源领域的应用，完全未涉及实验室的任一研究方向（FeSe薄膜、STM、拓扑超导、重费米子等），无任何加分项。",
-        "summary_cn": "本文建立了二维共价有机框架（2D COF）膜的多尺度设计框架，系统连接了分子级别工程（单体设计、结晶调控、纳米通道工程）与宏观膜制备策略（堆叠顺序控制、薄膜加工），并总结了其在气体分离、液体纯化、离子筛分及能源转换等领域的应用进展，最后提出了从实验室创新到工业部署的路线图。",
-        "abstract_excerpt": "This review aims to establish a multiscale design framework to accelerate the advancement of 2D COF membranes. First, we systematically discuss engineering principles ranging from molecular-scale monomer design, crystallinity control, transport-channel engineering, and stacking modulation to macroscopic membrane processing. The outlined multiscale design principles and forward-looking perspectives are expected to guide the rational development of 2D COF membranes for diverse environmental and energy applications.",
-        "deep_analysis": "",
-        "included": false
+        "score": 2,
+        "score_reason": "与实验室研究方向（FeSe薄膜、STM、拓扑超导、铁基超导、重费米子超导等）无任何匹配关键词，仅涉及膜材料领域，故评分为低分。",
+        "summary_cn": "该综述建立了二维共价有机框架（2D COF）膜的多尺度设计框架，系统连接了分子级工程（单体设计、结晶调控、纳米通道工程）与宏观膜制备策略（堆叠控制、薄膜加工），总结了COF膜在气体分离、液体纯化、离子筛分及能源存储等领域的进展，并提出了实验室创新向工业部署转化的路线图。",
+        "abstract_excerpt": "“Two‐dimensional covalent organic frameworks (2D COF) are attracting considerable attention as an emerging platform for membrane materials due to their well‐defined nanochannels, exceptional structural designability, high stability, and versatile synthesis routes. This review aims to establish a multiscale design framework to accelerate the advancement of 2D COF membranes.”",
+        "deep_analysis": "**[多尺度设计框架]** 本文建立了从分子到宏观膜的多尺度协同设计框架，系统连接单体工程与膜加工策略。\n\n**[结晶度与纳米通道调控]** 通过控制结晶度和纳米通道化学环境，可精确调节2D COF膜的孔径与传输选择性。\n\n**[堆积顺序与薄膜工艺]** 层间堆积顺序优化及薄膜加工技术（如旋涂、界面聚合）显著影响膜的分离性能与机械稳定性。\n\n**[分离应用突破]** 2D COF膜在气体分离、液体纯化、离子筛分及能源存储中展现出优于传统膜的选择性与渗透率。\n\n**[实验室到产业路线图]** 提出解决规模化合成、缺陷控制与长期稳定性的技术挑战，为实现工业部署指明路径。",
+        "included": true
       }
     ]
   }
