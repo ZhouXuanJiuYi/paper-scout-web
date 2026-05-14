@@ -37,6 +37,20 @@ function esc(str) {
     .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
+function renderMath(el) {
+  if (typeof renderMathInElement === 'function') {
+    renderMathInElement(el, {
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$',  right: '$',  display: false },
+        { left: '\\(', right: '\\)', display: false },
+        { left: '\\[', right: '\\]', display: true },
+      ],
+      throwOnError: false,
+    });
+  }
+}
+
 function fmtDate(dateStr) {
   if (!dateStr) return '';
   const d = new Date(dateStr);
@@ -197,6 +211,7 @@ function renderCurated(day) {
 
   empty.classList.toggle('hidden', included.length > 0);
   document.getElementById('tab-curated-count').textContent = included.length;
+  renderMath(list);
 }
 
 // ── 全部 Tab ──────────────────────────────────────────────────────────────
@@ -233,6 +248,7 @@ function applyAllFilters(day) {
   papers.forEach((p, i) => {
     list.insertAdjacentHTML('beforeend', buildPaperCard(p, i + 1, true));
   });
+  renderMath(list);
 }
 
 // ── 统计 Tab ──────────────────────────────────────────────────────────────
