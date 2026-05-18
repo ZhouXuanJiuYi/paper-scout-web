@@ -51899,9 +51899,9 @@ window.PAPER_DATA = {
   },
   "2026-05-18": {
     "date": "2026-05-18",
-    "generated": "2026-05-18 16:45",
+    "generated": "2026-05-18 16:47",
     "lookback_days": 2.5,
-    "total": 29,
+    "total": 22,
     "included": 0,
     "has_raw": true,
     "fetch_status": {
@@ -51919,7 +51919,7 @@ window.PAPER_DATA = {
       },
       "Nature": {
         "count": 0,
-        "error": null
+        "error": "HTTPSConnectionPool(host='feeds.nature.com', port=443): Max retries exceeded with url: /nature/rss/current (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset by peer')))"
       },
       "Science": {
         "count": 0,
@@ -51935,7 +51935,7 @@ window.PAPER_DATA = {
       },
       "npj Quantum Mater.": {
         "count": 0,
-        "error": null
+        "error": "HTTPSConnectionPool(host='feeds.nature.com', port=443): Max retries exceeded with url: /npjquantmats/rss/current (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset by peer')))"
       },
       "Communications Physics": {
         "count": 0,
@@ -51947,23 +51947,23 @@ window.PAPER_DATA = {
       },
       "PRB": {
         "count": 0,
-        "error": "HTTPSConnectionPool(host='feeds.aps.org', port=443): Max retries exceeded with url: /rss/recent/prb.xml (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset by peer')))"
+        "error": null
       },
       "PRX": {
         "count": 0,
-        "error": "HTTPSConnectionPool(host='feeds.aps.org', port=443): Max retries exceeded with url: /rss/recent/prx.xml (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset by peer')))"
+        "error": null
       },
       "Physical Review Research": {
         "count": 0,
-        "error": "HTTPSConnectionPool(host='feeds.aps.org', port=443): Max retries exceeded with url: /rss/recent/prresearch.xml (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset by peer')))"
+        "error": null
       },
       "Reviews of Modern Physics": {
         "count": 0,
-        "error": null
+        "error": "HTTPSConnectionPool(host='feeds.aps.org', port=443): Max retries exceeded with url: /rss/recent/rmp.xml (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset by peer')))"
       },
       "Nature Communications": {
-        "count": 7,
-        "error": null
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='feeds.nature.com', port=443): Max retries exceeded with url: /ncomms/rss/current (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset by peer')))"
       },
       "Nano Letters": {
         "count": 0,
@@ -51988,122 +51988,10 @@ window.PAPER_DATA = {
         "arxiv_id": null,
         "is_stm": false,
         "is_premium": false,
-        "score": 1,
-        "score_reason": "论文内容为热导率表征方法，与实验室铁基超导、铜基超导、拓扑超导、磁性拓扑、重费米子等所有核心方向完全无关。",
-        "summary_cn": "本文提出一种基于MATLAB的全自动化计算框架，通过逆向光声分析实现对多层薄膜的热导率精确表征。该方法在Bi2Te3/3D-AAO参考纳米复合材料上验证后，应用于电沉积CuxSe薄膜，揭示热导率随铜化学计量比系统变化，主要受晶格非谐性而非晶粒尺寸散射主导。",
-        "abstract_excerpt": "Precise determination of thermal conductivity in multilayer structures remains a critical challenge for advancing thermoelectric technologies. ... a fully automated, MATLAB-based computational framework operationalizing the generalized photoacoustic theory for a robust inverse analysis is presented. ... Results reveal a systematic dependence of thermal conductivity on copper stoichiometry, offering insights into anharmonicity-driven phonon scattering mechanisms.",
-        "deep_analysis": "",
-        "included": false
-      },
-      {
-        "title": "Trunk-branch-inspired carbon fiber scaffolds with boron nitride network for heat dissipation and electromagnetic interference shielding",
-        "authors": "Ning Jia, Yuan Ji, Wei Wang, Shichang Wang, Hong Wu, Shaoyun Guo, Jianhui Qiu",
-        "url": "https://www.nature.com/articles/s41467-026-73185-y",
-        "source": "Nature Communications",
-        "published": "2026-05-18",
-        "arxiv_id": null,
-        "is_stm": false,
-        "is_premium": false,
-        "score": 0,
-        "score_reason": "未命中任何凝聚态关键词",
-        "summary_cn": "（预筛过滤：与凝聚态物理方向无关）",
-        "abstract_excerpt": "",
-        "deep_analysis": "",
-        "included": false
-      },
-      {
-        "title": "Inorganic nitrogen metabolic reprogramming of the gut microbiome drives fecal microbiota transplantation in ulcerative colitis",
-        "authors": "Yinlong Wang, Qihang Hou, Xinying Lv, Jiongyan Liu, Huimei Wang, Yan Zhao, Haonan Tong, Yanli Liu, Juan Du, Xiaojun Yang, Shengru Wu, Shuixiang He, Xin Yang",
-        "url": "https://www.nature.com/articles/s41467-026-73290-y",
-        "source": "Nature Communications",
-        "published": "2026-05-18",
-        "arxiv_id": null,
-        "is_stm": false,
-        "is_premium": false,
-        "score": 0,
-        "score_reason": "未命中任何凝聚态关键词",
-        "summary_cn": "（预筛过滤：与凝聚态物理方向无关）",
-        "abstract_excerpt": "",
-        "deep_analysis": "",
-        "included": false
-      },
-      {
-        "title": "Frontier-orbital modulation of rhodium single-atom catalysts for enhanced hydrogen evolution",
-        "authors": "Rouna Jia, Zongyan Liu, Yang Wang, Jingyang Zhao, Zhong Huang, Wen Yue, Haozhi Wang, Kaiping Yu, Mingxin Huang, Yida Deng",
-        "url": "https://www.nature.com/articles/s41467-026-73161-6",
-        "source": "Nature Communications",
-        "published": "2026-05-18",
-        "arxiv_id": null,
-        "is_stm": false,
-        "is_premium": false,
-        "score": 0,
-        "score_reason": "未命中任何凝聚态关键词",
-        "summary_cn": "（预筛过滤：与凝聚态物理方向无关）",
-        "abstract_excerpt": "",
-        "deep_analysis": "",
-        "included": false
-      },
-      {
-        "title": "Gauge-field-induced duality group in metamaterials",
-        "authors": "Yan Meng, Hong-yu Zou, Naifu Zheng, Linyun Yang, Ruo-Yang Zhang, Jingming Chen, Xiang Xi, Bei Yan, Yong Ge, Yi-jun Guan, Hong-xiang Sun, Gui-Geng Liu, Zhenxiao Zhu, Shou-qi Yuan, Ce Shang, Hongsheng C",
-        "url": "https://www.nature.com/articles/s41467-026-73117-w",
-        "source": "Nature Communications",
-        "published": "2026-05-18",
-        "arxiv_id": null,
-        "is_stm": false,
-        "is_premium": false,
-        "score": 0,
-        "score_reason": "未命中任何凝聚态关键词",
-        "summary_cn": "（预筛过滤：与凝聚态物理方向无关）",
-        "abstract_excerpt": "",
-        "deep_analysis": "",
-        "included": false
-      },
-      {
-        "title": "Disorder-mediated non-equilibrium photocurrent redistribution enables homeostatic synaptic conditioning in AgBiS2 heterostructure",
-        "authors": "Hyun Woo Kim, Neul Ha, Hyun Min Kwon, Chan Kim, Jin Hyeon Kim, Min Sung Kim, Minkyun Son, Hanbyeol Oh, Sung Yeol Lim, Hui Chan Ahn, Sunil V. Barma, Jeong Ho Cho, Wooseok Yang, Sae Byeok Jo",
-        "url": "https://www.nature.com/articles/s41467-026-73235-5",
-        "source": "Nature Communications",
-        "published": "2026-05-18",
-        "arxiv_id": null,
-        "is_stm": false,
-        "is_premium": false,
-        "score": 0,
-        "score_reason": "未命中任何凝聚态关键词",
-        "summary_cn": "（预筛过滤：与凝聚态物理方向无关）",
-        "abstract_excerpt": "",
-        "deep_analysis": "",
-        "included": false
-      },
-      {
-        "title": "Interpretable machine learning and signal processing for automated reading and quality control of lateral flow tests for schistosomiasis",
-        "authors": "Chris Ho, Christin Puthur, Betty Nabatte, Carson P. Moore, Theresia Abdoel, Rene Paulussen, Pafue Nganjimi, Pytsje T. Hoekstra, Narcis B. Kabatereine, Bumali Kawesa, John Odea, Ronald Bogere, Rosette ",
-        "url": "https://www.nature.com/articles/s41467-026-73094-0",
-        "source": "Nature Communications",
-        "published": "2026-05-18",
-        "arxiv_id": null,
-        "is_stm": false,
-        "is_premium": false,
-        "score": 0,
-        "score_reason": "未命中任何凝聚态关键词",
-        "summary_cn": "（预筛过滤：与凝聚态物理方向无关）",
-        "abstract_excerpt": "",
-        "deep_analysis": "",
-        "included": false
-      },
-      {
-        "title": "DKC1 promotes colorectal cancer progression and therapy resistance by dysregulating sphingolipid biosynthesis",
-        "authors": "Umar K. Khan, Ayush Goel, Shivansh Nigam, Nazia Chaudhary, Ayush Praveen, Anjan Roy, Fabeha Fatima, Dilpreet K. Sawhney, Afiya Dalwai, Akshay Shendre, Shannon Carskadon, Anjali Bajpai, Abhimanyu Kapoo",
-        "url": "https://www.nature.com/articles/s41467-026-72800-2",
-        "source": "Nature Communications",
-        "published": "2026-05-18",
-        "arxiv_id": null,
-        "is_stm": false,
-        "is_premium": false,
-        "score": 0,
-        "score_reason": "未命中任何凝聚态关键词",
-        "summary_cn": "（预筛过滤：与凝聚态物理方向无关）",
-        "abstract_excerpt": "",
+        "score": 2,
+        "score_reason": "与实验室所有研究方向（超导、拓扑、磁性、重费米子等）均无任何重合，属于能源材料热表征方法。",
+        "summary_cn": "本文提出一种基于MATLAB的全自动光声分析框架，用于精确表征多层薄膜（如电沉积CuxSe）的热导率。通过Bi2Te3/AAO基准验证其可靠性，发现CuxSe热导率随铜化学计量比变化，主要受晶格非谐性而非晶粒尺寸影响。该工具为结构非理想薄膜的原位热表征提供了便捷方案。",
+        "abstract_excerpt": "\"Precise determination of thermal conductivity in multilayer structures remains a critical challenge for advancing thermoelectric technologies. ... To address this gap, a fully automated, MATLAB‑based computational framework operationalizing the generalized photoacoustic theory for a robust inverse analysis is presented. ... Results reveal a systematic dependence of thermal conductivity on copper stoichiometry, offering insights into anharmonicity‑driven phonon scattering mechanisms.\"",
         "deep_analysis": "",
         "included": false
       },
