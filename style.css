@@ -674,6 +674,63 @@ select {
   margin-bottom: 16px;
 }
 
+/* ── Group Tags ──────────────────────────────────────────────────── */
+.group-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+.group-tag {
+  display: inline-block;
+  font-size: 0.67rem;
+  font-weight: 600;
+  padding: 2px 9px;
+  border-radius: 10px;
+  border: 1px solid;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: opacity 0.15s, transform 0.1s;
+  user-select: none;
+}
+.group-tag:hover { opacity: 0.75; transform: translateY(-1px); }
+
+/* ── Group Filter Bar ─────────────────────────────────────────────── */
+.group-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 22px;
+  padding: 12px 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+.group-filter-btn {
+  display: inline-flex;
+  align-items: center;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  border-radius: 14px;
+  padding: 4px 13px;
+  font-size: 0.77rem;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+.group-filter-btn:hover { border-color: var(--border2); color: var(--text); background: var(--surface); }
+.group-filter-btn.active { font-weight: 700; }
+.group-filter-btn:first-child.active {
+  background: rgba(79,70,229,0.1);
+  border-color: rgba(79,70,229,0.35);
+  color: var(--accent);
+}
+
 /* ── Compact card ─────────────────────────────────────────────────── */
 .paper-card.compact { padding: 14px 20px; }
 .paper-card.compact .summary-cn { display: none; }

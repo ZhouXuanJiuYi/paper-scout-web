@@ -102,6 +102,10 @@
         <!-- 统计 Tab -->
         <div id="tab-stats" class="tab-content hidden">
           <div class="stats-grid">
+            <div class="stats-card" style="grid-column:1/-1">
+              <div class="stats-card-title">研究方向分布（点击可跳转筛选）</div>
+              <div id="group-chart"></div>
+            </div>
             <div class="stats-card">
               <div class="stats-card-title">来源分布</div>
               <div id="source-chart"></div>
@@ -123,31 +127,21 @@
 
         <div class="rp-group-label">重点期刊 <span class="rp-star">⭐</span></div>
         <ul class="rp-list">
-          <li>Nature</li>
-          <li>Nature Physics</li>
+          <li>Nature · Nature Physics</li>
           <li>Nature Materials</li>
-          <li>Nature Communications</li>
           <li>npj Quantum Mater.</li>
+          <li>Communications Physics</li>
           <li>Science</li>
-          <li>Science Bulletin</li>
-          <li>PRL</li>
-          <li>PRB</li>
-          <li>PRX</li>
+          <li>PRL · PRB · PRX</li>
           <li>Physical Review Research</li>
           <li>Reviews of Modern Physics</li>
         </ul>
 
-        <div class="rp-group-label" style="margin-top:10px">扩展期刊</div>
+        <div class="rp-group-label" style="margin-top:10px">扩展期刊（预筛过滤）</div>
         <ul class="rp-list">
-          <li>Nano Letters</li>
-          <li>ACS Nano</li>
+          <li>Nature Communications</li>
+          <li>Nano Letters · ACS Nano</li>
           <li>Small</li>
-          <li>Advanced Materials</li>
-          <li>Nanoscale</li>
-          <li>2D Materials</li>
-          <li>Supercond. Sci. Technol.</li>
-          <li>J. Phys.: Cond. Mat.</li>
-          <li>Annu. Rev. Cond. Mat.</li>
         </ul>
 
         <div class="rp-group-label" style="margin-top:10px">arXiv 分类</div>
@@ -158,61 +152,60 @@
         </ul>
       </div>
 
-      <!-- 评分关键词 -->
+      <!-- 评分维度 -->
       <div class="rp-section">
-        <div class="rp-title">评分关键词</div>
+        <div class="rp-title">评分维度（11 维，满分 10 分）</div>
         <ul class="rp-score-list">
           <li>
             <span class="rp-score rp-score-high">+3</span>
-            <span class="rp-kw">FeSe薄膜 · vortex · vortex core · vortex bound state · zero-energy mode</span>
+            <span class="rp-kw">涡旋·准粒子 — vortex · zero-bias peak · CdGM · Andreev · vortex pinning</span>
           </li>
           <li>
             <span class="rp-score rp-score-mid">+2</span>
-            <span class="rp-kw">STM · STS · scanning tunneling</span>
+            <span class="rp-kw">STM · STS — scanning tunneling · SJSTM · SP-STM · Josephson STM</span>
           </li>
           <li>
             <span class="rp-score rp-score-mid">+2</span>
-            <span class="rp-kw">铁基超导 · FeSe · FeTe · FeAs · BaFe2As2 · (Li,Fe)OHFeSe · nematic order · 1111/122/11型</span>
+            <span class="rp-kw">铁基超导 — FeSe · FeTe · BaFe2As2 · (Li,Fe)OHFeSe · nematic · charge order</span>
           </li>
           <li>
             <span class="rp-score rp-score-mid">+2</span>
-            <span class="rp-kw">铜基超导 · cuprate · YBCO · BSCCO · Bi2212 · LSCO · pseudogap · strange metal · d-wave</span>
+            <span class="rp-kw">铜基超导 — cuprate · YBCO · BSCCO · LSCO · pseudogap · strange metal</span>
           </li>
           <li>
             <span class="rp-score rp-score-mid">+2</span>
-            <span class="rp-kw">镍基超导 · nickelate · NdNiO2 · infinite-layer nickelate · La3Ni2O7</span>
+            <span class="rp-kw">镍基超导 — nickelate · NdNiO2 · La3Ni2O7 · infinite-layer</span>
           </li>
           <li>
             <span class="rp-score rp-score-mid">+2</span>
-            <span class="rp-kw">拓扑超导 · Majorana · Majorana zero mode · topological superconductor · Bi2Te3 · CuxBi2Se3</span>
-          </li>
-          <li>
-            <span class="rp-score rp-score-mid">+2</span>
-            <span class="rp-kw">Josephson STM · SJSTM · superconducting tip · 超导探针</span>
+            <span class="rp-kw">拓扑超导 — Majorana · higher-order topo. · hinge state · Bi2Te3 · MnTe</span>
           </li>
           <li>
             <span class="rp-score rp-score-low">+1</span>
-            <span class="rp-kw">重费米子超导 · heavy fermion · Kondo · CeCoIn5 · CeRhIn5 · URu2Si2</span>
+            <span class="rp-kw">磁性拓扑 — MnBi2Te4 · Fe3GeTe2 · skyrmion · multiferroic · SP-STM</span>
           </li>
           <li>
             <span class="rp-score rp-score-low">+1</span>
-            <span class="rp-kw">异质结 · heterostructure · thin film · 薄膜 · 界面 · MBE</span>
+            <span class="rp-kw">重费米子 — heavy fermion · Kondo · CeCoIn5 · LiV2O4</span>
           </li>
           <li>
             <span class="rp-score rp-score-low">+1</span>
-            <span class="rp-kw">量子相变 · quantum critical · SDW · Mott transition · Kondo insulator · SmB6</span>
+            <span class="rp-kw">界面·薄膜 — heterostructure · interface SC · proximity effect · MBE · moiré</span>
           </li>
           <li>
             <span class="rp-score rp-score-low">+1</span>
-            <span class="rp-kw">ARPES · angle-resolved photoemission · Fermi surface · band structure</span>
+            <span class="rp-kw">量子相变 — quantum critical · SDW · CDW · Weyl orbit · Lifshitz transition</span>
+          </li>
+          <li>
+            <span class="rp-score rp-score-low">+1</span>
+            <span class="rp-kw">ARPES — angle-resolved photoemission · Fermi surface · QPI</span>
           </li>
         </ul>
 
         <div class="rp-group-label" style="margin-top:10px">STM 强制收录</div>
         <ul class="rp-list rp-stm-list">
           <li>scanning tunneling microscopy/spectroscopy</li>
-          <li>STM · STS</li>
-          <li>tunneling spectroscopy/microscopy</li>
+          <li>STM · STS · tunneling spectroscopy</li>
         </ul>
       </div>
     </aside>

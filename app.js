@@ -4,10 +4,37 @@
 const SCORE_HIGH = 8;
 const SCORE_MID  = 5;
 
+// ── 研究方向分组 ──────────────────────────────────────────────────────────
+const GROUPS = [
+  { name: '涡旋·准粒子', color: '#dc2626', bg: 'rgba(220,38,38,0.1)',   border: 'rgba(220,38,38,0.3)',
+    keys: ['vortex', 'zero-bias', 'caroli-de gennes', 'in-gap state', 'andreev', 'zero-energy mode', 'vortex pinning', '涡旋', '零偏压'] },
+  { name: 'STM · STS',   color: '#059669', bg: 'rgba(5,150,105,0.1)',   border: 'rgba(5,150,105,0.3)',
+    keys: ['scanning tunneling', 'tunneling spectroscop', 'tunneling microscop', 'sjstm', 'josephson stm', 'spin-polarized stm', 'sp-stm', '扫描隧道', '隧道谱'] },
+  { name: '铁基超导',    color: '#d97706', bg: 'rgba(217,119,6,0.1)',   border: 'rgba(217,119,6,0.3)',
+    keys: ['fese', 'fete', 'iron-based supercond', 'bafe2as2', 'lifeohfese', 'nematic order', 'nematic supercond', 'hund', '铁基超导', '向列序'] },
+  { name: '铜基超导',    color: '#be123c', bg: 'rgba(190,18,60,0.08)',  border: 'rgba(190,18,60,0.25)',
+    keys: ['cuprate', 'ybco', 'bscco', 'bi2212', 'bi-2212', 'lsco', 'nd-lsco', 'pseudogap', 'd-wave supercond', 'strange metal', '铜基超导', '赝能隙', '奇异金属'] },
+  { name: '镍基超导',    color: '#7c3aed', bg: 'rgba(124,58,237,0.1)',  border: 'rgba(124,58,237,0.3)',
+    keys: ['nickelate', 'ndnio2', 'la3ni2o7', 'infinite-layer nickelate', '镍基超导'] },
+  { name: '拓扑超导',    color: '#0891b2', bg: 'rgba(8,145,178,0.1)',   border: 'rgba(8,145,178,0.3)',
+    keys: ['majorana', 'topological superconductor', 'higher-order topolog', 'hinge state', 'corner state', 'bi2te3', 'mnte', '拓扑超导', '马约拉纳', '棱态'] },
+  { name: '磁性拓扑',    color: '#be185d', bg: 'rgba(190,24,93,0.08)',  border: 'rgba(190,24,93,0.25)',
+    keys: ['magnetic topological', 'mnbi2te4', 'fe3gete2', 'skyrmion', 'spin texture', 'multiferroic', 'magnetic domain wall', 'helimagnet', '磁性拓扑', '斯格明子', '多铁'] },
+  { name: 'Weyl · Dirac',color: '#4f46e5', bg: 'rgba(79,70,229,0.1)',  border: 'rgba(79,70,229,0.3)',
+    keys: ['weyl fermion', 'weyl semimetal', 'weyl orbit', 'dirac semimetal', 'fermi arc', 'topological lifshitz', 'weyl半金属'] },
+  { name: '强关联',      color: '#92400e', bg: 'rgba(146,64,14,0.1)',   border: 'rgba(146,64,14,0.3)',
+    keys: ['kondo', 'heavy fermion', 'mott insulator', 'mott transition', 'hubbard', 'spin density wave', 'charge density wave', 'quantum spin liquid', 'quantum critical', 'luttinger liquid', '强关联', '重费米子', 'kondo效应'] },
+  { name: 'ARPES',       color: '#475569', bg: 'rgba(71,85,105,0.1)',   border: 'rgba(71,85,105,0.3)',
+    keys: ['arpes', 'angle-resolved photoemission', 'quasiparticle interference', '角分辨光电子', '费米面'] },
+  { name: '界面·薄膜',   color: '#0369a1', bg: 'rgba(3,105,161,0.1)',   border: 'rgba(3,105,161,0.3)',
+    keys: ['interface superconductiv', 'interfacial superconductiv', 'proximity effect', 'molecular beam epitaxy', 'moiré superlattice', 'flat band superconductor', 'van der waals heterostructure', '界面超导', '薄膜超导', '异质结超导'] },
+];
+
 // ── 状态 ──────────────────────────────────────────────────────────────────
 let currentDate = null;
 let currentTab  = 'curated';
 let allDates    = [];
+let activeGroup = null;
 
 function onReady(fn) {
   if (document.readyState === 'loading') {
@@ -23,6 +50,30 @@ function scoreClass(score) {
   if (score >= SCORE_MID)  return 'score-mid';
   return 'score-low';
 }
+
+function detectGroups(paper) {
+  const text = [paper.title, paper.summary_cn, paper.score_reason, paper.abstract_excerpt]
+    .filter(Boolean).join(' ').toLowerCase();
+  return GROUPS.filter(g => g.keys.some(k => text.includes(k)));
+}
+
+function buildGroupFilterBar() {
+  let html = '<div class="group-filter-bar">';
+  html += `<button class="group-filter-btn${!activeGroup ? ' active' : ''}" onclick="setGroupFilter(null)">全部</button>`;
+  GROUPS.forEach(g => {
+    const on = activeGroup === g.name;
+    const sty = on ? `color:${g.color};background:${g.bg};border-color:${g.border};font-weight:700` : '';
+    html += `<button class="group-filter-btn${on ? ' active' : ''}" style="${sty}" onclick="setGroupFilter('${g.name.replace(/'/g, "\\'")}')">${g.name}</button>`;
+  });
+  html += '</div>';
+  return html;
+}
+
+function setGroupFilter(group) {
+  activeGroup = group;
+  if (currentDate) renderCurated(window.PAPER_DATA[currentDate]);
+}
+window.setGroupFilter = setGroupFilter;
 
 function sourceBadge(source, isPremium) {
   const isArxiv = /^cond-mat\.|^hep-|^quant-ph/.test(source);
@@ -90,6 +141,14 @@ function buildPaperCard(paper, index, compact = false) {
     ? `<button class="expand-btn" onclick="toggleExpand(this)">摘要 ▾</button>`
     : '';
 
+  const groups = detectGroups(paper);
+  const groupTagsHtml = groups.length
+    ? `<div class="group-tags">${groups.map(g =>
+        `<span class="group-tag" style="color:${g.color};background:${g.bg};border-color:${g.border}" ` +
+        `onclick="setGroupFilter('${g.name.replace(/'/g, "\\'")}')" title="按此方向筛选">${g.name}</span>`
+      ).join('')}</div>`
+    : '';
+
   return `
 <div class="paper-card ${compact ? 'compact' : ''} ${sc}">
   <div class="paper-num">${String(index).padStart(2, '0')}</div>
@@ -104,6 +163,7 @@ function buildPaperCard(paper, index, compact = false) {
     <span class="score-num">${paper.score}/10</span>
     <div class="score-bar-track"><div class="score-bar-fill" style="width:${barW}%"></div></div>
   </div>
+  ${groupTagsHtml}
   ${summaryBlock}
   ${reasonBlock}
   <div class="paper-actions">
@@ -185,31 +245,47 @@ function renderCurated(day) {
   const empty = document.getElementById('curated-empty');
   list.innerHTML = '';
 
-  const included   = day.papers.filter(p => p.included).sort((a, b) => b.score - a.score);
-  const highlighted = included.filter(p => p.score >= SCORE_HIGH);
-  const normal      = included.filter(p => p.score >= SCORE_MID && p.score < SCORE_HIGH);
-  const stmOnly     = included.filter(p => p.is_stm && p.score < SCORE_MID);
-  const others      = included.filter(p => !p.is_stm && p.score < SCORE_MID);
+  const included = day.papers.filter(p => p.included).sort((a, b) => b.score - a.score);
 
-  let num = 1;
-  if (highlighted.length) {
-    list.insertAdjacentHTML('beforeend', `<div class="section-heading red">🔴 强烈推荐（${SCORE_HIGH}–10 分）</div>`);
-    highlighted.forEach(p => { list.insertAdjacentHTML('beforeend', buildPaperCard(p, num++)); });
-  }
-  if (normal.length) {
-    list.insertAdjacentHTML('beforeend', `<div class="section-heading blue">🔵 推荐阅读（${SCORE_MID}–${SCORE_HIGH - 1} 分）</div>`);
-    normal.forEach(p => { list.insertAdjacentHTML('beforeend', buildPaperCard(p, num++)); });
-  }
-  if (stmOnly.length) {
-    list.insertAdjacentHTML('beforeend', `<div class="section-heading purple">📡 STM 必读（强制收录）</div>`);
-    stmOnly.forEach(p => { list.insertAdjacentHTML('beforeend', buildPaperCard(p, num++)); });
-  }
-  if (others.length) {
-    list.insertAdjacentHTML('beforeend', `<div class="section-heading gray">📋 其他精选</div>`);
-    others.forEach(p => { list.insertAdjacentHTML('beforeend', buildPaperCard(p, num++)); });
+  // 方向筛选栏（始终显示）
+  list.insertAdjacentHTML('beforeend', buildGroupFilterBar());
+
+  if (activeGroup) {
+    // 按分组过滤：平铺显示匹配论文
+    const grp = GROUPS.find(g => g.name === activeGroup);
+    const filtered = included.filter(p => detectGroups(p).some(g => g.name === activeGroup));
+    if (filtered.length) {
+      list.insertAdjacentHTML('beforeend',
+        `<div class="section-heading" style="color:${grp.color};border-color:${grp.border}">${activeGroup} · ${filtered.length} 篇</div>`);
+      filtered.forEach((p, i) => list.insertAdjacentHTML('beforeend', buildPaperCard(p, i + 1)));
+    }
+    empty.classList.toggle('hidden', filtered.length > 0);
+  } else {
+    // 默认分段视图
+    const highlighted = included.filter(p => p.score >= SCORE_HIGH);
+    const normal      = included.filter(p => p.score >= SCORE_MID && p.score < SCORE_HIGH);
+    const stmOnly     = included.filter(p => p.is_stm && p.score < SCORE_MID);
+    const others      = included.filter(p => !p.is_stm && p.score < SCORE_MID);
+    let num = 1;
+    if (highlighted.length) {
+      list.insertAdjacentHTML('beforeend', `<div class="section-heading red">🔴 强烈推荐（${SCORE_HIGH}–10 分）</div>`);
+      highlighted.forEach(p => { list.insertAdjacentHTML('beforeend', buildPaperCard(p, num++)); });
+    }
+    if (normal.length) {
+      list.insertAdjacentHTML('beforeend', `<div class="section-heading blue">🔵 推荐阅读（${SCORE_MID}–${SCORE_HIGH - 1} 分）</div>`);
+      normal.forEach(p => { list.insertAdjacentHTML('beforeend', buildPaperCard(p, num++)); });
+    }
+    if (stmOnly.length) {
+      list.insertAdjacentHTML('beforeend', `<div class="section-heading purple">📡 STM 必读（强制收录）</div>`);
+      stmOnly.forEach(p => { list.insertAdjacentHTML('beforeend', buildPaperCard(p, num++)); });
+    }
+    if (others.length) {
+      list.insertAdjacentHTML('beforeend', `<div class="section-heading gray">📋 其他精选</div>`);
+      others.forEach(p => { list.insertAdjacentHTML('beforeend', buildPaperCard(p, num++)); });
+    }
+    empty.classList.toggle('hidden', included.length > 0);
   }
 
-  empty.classList.toggle('hidden', included.length > 0);
   document.getElementById('tab-curated-count').textContent = included.length;
   renderMath(list);
 }
@@ -255,6 +331,31 @@ function applyAllFilters(day) {
 function renderStats(day) {
   renderSourceChart(day);
   renderScoreHist(day);
+  renderGroupChart(day);
+}
+
+function renderGroupChart(day) {
+  const el = document.getElementById('group-chart');
+  if (!el) return;
+  el.innerHTML = '';
+  const counts = {};
+  GROUPS.forEach(g => { counts[g.name] = 0; });
+  day.papers.filter(p => p.score > 0).forEach(p => {
+    detectGroups(p).forEach(g => { counts[g.name]++; });
+  });
+  const entries = Object.entries(counts).filter(([, c]) => c > 0).sort((a, b) => b[1] - a[1]);
+  const max = entries[0]?.[1] || 1;
+  entries.forEach(([name, cnt]) => {
+    const g = GROUPS.find(x => x.name === name);
+    const pct = Math.round(cnt / max * 100);
+    el.insertAdjacentHTML('beforeend',
+      `<div class="chart-bar-row" style="cursor:pointer" onclick="selectTab('curated');setGroupFilter('${name.replace(/'/g, "\\'")}')" title="筛选：${name}">
+        <span class="chart-bar-label" style="color:${g.color};font-weight:600;min-width:80px">${name}</span>
+        <div class="chart-bar-track"><div class="chart-bar-fill" style="width:${pct}%;background:${g.color};opacity:0.75"></div></div>
+        <span class="chart-bar-count">${cnt}</span>
+      </div>`);
+  });
+  if (!entries.length) el.innerHTML = '<div style="color:var(--text-dim);font-size:0.8rem;padding:8px 0">暂无数据</div>';
 }
 
 function renderSourceChart(day) {
@@ -298,6 +399,7 @@ function renderScoreHist(day) {
 // ── 日期选择 ──────────────────────────────────────────────────────────────
 function selectDate(date) {
   currentDate = date;
+  activeGroup = null;
   highlightDate(date);
   updateSourceStats(date);
 
