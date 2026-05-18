@@ -329,9 +329,63 @@ function applyAllFilters(day) {
 
 // ── 统计 Tab ──────────────────────────────────────────────────────────────
 function renderStats(day) {
+  renderFetchStatus(day);
   renderSourceChart(day);
   renderScoreHist(day);
   renderGroupChart(day);
+}
+
+function renderFetchStatus(day) {
+  const el = document.getElementById('fetch-status-chart');
+  if (!el) return;
+  el.innerHTML = '';
+
+  const status = day.fetch_status;
+  if (!status || Object.keys(status).length === 0) {
+    el.innerHTML = '<div class="fs-no-data">暂无抓取状态数据（旧版报告不含此字段）</div>';
+    return;
+  }
+
+  const rows = Object.entries(status);
+  const errCnt   = rows.filter(([, s]) => s.error).length;
+  const okCnt    = rows.filter(([, s]) => !s.error && s.count > 0).length;
+  const emptyCnt = rows.filter(([, s]) => !s.error && s.count === 0).length;
+
+  let summary = '<div class="fs-summary">';
+  if (errCnt   > 0) summary += `<span class="fs-sbadge fs-sbadge-error">✗ ${errCnt} 个源失败</span>`;
+  summary += `<span class="fs-sbadge fs-sbadge-ok">✓ ${okCnt} 个源成功</span>`;
+  if (emptyCnt > 0) summary += `<span class="fs-sbadge fs-sbadge-empty">— ${emptyCnt} 个空结果</span>`;
+  summary += '</div>';
+  el.insertAdjacentHTML('beforeend', summary);
+
+  // arxiv 分类在前，期刊 RSS 在后
+  const arxivRows   = rows.filter(([k]) =>  k.startsWith('arxiv:'));
+  const journalRows = rows.filter(([k]) => !k.startsWith('arxiv:'));
+
+  let html = '<div class="fs-grid">';
+  for (const [source, info] of [...arxivRows, ...journalRows]) {
+    const hasError  = !!info.error;
+    const isEmpty   = !hasError && info.count === 0;
+    const isArxiv   = source.startsWith('arxiv:');
+    const dispName  = source.replace('arxiv:', '');
+    const rowCls    = hasError ? 'fs-row-error' : isEmpty ? 'fs-row-empty' : 'fs-row-ok';
+    const icon      = hasError ? '✗' : isEmpty ? '—' : '✓';
+    const cntCls    = hasError ? 'fs-cnt-error' : isEmpty ? 'fs-cnt-empty' : 'fs-cnt-ok';
+    const cntLabel  = hasError ? 'ERROR' : `${info.count} 篇`;
+    const arxivTag  = isArxiv ? '<span class="fs-arxiv-tag">arXiv</span> ' : '';
+    const errLine   = hasError
+      ? `<div class="fs-errmsg">${esc(info.error.length > 90 ? info.error.slice(0, 90) + '…' : info.error)}</div>`
+      : '';
+
+    html += `<div class="fs-row ${rowCls}">
+      <span class="fs-icon">${icon}</span>
+      <span class="fs-name">${arxivTag}${esc(dispName)}</span>
+      <span class="fs-cnt ${cntCls}">${cntLabel}</span>
+      ${errLine}
+    </div>`;
+  }
+  html += '</div>';
+  el.insertAdjacentHTML('beforeend', html);
 }
 
 function renderGroupChart(day) {
