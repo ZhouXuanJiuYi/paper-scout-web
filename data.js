@@ -51899,9 +51899,9 @@ window.PAPER_DATA = {
   },
   "2026-05-18": {
     "date": "2026-05-18",
-    "generated": "2026-05-18 16:47",
+    "generated": "2026-05-18 21:14",
     "lookback_days": 2.5,
-    "total": 22,
+    "total": 38,
     "included": 0,
     "has_raw": true,
     "fetch_status": {
@@ -51917,29 +51917,33 @@ window.PAPER_DATA = {
         "count": 0,
         "error": null
       },
-      "Nature": {
+      "arxiv:cond-mat.mtrl-sci": {
         "count": 0,
-        "error": "HTTPSConnectionPool(host='feeds.nature.com', port=443): Max retries exceeded with url: /nature/rss/current (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset by peer')))"
+        "error": null
+      },
+      "Nature": {
+        "count": 4,
+        "error": null
       },
       "Science": {
         "count": 0,
-        "error": "HTTPSConnectionPool(host='www.science.org', port=443): Max retries exceeded with url: /action/showFeed?type=etoc&feed=rss&jc=science (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset by peer')))"
+        "error": null
       },
       "Nature Physics": {
-        "count": 0,
-        "error": "HTTPSConnectionPool(host='feeds.nature.com', port=443): Max retries exceeded with url: /nphys/rss/current (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset by peer')))"
+        "count": 2,
+        "error": null
       },
       "Nature Materials": {
-        "count": 0,
-        "error": "HTTPSConnectionPool(host='feeds.nature.com', port=443): Max retries exceeded with url: /nmat/rss/current (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset by peer')))"
+        "count": 1,
+        "error": null
       },
       "npj Quantum Mater.": {
         "count": 0,
-        "error": "HTTPSConnectionPool(host='feeds.nature.com', port=443): Max retries exceeded with url: /npjquantmats/rss/current (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset by peer')))"
+        "error": null
       },
       "Communications Physics": {
-        "count": 0,
-        "error": "HTTPSConnectionPool(host='feeds.nature.com', port=443): Max retries exceeded with url: /commsphys/rss/current (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset by peer')))"
+        "count": 3,
+        "error": null
       },
       "PRL": {
         "count": 0,
@@ -51947,23 +51951,23 @@ window.PAPER_DATA = {
       },
       "PRB": {
         "count": 0,
-        "error": null
+        "error": "HTTPSConnectionPool(host='feeds.aps.org', port=443): Max retries exceeded with url: /rss/recent/prb.xml (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset by peer')))"
       },
       "PRX": {
         "count": 0,
-        "error": null
+        "error": "HTTPSConnectionPool(host='feeds.aps.org', port=443): Max retries exceeded with url: /rss/recent/prx.xml (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset by peer')))"
       },
       "Physical Review Research": {
         "count": 0,
-        "error": null
+        "error": "HTTPSConnectionPool(host='feeds.aps.org', port=443): Max retries exceeded with url: /rss/recent/prresearch.xml (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset by peer')))"
       },
       "Reviews of Modern Physics": {
         "count": 0,
         "error": "HTTPSConnectionPool(host='feeds.aps.org', port=443): Max retries exceeded with url: /rss/recent/rmp.xml (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset by peer')))"
       },
       "Nature Communications": {
-        "count": 0,
-        "error": "HTTPSConnectionPool(host='feeds.nature.com', port=443): Max retries exceeded with url: /ncomms/rss/current (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset by peer')))"
+        "count": 6,
+        "error": null
       },
       "Nano Letters": {
         "count": 0,
@@ -51988,10 +51992,266 @@ window.PAPER_DATA = {
         "arxiv_id": null,
         "is_stm": false,
         "is_premium": false,
-        "score": 2,
-        "score_reason": "与实验室所有研究方向（超导、拓扑、磁性、重费米子等）均无任何重合，属于能源材料热表征方法。",
-        "summary_cn": "本文提出一种基于MATLAB的全自动光声分析框架，用于精确表征多层薄膜（如电沉积CuxSe）的热导率。通过Bi2Te3/AAO基准验证其可靠性，发现CuxSe热导率随铜化学计量比变化，主要受晶格非谐性而非晶粒尺寸影响。该工具为结构非理想薄膜的原位热表征提供了便捷方案。",
-        "abstract_excerpt": "\"Precise determination of thermal conductivity in multilayer structures remains a critical challenge for advancing thermoelectric technologies. ... To address this gap, a fully automated, MATLAB‑based computational framework operationalizing the generalized photoacoustic theory for a robust inverse analysis is presented. ... Results reveal a systematic dependence of thermal conductivity on copper stoichiometry, offering insights into anharmonicity‑driven phonon scattering mechanisms.\"",
+        "score": 1,
+        "score_reason": "与实验室所有研究方向（超导、拓扑、磁性等）完全无关，属于热电材料热表征领域。",
+        "summary_cn": "本文提出一种基于MATLAB的自动化计算框架，用于多层薄膜的热导率精确表征。通过光声理论逆分析，该方法在Bi2Te3/3D-AAO参考纳米复合材料上得到验证，并成功表征了电沉积CuxSe薄膜，发现其热导率随铜化学计量比系统变化，主要受晶格非谐性而非晶粒尺寸散射主导。",
+        "abstract_excerpt": "\"Precise determination of thermal conductivity in multilayer structures remains a critical challenge for advancing thermoelectric technologies. ... To address this gap, a fully automated, MATLAB-based computational framework operationalizing the generalized photoacoustic theory for a robust inverse analysis is presented. ... Results reveal a systematic dependence of thermal conductivity on copper stoichiometry, offering insights into anharmonicity-driven phonon scattering mechanisms.\"",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "A step-by-step guide for scientists who hate conference networking",
+        "authors": "Caroline  Dunne",
+        "url": "https://www.nature.com/articles/d41586-026-00525-9",
+        "source": "Nature",
+        "published": "2026-05-18",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": true,
+        "score": 0,
+        "score_reason": "未命中任何凝聚态关键词",
+        "summary_cn": "（预筛过滤：与凝聚态物理方向无关）",
+        "abstract_excerpt": "",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Criminals are made, not born: how when you live shapes whether you will break the law",
+        "authors": "Christopher Browning",
+        "url": "https://www.nature.com/articles/d41586-026-01556-y",
+        "source": "Nature",
+        "published": "2026-05-18",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": true,
+        "score": 0,
+        "score_reason": "未命中任何凝聚态关键词",
+        "summary_cn": "（预筛过滤：与凝聚态物理方向无关）",
+        "abstract_excerpt": "",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Ebola outbreak is a global health emergency: what happens next",
+        "authors": "Rachel Fieldhouse, Mohana Basu",
+        "url": "https://www.nature.com/articles/d41586-026-01597-3",
+        "source": "Nature",
+        "published": "2026-05-18",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": true,
+        "score": 0,
+        "score_reason": "未命中任何凝聚态关键词",
+        "summary_cn": "（预筛过滤：与凝聚态物理方向无关）",
+        "abstract_excerpt": "",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Birds get a bad rap: why we should look up to our feathered friends",
+        "authors": "Richard Schiffman",
+        "url": "https://www.nature.com/articles/d41586-026-01555-z",
+        "source": "Nature",
+        "published": "2026-05-18",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": true,
+        "score": 0,
+        "score_reason": "未命中任何凝聚态关键词",
+        "summary_cn": "（预筛过滤：与凝聚态物理方向无关）",
+        "abstract_excerpt": "",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "More spin flow with less dissipation",
+        "authors": "Prasanta Kumar Muduli, Pranaba Kishor Muduli",
+        "url": "https://www.nature.com/articles/s41567-026-03267-7",
+        "source": "Nature Physics",
+        "published": "2026-05-18",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": true,
+        "score": 0,
+        "score_reason": "未命中任何凝聚态关键词",
+        "summary_cn": "（预筛过滤：与凝聚态物理方向无关）",
+        "abstract_excerpt": "",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Simple input–output dependencies explain neuronal activity",
+        "authors": "Christopher W. Lynn",
+        "url": "https://www.nature.com/articles/s41567-026-03306-3",
+        "source": "Nature Physics",
+        "published": "2026-05-18",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": true,
+        "score": 0,
+        "score_reason": "未命中任何凝聚态关键词",
+        "summary_cn": "（预筛过滤：与凝聚态物理方向无关）",
+        "abstract_excerpt": "",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Layer photovoltaic effect in a two-dimensional antiferromagnet with parity–time symmetry",
+        "authors": "Yu Dong, Sota Kitamura, Yuki M. Itahashi, Daniel G. Chica, Shingo Toyoda, Kenji Watanabe, Takashi Taniguchi, Miuko Tanaka, Xavier Roy, Naoki Ogawa, Takahiro Morimoto, Yoshihiro Iwasa, Toshiya Ideue",
+        "url": "https://www.nature.com/articles/s41563-026-02593-8",
+        "source": "Nature Materials",
+        "published": "2026-05-18",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": true,
+        "score": 0,
+        "score_reason": "未命中任何凝聚态关键词",
+        "summary_cn": "（预筛过滤：与凝聚态物理方向无关）",
+        "abstract_excerpt": "",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Frequency-encoded magnetic resonance imaging with dynamic radio frequency field gradients",
+        "authors": "Sai Abitha Srinivas, Antonio D. Glenn, Mark A. Griswold, William A. Grissom",
+        "url": "https://www.nature.com/articles/s42005-026-02686-5",
+        "source": "Communications Physics",
+        "published": "2026-05-18",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": true,
+        "score": 0,
+        "score_reason": "未命中任何凝聚态关键词",
+        "summary_cn": "（预筛过滤：与凝聚态物理方向无关）",
+        "abstract_excerpt": "",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Physics-guided reinforcement learning for structured illumination microscopy",
+        "authors": "Junli Wu, Qiurong Yan, Siying Huang, Haoran Zhang, Junyuan Yin, Xiaolong Luo, Zhiqiang Wen",
+        "url": "https://www.nature.com/articles/s42005-026-02692-7",
+        "source": "Communications Physics",
+        "published": "2026-05-18",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": true,
+        "score": 0,
+        "score_reason": "未命中任何凝聚态关键词",
+        "summary_cn": "（预筛过滤：与凝聚态物理方向无关）",
+        "abstract_excerpt": "",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Roughening and dynamics of an electric flux string in a (2+1)D lattice gauge theory",
+        "authors": "Francesco Di Marcantonio, Sunny Pradhan, Sofia Vallecorsa, Mari Carmen Bañuls, Enrique Rico Ortega",
+        "url": "https://www.nature.com/articles/s42005-026-02659-8",
+        "source": "Communications Physics",
+        "published": "2026-05-17",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": true,
+        "score": 0,
+        "score_reason": "未命中任何凝聚态关键词",
+        "summary_cn": "（预筛过滤：与凝聚态物理方向无关）",
+        "abstract_excerpt": "",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Trunk-branch-inspired carbon fiber scaffolds with boron nitride network for heat dissipation and electromagnetic interference shielding",
+        "authors": "Ning Jia, Yuan Ji, Wei Wang, Shichang Wang, Hong Wu, Shaoyun Guo, Jianhui Qiu",
+        "url": "https://www.nature.com/articles/s41467-026-73185-y",
+        "source": "Nature Communications",
+        "published": "2026-05-18",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 0,
+        "score_reason": "未命中任何凝聚态关键词",
+        "summary_cn": "（预筛过滤：与凝聚态物理方向无关）",
+        "abstract_excerpt": "",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Inorganic nitrogen metabolic reprogramming of the gut microbiome drives fecal microbiota transplantation in ulcerative colitis",
+        "authors": "Yinlong Wang, Qihang Hou, Xinying Lv, Jiongyan Liu, Huimei Wang, Yan Zhao, Haonan Tong, Yanli Liu, Juan Du, Xiaojun Yang, Shengru Wu, Shuixiang He, Xin Yang",
+        "url": "https://www.nature.com/articles/s41467-026-73290-y",
+        "source": "Nature Communications",
+        "published": "2026-05-18",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 0,
+        "score_reason": "未命中任何凝聚态关键词",
+        "summary_cn": "（预筛过滤：与凝聚态物理方向无关）",
+        "abstract_excerpt": "",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "De novo design of a macrocycle-induced dimerization system for cellular control",
+        "authors": "Stephanie Hanna, Patrick J. Salveson, Basile Wicky, Madison A. Kennedy, Derrick R. Hicks, Carolina Moller, Suna Cheng, Xinting Li, Mohamad Abedi, Brian Coventry, Meerit Y. Said, Asim K. Bera, Alex Kan",
+        "url": "https://www.nature.com/articles/s41467-026-71345-8",
+        "source": "Nature Communications",
+        "published": "2026-05-18",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 0,
+        "score_reason": "未命中任何凝聚态关键词",
+        "summary_cn": "（预筛过滤：与凝聚态物理方向无关）",
+        "abstract_excerpt": "",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Mechanism study of hollow-structured MOFs improving catalytic performance",
+        "authors": "Lindong Ma, Cancan Li, Qingfeng Wei, Zhenjie Xue, Haochen Ye, Xinyuan Zhou, Jikun Yin, Linbo Cao, Meihui Liu, Xiaomeng Yin, Shan Zhu, Zhe Tang, Tie Wang",
+        "url": "https://www.nature.com/articles/s41467-026-73142-9",
+        "source": "Nature Communications",
+        "published": "2026-05-18",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 0,
+        "score_reason": "未命中任何凝聚态关键词",
+        "summary_cn": "（预筛过滤：与凝聚态物理方向无关）",
+        "abstract_excerpt": "",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Frontier-orbital modulation of rhodium single-atom catalysts for enhanced hydrogen evolution",
+        "authors": "Rouna Jia, Zongyan Liu, Yang Wang, Jingyang Zhao, Zhong Huang, Wen Yue, Haozhi Wang, Kaiping Yu, Mingxin Huang, Yida Deng",
+        "url": "https://www.nature.com/articles/s41467-026-73161-6",
+        "source": "Nature Communications",
+        "published": "2026-05-18",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 0,
+        "score_reason": "未命中任何凝聚态关键词",
+        "summary_cn": "（预筛过滤：与凝聚态物理方向无关）",
+        "abstract_excerpt": "",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Phage-encoded factor stimulates DNA degradation by the Hna anti-phage defense system",
+        "authors": "Matthew M. Hooper, Benjamin T. Hoover, Hongshan Zhang, Adam S. Franco, Ilya J. Finkelstein, David W. Taylor",
+        "url": "https://www.nature.com/articles/s41467-026-73157-2",
+        "source": "Nature Communications",
+        "published": "2026-05-18",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 0,
+        "score_reason": "未命中任何凝聚态关键词",
+        "summary_cn": "（预筛过滤：与凝聚态物理方向无关）",
+        "abstract_excerpt": "",
         "deep_analysis": "",
         "included": false
       },
