@@ -51899,7 +51899,7 @@ window.PAPER_DATA = {
   },
   "2026-05-18": {
     "date": "2026-05-18",
-    "generated": "2026-05-18 21:14",
+    "generated": "2026-05-18 21:35",
     "lookback_days": 2.5,
     "total": 38,
     "included": 0,
@@ -51951,19 +51951,19 @@ window.PAPER_DATA = {
       },
       "PRB": {
         "count": 0,
-        "error": "HTTPSConnectionPool(host='feeds.aps.org', port=443): Max retries exceeded with url: /rss/recent/prb.xml (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset by peer')))"
+        "error": null
       },
       "PRX": {
         "count": 0,
-        "error": "HTTPSConnectionPool(host='feeds.aps.org', port=443): Max retries exceeded with url: /rss/recent/prx.xml (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset by peer')))"
+        "error": null
       },
       "Physical Review Research": {
         "count": 0,
-        "error": "HTTPSConnectionPool(host='feeds.aps.org', port=443): Max retries exceeded with url: /rss/recent/prresearch.xml (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset by peer')))"
+        "error": null
       },
       "Reviews of Modern Physics": {
         "count": 0,
-        "error": "HTTPSConnectionPool(host='feeds.aps.org', port=443): Max retries exceeded with url: /rss/recent/rmp.xml (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset by peer')))"
+        "error": null
       },
       "Nature Communications": {
         "count": 6,
@@ -51992,10 +51992,10 @@ window.PAPER_DATA = {
         "arxiv_id": null,
         "is_stm": false,
         "is_premium": false,
-        "score": 1,
-        "score_reason": "与实验室所有研究方向（超导、拓扑、磁性等）完全无关，属于热电材料热表征领域。",
-        "summary_cn": "本文提出一种基于MATLAB的自动化计算框架，用于多层薄膜的热导率精确表征。通过光声理论逆分析，该方法在Bi2Te3/3D-AAO参考纳米复合材料上得到验证，并成功表征了电沉积CuxSe薄膜，发现其热导率随铜化学计量比系统变化，主要受晶格非谐性而非晶粒尺寸散射主导。",
-        "abstract_excerpt": "\"Precise determination of thermal conductivity in multilayer structures remains a critical challenge for advancing thermoelectric technologies. ... To address this gap, a fully automated, MATLAB-based computational framework operationalizing the generalized photoacoustic theory for a robust inverse analysis is presented. ... Results reveal a systematic dependence of thermal conductivity on copper stoichiometry, offering insights into anharmonicity-driven phonon scattering mechanisms.\"",
+        "score": 2,
+        "score_reason": "论文主题为热导率表征，与实验室超导、拓扑、磁性等核心方向无直接关联，仅涉及薄膜异质结（+1分），总体相关性低。",
+        "summary_cn": "本文提出一个基于MATLAB的自动化计算框架，利用广义光声理论对多层薄膜进行热导率反演分析。通过Bi2Te3/3D-AAO参考纳米复合材料验证了方法的准确性，并成功表征了电沉积CuₓSe薄膜的热导率，发现其随铜化学计量比变化，由晶格非谐性主导声子散射而非晶粒尺寸效应。",
+        "abstract_excerpt": "\"Precise determination of thermal conductivity in multilayer structures remains a critical challenge for advancing thermoelectric technologies... a fully automated, MATLAB-based computational framework operationalizing the generalized photoacoustic theory for a robust inverse analysis is presented... Results reveal a systematic dependence of thermal conductivity on copper stoichiometry, offering insights into anharmonicity-driven phonon scattering mechanisms.\"",
         "deep_analysis": "",
         "included": false
       },
