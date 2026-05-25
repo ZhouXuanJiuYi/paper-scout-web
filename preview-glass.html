@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paper Scout · Glass Preview</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-0: #0a0420;
+    --bg-1: #1a0b3a;
+    --bg-2: #0d1b4d;
+    --accent-1: #a78bfa;   /* violet */
+    --accent-2: #38bdf8;   /* sky */
+    --accent-3: #f472b6;   /* pink */
+    --accent-4: #34d399;   /* emerald */
+    --text-hi: rgba(255,255,255,0.96);
+    --text-md: rgba(255,255,255,0.72);
+    --text-lo: rgba(255,255,255,0.45);
+    --glass-bg: rgba(255,255,255,0.06);
+    --glass-bg-hi: rgba(255,255,255,0.10);
+    --glass-border: rgba(255,255,255,0.12);
+    --glass-border-hi: rgba(255,255,255,0.22);
+    --radius-lg: 24px;
+    --radius-md: 16px;
+    --radius-sm: 10px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    min-height: 100vh;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--text-hi);
+    background: var(--bg-0);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ---------- 背景：径向渐变 + 漂浮光斑 ---------- */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background:
+      radial-gradient(ellipse at 20% 10%, var(--bg-1) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 90%, var(--bg-2) 0%, transparent 50%),
+      var(--bg-0);
+    z-index: -2;
+  }
+
+  .blobs {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  .blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.45;
+    animation: float 18s ease-in-out infinite;
+  }
+  .blob.b1 { width: 480px; height: 480px; background: var(--accent-1); top: -80px; left: -120px; }
+  .blob.b2 { width: 420px; height: 420px; background: var(--accent-2); top: 30%; right: -100px; animation-delay: -6s; animation-duration: 22s; }
+  .blob.b3 { width: 360px; height: 360px; background: var(--accent-3); bottom: -100px; left: 30%; animation-delay: -12s; animation-duration: 26s; }
+  .blob.b4 { width: 300px; height: 300px; background: var(--accent-4); top: 50%; left: 50%; animation-delay: -3s; opacity: 0.25; }
+
+  @keyframes float {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33%      { transform: translate(40px, -30px) scale(1.05); }
+    66%      { transform: translate(-30px, 40px) scale(0.95); }
+  }
+
+  /* ---------- 玻璃通用 ---------- */
+  .glass {
+    background: var(--glass-bg);
+    backdrop-filter: blur(24px) saturate(160%);
+    -webkit-backdrop-filter: blur(24px) saturate(160%);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-md);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.08);
+  }
+
+  /* ---------- 布局 ---------- */
+  .app {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 28px 32px 80px;
+  }
+
+  /* ---------- 顶部 Header ---------- */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 24px;
+    margin-bottom: 28px;
+    border-radius: var(--radius-md);
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+  }
+  .brand .mark {
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 6px 20px rgba(167,139,250,0.45);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 16px;
+  }
+  .brand .sub {
+    font-weight: 400;
+    color: var(--text-md);
+    font-size: 13px;
+    margin-left: 4px;
+  }
+
+  .header-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .date-picker {
+    background: var(--glass-bg-hi);
+    border: 1px solid var(--glass-border);
+    color: var(--text-hi);
+    padding: 10px 16px;
+    border-radius: var(--radius-sm);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.2s;
+  }
+  .date-picker:hover { border-color: var(--glass-border-hi); }
+  .date-picker option { background: var(--bg-1); color: var(--text-hi); }
+
+  .pill {
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--text-md);
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+  }
+  .pill.live::before {
+    content: '';
+    display: inline-block;
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--accent-4);
+    margin-right: 6px;
+    box-shadow: 0 0 8px var(--accent-4);
+    animation: pulse 1.6s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    50% { opacity: 0.4; transform: scale(0.85); }
+  }
+
+  /* ---------- 顶部第一行：Top Pick + Trend ---------- */
+  .row-1 {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+
+  .top-pick {
+    padding: 28px 32px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .top-pick::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(167,139,250,0.18), rgba(56,189,248,0.12) 50%, rgba(244,114,182,0.10));
+    z-index: -1;
+  }
+  .top-pick:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 48px rgba(167,139,250,0.25);
+  }
+  .top-pick .label {
+    font-size: 11px;
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 2px;
+    color: var(--accent-1);
+    margin-bottom: 14px;
+  }
+  .top-pick .title {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.35;
+    margin-bottom: 14px;
+    color: var(--text-hi);
+  }
+  .top-pick .meta {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+  .top-pick .summary {
+    color: var(--text-md);
+    font-size: 14px;
+    line-height: 1.65;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .score-badge {
+    background: linear-gradient(135deg, var(--accent-3), var(--accent-1));
+    color: white;
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .source-badge {
+    background: var(--glass-bg-hi);
+    border: 1px solid var(--glass-border);
+    color: var(--text-md);
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .premium-badge {
+    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+    color: #1a0b3a;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 700;
+  }
+
+  /* trend card */
+  .trend-card {
+    padding: 24px 28px;
+    display: flex;
+    flex-direction: column;
+  }
+  .card-title {
+    font-size: 12px;
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 1.5px;
+    color: var(--text-lo);
+    margin-bottom: 4px;
+  }
+  .card-subtitle {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .card-hint {
+    font-size: 12px;
+    color: var(--text-lo);
+    margin-bottom: 14px;
+  }
+  .trend-chart-wrap {
+    flex: 1;
+    position: relative;
+    min-height: 180px;
+  }
+
+  /* ---------- 精选 4 卡片 ---------- */
+  .picks-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 24px;
+  }
+  .pick-card {
+    padding: 20px 22px;
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+  }
+  .pick-card:hover {
+    transform: translateY(-4px);
+    background: var(--glass-bg-hi);
+    box-shadow: 0 12px 32px rgba(56,189,248,0.18);
+  }
+  .pick-card .pick-rank {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--accent-2);
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+  }
+  .pick-card .pick-title {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.45;
+    margin-bottom: 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    flex: 1;
+  }
+  .pick-card .pick-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+    color: var(--text-lo);
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  /* ---------- 底部图表行 ---------- */
+  .row-3 {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+  .chart-card {
+    padding: 24px 28px;
+  }
+  .chart-wrap {
+    position: relative;
+    height: 260px;
+    margin-top: 16px;
+  }
+
+  /* ---------- 统计条 ---------- */
+  .stats-strip {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 24px;
+  }
+  .stat-card {
+    padding: 22px 24px;
+    position: relative;
+    overflow: hidden;
+  }
+  .stat-card .stat-icon {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 36px;
+    opacity: 0.2;
+  }
+  .stat-card .stat-label {
+    font-size: 11px;
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 1.5px;
+    color: var(--text-lo);
+    margin-bottom: 8px;
+  }
+  .stat-card .stat-value {
+    font-size: 32px;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--text-hi), var(--accent-1));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+  .stat-card .stat-delta {
+    font-size: 12px;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--accent-4);
+  }
+  .stat-card .stat-delta.down { color: var(--accent-3); }
+
+  /* ---------- 模态浮层（点卡片看详情） ---------- */
+  .modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(10,4,32,0.6);
+    backdrop-filter: blur(8px);
+    display: none;
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    animation: fadeIn 0.2s ease;
+  }
+  .modal-backdrop.active { display: flex; }
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+  .modal {
+    max-width: 800px;
+    width: 100%;
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 36px 40px;
+    position: relative;
+    background: rgba(20, 12, 50, 0.85);
+    backdrop-filter: blur(40px) saturate(160%);
+    border: 1px solid var(--glass-border-hi);
+    border-radius: var(--radius-lg);
+    animation: slideUp 0.3s cubic-bezier(0.16,1,0.3,1);
+  }
+  @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+  .modal-close {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--glass-bg-hi);
+    border: 1px solid var(--glass-border);
+    color: var(--text-md);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    transition: all 0.2s;
+  }
+  .modal-close:hover { background: rgba(244,114,182,0.2); color: white; }
+
+  .modal h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    line-height: 1.35;
+    padding-right: 40px;
+  }
+  .modal .authors {
+    color: var(--text-md);
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+  .modal-section {
+    margin-top: 22px;
+  }
+  .modal-section h3 {
+    font-size: 12px;
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 1.5px;
+    color: var(--accent-1);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  .modal-section p, .modal-section div {
+    color: var(--text-md);
+    line-height: 1.7;
+    font-size: 14px;
+    white-space: pre-wrap;
+  }
+  .modal-section a {
+    color: var(--accent-2);
+    text-decoration: none;
+    border-bottom: 1px dashed var(--accent-2);
+  }
+
+  /* ---------- 滚动条 ---------- */
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.1);
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.2); }
+
+  /* ---------- 响应式 ---------- */
+  @media (max-width: 1100px) {
+    .row-1 { grid-template-columns: 1fr; }
+    .picks-grid { grid-template-columns: repeat(2, 1fr); }
+    .row-3 { grid-template-columns: 1fr; }
+    .stats-strip { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 600px) {
+    .app { padding: 16px; }
+    .picks-grid { grid-template-columns: 1fr; }
+    .stats-strip { grid-template-columns: 1fr; }
+    .top-pick .title { font-size: 18px; }
+  }
+</style>
+</head>
+<body>
+  <div class="blobs">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+    <div class="blob b4"></div>
+  </div>
+
+  <div class="app">
+    <header class="glass">
+      <div class="brand">
+        <div class="mark">P</div>
+        <div>
+          Paper Scout <span class="sub">// Glass Preview</span>
+        </div>
+      </div>
+      <div class="header-controls">
+        <span class="pill live">LIVE</span>
+        <span class="pill" id="lastUpdated">--</span>
+        <select class="date-picker" id="datePicker"></select>
+      </div>
+    </header>
+
+    <!-- 统计条 -->
+    <section class="stats-strip">
+      <div class="glass stat-card">
+        <div class="stat-icon">📄</div>
+        <div class="stat-label">TODAY · TOTAL</div>
+        <div class="stat-value" id="stat-total">0</div>
+        <div class="stat-delta" id="stat-total-delta">--</div>
+      </div>
+      <div class="glass stat-card">
+        <div class="stat-icon">⭐</div>
+        <div class="stat-label">PREMIUM PICKS</div>
+        <div class="stat-value" id="stat-included">0</div>
+        <div class="stat-delta">curated by AI</div>
+      </div>
+      <div class="glass stat-card">
+        <div class="stat-icon">🔬</div>
+        <div class="stat-label">STM-RELATED</div>
+        <div class="stat-value" id="stat-stm">0</div>
+        <div class="stat-delta">topical match</div>
+      </div>
+      <div class="glass stat-card">
+        <div class="stat-icon">📅</div>
+        <div class="stat-label">DAYS TRACKED</div>
+        <div class="stat-value" id="stat-days">0</div>
+        <div class="stat-delta" id="stat-days-since">since launch</div>
+      </div>
+    </section>
+
+    <!-- Top Pick + Trend -->
+    <section class="row-1">
+      <div class="glass top-pick" id="topPick">
+        <div class="label">⟡ TODAY'S TOP PICK</div>
+        <div class="title" id="tp-title">Loading…</div>
+        <div class="meta" id="tp-meta"></div>
+        <div class="summary" id="tp-summary"></div>
+      </div>
+      <div class="glass trend-card">
+        <div class="card-title">⟡ 14-DAY VOLUME</div>
+        <div class="card-subtitle" id="trend-subtitle">--</div>
+        <div class="card-hint">papers fetched per day</div>
+        <div class="trend-chart-wrap"><canvas id="trendChart"></canvas></div>
+      </div>
+    </section>
+
+    <!-- 精选 #2-#5 -->
+    <section class="picks-grid" id="picksGrid"></section>
+
+    <!-- 底部双图表 -->
+    <section class="row-3">
+      <div class="glass chart-card">
+        <div class="card-title">⟡ SOURCE DISTRIBUTION</div>
+        <div class="card-subtitle">来源分布</div>
+        <div class="chart-wrap"><canvas id="sourceChart"></canvas></div>
+      </div>
+      <div class="glass chart-card">
+        <div class="card-title">⟡ SCORE HISTOGRAM</div>
+        <div class="card-subtitle">评分分布（今日）</div>
+        <div class="chart-wrap"><canvas id="scoreChart"></canvas></div>
+      </div>
+    </section>
+  </div>
+
+  <!-- 详情浮层 -->
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modalClose">×</button>
+      <h2 id="m-title">--</h2>
+      <div class="authors" id="m-authors"></div>
+      <div class="meta" id="m-meta"></div>
+      <div class="modal-section">
+        <h3>SUMMARY · 中文摘要</h3>
+        <p id="m-summary"></p>
+      </div>
+      <div class="modal-section">
+        <h3>SCORE REASON · 评分理由</h3>
+        <p id="m-score-reason"></p>
+      </div>
+      <div class="modal-section">
+        <h3>DEEP ANALYSIS · 深度分析</h3>
+        <div id="m-deep"></div>
+      </div>
+      <div class="modal-section">
+        <h3>SOURCE LINK</h3>
+        <p><a id="m-link" href="#" target="_blank" rel="noopener">--</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script>
+    /* ===================== 数据初始化 ===================== */
+    const DATA = (window.PAPER_DATA && Object.keys(window.PAPER_DATA).length)
+      ? window.PAPER_DATA : {};
+    const DATES = Object.keys(DATA).sort();
+    const LATEST = DATES[DATES.length - 1];
+
+    const ACCENT_PALETTE = [
+      '#a78bfa','#38bdf8','#f472b6','#34d399','#fbbf24',
+      '#fb7185','#60a5fa','#c084fc','#f97316','#22d3ee',
+      '#84cc16','#e879f9','#fde047','#4ade80','#94a3b8'
+    ];
+
+    /* ===================== Helpers ===================== */
+    function fmtSource(s) {
+      if (!s) return '--';
+      return s.replace(/^arxiv:/, 'arXiv·');
+    }
+
+    function sumDay(day) {
+      if (!day) return { total: 0, included: 0, stm: 0 };
+      const stm = (day.papers || []).filter(p => p.is_stm).length;
+      return { total: day.total || 0, included: day.included || 0, stm };
+    }
+
+    let currentDate = LATEST;
+    let trendChart, sourceChart, scoreChart;
+
+    /* ===================== 日期选择 ===================== */
+    function initDatePicker() {
+      const sel = document.getElementById('datePicker');
+      sel.innerHTML = DATES.slice().reverse().map(d =>
+        `<option value="${d}">${d}</option>`).join('');
+      sel.value = currentDate;
+      sel.addEventListener('change', e => {
+        currentDate = e.target.value;
+        render();
+      });
+    }
+
+    /* ===================== Header & Stats ===================== */
+    function renderHeader() {
+      const day = DATA[currentDate];
+      const updated = (day && day.generated) ? day.generated : currentDate;
+      document.getElementById('lastUpdated').textContent = `updated · ${updated}`;
+    }
+
+    function renderStats() {
+      const day = DATA[currentDate];
+      const idx = DATES.indexOf(currentDate);
+      const prev = idx > 0 ? DATA[DATES[idx-1]] : null;
+      const cur = sumDay(day);
+      const prv = sumDay(prev);
+      document.getElementById('stat-total').textContent = cur.total;
+      document.getElementById('stat-included').textContent = cur.included;
+      document.getElementById('stat-stm').textContent = cur.stm;
+      document.getElementById('stat-days').textContent = DATES.length;
+
+      const dEl = document.getElementById('stat-total-delta');
+      if (prev) {
+        const diff = cur.total - prv.total;
+        const arrow = diff >= 0 ? '▲' : '▼';
+        dEl.textContent = `${arrow} ${Math.abs(diff)} vs prev day`;
+        dEl.classList.toggle('down', diff < 0);
+      } else {
+        dEl.textContent = '—';
+      }
+      document.getElementById('stat-days-since').textContent =
+        `${DATES[0]} → ${DATES[DATES.length-1]}`;
+    }
+
+    /* ===================== Top Pick & Picks Grid ===================== */
+    function renderPicks() {
+      const day = DATA[currentDate] || {};
+      const picks = (day.papers || []).filter(p => p.included);
+      const top = picks[0];
+
+      // top pick
+      if (top) {
+        document.getElementById('tp-title').textContent = top.title;
+        document.getElementById('tp-summary').textContent =
+          top.summary_cn || top.abstract_excerpt || '';
+        const meta = document.getElementById('tp-meta');
+        meta.innerHTML = '';
+        meta.appendChild(badge('score-badge', `★ ${top.score ?? '-'} / 10`));
+        meta.appendChild(badge('source-badge', fmtSource(top.source)));
+        if (top.is_premium) meta.appendChild(badge('premium-badge', 'PREMIUM'));
+        if (top.is_stm)    meta.appendChild(badge('source-badge', 'STM'));
+        document.getElementById('topPick').onclick = () => openModal(top);
+      } else {
+        document.getElementById('tp-title').textContent = '今日暂无精选';
+        document.getElementById('tp-summary').textContent = '';
+        document.getElementById('tp-meta').innerHTML = '';
+      }
+
+      // grid (#2 .. #5)
+      const grid = document.getElementById('picksGrid');
+      const rest = picks.slice(1, 5);
+      grid.innerHTML = '';
+      rest.forEach((p, i) => {
+        const el = document.createElement('div');
+        el.className = 'glass pick-card';
+        el.innerHTML = `
+          <div class="pick-rank">PICK #${i + 2}</div>
+          <div class="pick-title">${p.title}</div>
+          <div class="pick-foot">
+            <span>${fmtSource(p.source)}</span>
+            <span>★ ${p.score ?? '-'}</span>
+          </div>
+        `;
+        el.onclick = () => openModal(p);
+        grid.appendChild(el);
+      });
+      // 占位
+      for (let i = rest.length + 2; i <= 5; i++) {
+        const el = document.createElement('div');
+        el.className = 'glass pick-card';
+        el.style.opacity = '0.35';
+        el.style.cursor = 'default';
+        el.innerHTML = `
+          <div class="pick-rank">PICK #${i}</div>
+          <div class="pick-title" style="color: var(--text-lo)">无更多精选</div>
+          <div class="pick-foot"><span>—</span><span>—</span></div>
+        `;
+        grid.appendChild(el);
+      }
+    }
+
+    function badge(cls, text) {
+      const b = document.createElement('span');
+      b.className = cls;
+      b.textContent = text;
+      return b;
+    }
+
+    /* ===================== Charts ===================== */
+    Chart.defaults.color = 'rgba(255,255,255,0.7)';
+    Chart.defaults.font.family = "'Inter', sans-serif";
+    Chart.defaults.borderColor = 'rgba(255,255,255,0.08)';
+
+    function renderTrend() {
+      const ctx = document.getElementById('trendChart');
+      const recent = DATES.slice(-14);
+      const labels = recent.map(d => d.slice(5)); // MM-DD
+      const totals = recent.map(d => DATA[d].total || 0);
+      const included = recent.map(d => DATA[d].included || 0);
+
+      const grad = ctx.getContext('2d').createLinearGradient(0, 0, 0, 220);
+      grad.addColorStop(0, 'rgba(167,139,250,0.55)');
+      grad.addColorStop(1, 'rgba(167,139,250,0.02)');
+
+      const todayIdx = recent.indexOf(currentDate);
+      document.getElementById('trend-subtitle').textContent =
+        `${totals.reduce((a,b)=>a+b,0)} papers · ${recent.length} days`;
+
+      if (trendChart) trendChart.destroy();
+      trendChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels,
+          datasets: [
+            {
+              label: 'Total',
+              data: totals,
+              borderColor: '#a78bfa',
+              backgroundColor: grad,
+              fill: true,
+              tension: 0.35,
+              borderWidth: 2,
+              pointRadius: recent.map((_,i)=>i===todayIdx?5:0),
+              pointBackgroundColor: '#f472b6',
+              pointBorderColor: '#fff',
+              pointBorderWidth: 2,
+            },
+            {
+              label: 'Included',
+              data: included,
+              borderColor: '#34d399',
+              backgroundColor: 'transparent',
+              tension: 0.3,
+              borderWidth: 1.5,
+              borderDash: [4, 4],
+              pointRadius: 0,
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: true, labels: { boxWidth: 10, boxHeight: 10, padding: 16 } },
+            tooltip: {
+              backgroundColor: 'rgba(20,12,50,0.95)',
+              borderColor: 'rgba(255,255,255,0.15)',
+              borderWidth: 1,
+              padding: 10,
+            }
+          },
+          scales: {
+            x: { grid: { display: false }, ticks: { font: { size: 10 } } },
+            y: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { font: { size: 10 } } }
+          }
+        }
+      });
+    }
+
+    function renderSource() {
+      const day = DATA[currentDate] || {};
+      const counts = {};
+      (day.papers || []).forEach(p => {
+        const k = fmtSource(p.source);
+        counts[k] = (counts[k] || 0) + 1;
+      });
+      const entries = Object.entries(counts).sort((a,b) => b[1]-a[1]).slice(0, 10);
+
+      if (sourceChart) sourceChart.destroy();
+      sourceChart = new Chart(document.getElementById('sourceChart'), {
+        type: 'doughnut',
+        data: {
+          labels: entries.map(e => e[0]),
+          datasets: [{
+            data: entries.map(e => e[1]),
+            backgroundColor: entries.map((_,i) => ACCENT_PALETTE[i % ACCENT_PALETTE.length]),
+            borderColor: 'rgba(20,12,50,0.6)',
+            borderWidth: 2,
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          cutout: '60%',
+          plugins: {
+            legend: {
+              position: 'right',
+              labels: { boxWidth: 10, boxHeight: 10, padding: 10, font: { size: 11 } }
+            },
+            tooltip: {
+              backgroundColor: 'rgba(20,12,50,0.95)',
+              borderColor: 'rgba(255,255,255,0.15)',
+              borderWidth: 1,
+            }
+          }
+        }
+      });
+    }
+
+    function renderScore() {
+      const day = DATA[currentDate] || {};
+      const buckets = [0,0,0,0,0,0,0,0,0,0,0]; // 0..10
+      (day.papers || []).forEach(p => {
+        const s = Math.max(0, Math.min(10, Number(p.score) || 0));
+        buckets[s]++;
+      });
+
+      if (scoreChart) scoreChart.destroy();
+      scoreChart = new Chart(document.getElementById('scoreChart'), {
+        type: 'bar',
+        data: {
+          labels: buckets.map((_,i) => i.toString()),
+          datasets: [{
+            label: 'count',
+            data: buckets,
+            backgroundColor: buckets.map((_,i) => {
+              if (i >= 8) return '#34d399';
+              if (i >= 6) return '#38bdf8';
+              if (i >= 4) return '#a78bfa';
+              return 'rgba(167,139,250,0.4)';
+            }),
+            borderRadius: 6,
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              backgroundColor: 'rgba(20,12,50,0.95)',
+              borderColor: 'rgba(255,255,255,0.15)',
+              borderWidth: 1,
+            }
+          },
+          scales: {
+            x: { grid: { display: false }, title: { display: true, text: 'score', color: 'rgba(255,255,255,0.5)', font: { size: 11 } } },
+            y: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { precision: 0 } }
+          }
+        }
+      });
+    }
+
+    /* ===================== Modal ===================== */
+    function openModal(p) {
+      document.getElementById('m-title').textContent = p.title || '--';
+      document.getElementById('m-authors').textContent = p.authors || '--';
+      const meta = document.querySelector('.modal .meta');
+      meta.innerHTML = '';
+      meta.appendChild(badge('score-badge', `★ ${p.score ?? '-'} / 10`));
+      meta.appendChild(badge('source-badge', fmtSource(p.source)));
+      if (p.is_premium) meta.appendChild(badge('premium-badge', 'PREMIUM'));
+      if (p.is_stm)    meta.appendChild(badge('source-badge', 'STM'));
+      meta.appendChild(badge('source-badge', p.published || ''));
+
+      document.getElementById('m-summary').textContent =
+        p.summary_cn || p.abstract_excerpt || '—';
+      document.getElementById('m-score-reason').textContent = p.score_reason || '—';
+      document.getElementById('m-deep').textContent = p.deep_analysis || '—';
+
+      const link = document.getElementById('m-link');
+      link.textContent = p.url || '—';
+      link.href = p.url || '#';
+
+      document.getElementById('modalBackdrop').classList.add('active');
+    }
+    function closeModal() {
+      document.getElementById('modalBackdrop').classList.remove('active');
+    }
+    document.getElementById('modalClose').onclick = closeModal;
+    document.getElementById('modalBackdrop').onclick = (e) => {
+      if (e.target.id === 'modalBackdrop') closeModal();
+    };
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeModal();
+    });
+
+    /* ===================== Render ===================== */
+    function render() {
+      renderHeader();
+      renderStats();
+      renderPicks();
+      renderTrend();
+      renderSource();
+      renderScore();
+    }
+
+    /* ===================== Boot ===================== */
+    if (!DATES.length) {
+      document.querySelector('.app').innerHTML =
+        '<div class="glass" style="padding:60px;text-align:center;color:var(--text-md)">⚠ data.js 未加载或为空。请在 web/ 目录下用 http server 打开本页。</div>';
+    } else {
+      initDatePicker();
+      render();
+    }
+  </script>
+</body>
+</html>
