@@ -104683,10 +104683,10 @@ window.PAPER_DATA = {
   },
   "2026-05-26": {
     "date": "2026-05-26",
-    "generated": "2026-05-26 18:53",
+    "generated": "2026-05-26 19:04",
     "lookback_days": 2.5,
-    "total": 58,
-    "included": 1,
+    "total": 50,
+    "included": 0,
     "has_raw": true,
     "fetch_status": {
       "arxiv:cond-mat.supr-con": {
@@ -104695,7 +104695,7 @@ window.PAPER_DATA = {
       },
       "arxiv:cond-mat.str-el": {
         "count": 0,
-        "error": "HTTPSConnectionPool(host='export.arxiv.org', port=443): Max retries exceeded with url: /api/query?search_query=cat%3Acond-mat.str-el&start=0&max_results=150&sortBy=submittedDate&sortOrder=descending (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset by peer'"
+        "error": "429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=cat%3Acond-mat.str-el&start=0&max_results=150&sortBy=submittedDate&sortOrder=descending"
       },
       "arxiv:cond-mat.mes-hall": {
         "count": 0,
@@ -104703,15 +104703,15 @@ window.PAPER_DATA = {
       },
       "arxiv:cond-mat.mtrl-sci": {
         "count": 0,
-        "error": "429 Client Error: Too Many Requests for url: https://export.arxiv.org/api/query?search_query=cat%3Acond-mat.mtrl-sci&start=0&max_results=150&sortBy=submittedDate&sortOrder=descending"
+        "error": "HTTPSConnectionPool(host='export.arxiv.org', port=443): Max retries exceeded with url: /api/query?search_query=cat%3Acond-mat.mtrl-sci&start=0&max_results=150&sortBy=submittedDate&sortOrder=descending (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset by pee"
       },
       "Nature": {
-        "count": 8,
-        "error": null
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='feeds.nature.com', port=443): Max retries exceeded with url: /nature/rss/current (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset by peer')))"
       },
       "Science": {
         "count": 0,
-        "error": null
+        "error": "HTTPSConnectionPool(host='www.science.org', port=443): Max retries exceeded with url: /action/showFeed?type=etoc&feed=rss&jc=science (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset by peer')))"
       },
       "Science (AOP)": {
         "count": 0,
@@ -104784,12 +104784,12 @@ window.PAPER_DATA = {
         "arxiv_id": null,
         "is_stm": false,
         "is_premium": true,
-        "score": 6,
-        "score_reason": "核心加分：Majorana零能模（+3分）、拓扑超导（+2分）、界面近邻效应（+1分）；未涉及实验室其他优势方向。",
-        "summary_cn": "本研究通过构建磁性原子链沉积在超导Rashba合金表面，利用近邻效应实现拓扑超导，系统研究了无序势对Majorana零能模的影响。实验发现，在存在无序的情况下，原子链中仍能保持鲁棒的Majorana态，证明了Majorana模式对无序的抵抗能力，为拓扑量子计算提供了重要支撑。",
-        "abstract_excerpt": "\"The presence of Majorana zero modes is often difficult to confirm experimentally due to the detrimental effects of disorder. Now, a chain of magnetic atoms on a proximatized surface is shown to exhibit robust Majorana states with disorder present.\"",
-        "deep_analysis": "**[无序增强拓扑保护]** 在有超导近邻效应的Rashba合金上，磁性原子链中的Majorana零模不仅能在静无序势下存活，其零能态反而更加局域化。\n\n**[STM零偏压峰鲁棒性]** 扫描隧道谱测量表明，即便引入显著的无序势，零偏压电导峰的高度和展宽维持不变，证实了Majorana态免受无序背散射。\n\n**[无序类型无关性]** 实验通过替换原子位置、引入空位和局域势波动等多种无序构型，发现Majorana模式的存在不依赖于特定的无序微观形式。\n\n**[自旋轨道耦合关键作用]** Rashba型自旋轨道耦合抑制了磁性链中由无序引发的非拓扑低能态，从而加固了拓扑能隙与Majorana零模的稳定性。\n\n**[相图与实验映射]** 结合第一性原理与有效模型计算，绘制的无序-磁交换作用相图中实验数据点落在稳健拓扑相区，直接验证了物理图像。\n\n**[STM实验价值]** 可直接指导本组利用SJSTM针尖在超导-半导体异质结上构筑原子链并原位调制无序，用零偏压成像鉴定Majorana态对抗无序的拓扑鲁棒性。",
-        "included": true
+        "score": 3,
+        "score_reason": "命中拓扑超导（Majorana零模）+2分、界面/异质结（临近效应）+1分，未涉及涡旋、STM等核心加分项。",
+        "summary_cn": "本研究在超导Rashba合金表面构建磁性原子链，通过实验与理论结合揭示Majorana零模对无序势具有鲁棒性。即使存在无序干扰，拓扑保护的Majorana态仍能稳定存在，为拓扑量子计算中克服无序问题提供了关键实验证据。",
+        "abstract_excerpt": "The presence of Majorana zero modes is often difficult to confirm experimentally due to the detrimental effects of disorder. Now, a chain of magnetic atoms on a proximatized surface is shown to exhibit robust Majorana states with disorder present.",
+        "deep_analysis": "",
+        "included": false
       },
       {
         "title": "Topological polarization beam splitter with polarization-selective edge states",
@@ -104801,8 +104801,8 @@ window.PAPER_DATA = {
         "is_stm": false,
         "is_premium": true,
         "score": 1,
-        "score_reason": "论文为光子学拓扑绝缘体领域，与实验室量子材料（超导、STM、磁性拓扑等）研究方向完全无关。",
-        "summary_cn": "本文提出并实现了一种基于Floquet拓扑绝缘体的片上偏振分束器，利用耦合微环谐振器阵列中的偏振选择性边缘态，实现对不同偏振光的分束。该器件对制造缺陷具有鲁棒性，克服了传统偏振分束器易受工艺缺陷影响的难题，为光子集成提供了新方案。",
+        "score_reason": "属于拓扑光子学，与实验室量子材料（超导、磁性、重费米子等）及STM/ARPES等手段均无关。",
+        "summary_cn": "本文提出一种基于Floquet拓扑绝缘体的片上偏振分束器，利用耦合微环谐振器实现偏振选择边缘态。该器件对制造缺陷具有鲁棒性，克服了传统分束器对加工误差敏感的难题，为光子集成提供了新方案。",
         "abstract_excerpt": "The realization of on-chip polarization beam splitters robust to fabrication imperfections remains a key challenge for photonic integration. The authors overcome this by leveraging Floquet topological insulators based on coupled microring resonators on a micro-scale platform that is resilient to most of defects, unlike conventional polarization beam splitter architectures.",
         "deep_analysis": "",
         "included": false
@@ -104816,10 +104816,10 @@ window.PAPER_DATA = {
         "arxiv_id": null,
         "is_stm": false,
         "is_premium": false,
-        "score": 1,
-        "score_reason": "论文研究铁电流体中的极性拓扑网络，属于软物质物理，与实验室超导、磁性拓扑、重费米子等研究方向均无关。",
-        "summary_cn": "本研究在新型铁电流体中发现自组装极性拓扑网络，实现了大规模畴工程和可控手性序。通过实验观测到自带电极性向列单极子和混合拓扑态，揭示了拓扑缺陷的纠缠与畴集成机制，为超越固态铁电体的拓扑结构调控提供了新路径。",
-        "abstract_excerpt": "The authors find self-assembled polar topological networks in an emerging class of ferroelectric fluid, enabling large-scale domain engineering and controllable chiral order beyond solid-state ferroelectrics.",
+        "score": 2,
+        "score_reason": "研究方向为软物质铁电流体拓扑，与实验室量子材料（超导、拓扑超导、磁性、重费米子等）完全无关，无任何加分项命中。",
+        "summary_cn": "本文通过实验发现一类新兴铁电流体中自组装形成的极性拓扑网络，实现大规模畴工程和可控手性序，超越了固态铁电体的限制。研究揭示了自充电极性向列单极子与杂化拓扑态的交织与畴融合机制。",
+        "abstract_excerpt": "\"The authors find self-assembled polar topological networks in an emerging class of ferroelectric fluid, enabling large-scale domain engineering and controllable chiral order beyond solid-state ferroelectrics.\"",
         "deep_analysis": "",
         "included": false
       },
@@ -104833,137 +104833,9 @@ window.PAPER_DATA = {
         "is_stm": false,
         "is_premium": false,
         "score": 1,
-        "score_reason": "论文为柔性传感器领域，与课题组超导、拓扑、磁性等量子材料研究方向完全无关，无任何命中加分项。",
-        "summary_cn": "本文通过将化学气相沉积生长的石墨烯与水凝胶集成，制备了具有离子-电子协同传导、多重动态相互作用及褶皱/裂纹结构的可拉伸机械-生物电多模态传感器。该传感器实现了低界面阻抗、高自修复效率（95.24%）、宽传感范围（~500%）及优异耐久性。展示了在生理信号检测、信息传输、空间力映射及膀胱活动监测中的应用。",
-        "abstract_excerpt": "\"Herein, stretchable mechanical‐bioelectric multi‐modal sensors with low interfacial impedance, excellent environmental stability, excellent self‐healing ability and biocompatibility, are fabricated by integrating hydrogels with chemical vapor deposition grown graphene films. ... A robust interface with wrinkle structure is formed owing to the nano‐scaled thickness of graphene and dynamic interactions of hydrogels, where ion‐electron synergistic conduction offers ion and electron charges, enhancing the capacitive coupling process of ionic and electronic current.\"",
-        "deep_analysis": "",
-        "included": false
-      },
-      {
-        "title": "Poland’s economy is thriving, but its science is dying",
-        "authors": "Maria W. Górna, Michał Tomza, Agata Starosta, Łukasz Okruszek",
-        "url": "https://www.nature.com/articles/d41586-026-01664-9",
-        "source": "Nature",
-        "published": "2026-05-26",
-        "arxiv_id": null,
-        "is_stm": false,
-        "is_premium": true,
-        "score": 0,
-        "score_reason": "未命中任何凝聚态关键词",
-        "summary_cn": "（预筛过滤：与凝聚态物理方向无关）",
-        "abstract_excerpt": "",
-        "deep_analysis": "",
-        "included": false
-      },
-      {
-        "title": "Conservation gains should not be at the mercy of political changes",
-        "authors": "Juan F. Ovalle, Dylan Craven",
-        "url": "https://www.nature.com/articles/d41586-026-01665-8",
-        "source": "Nature",
-        "published": "2026-05-26",
-        "arxiv_id": null,
-        "is_stm": false,
-        "is_premium": true,
-        "score": 0,
-        "score_reason": "未命中任何凝聚态关键词",
-        "summary_cn": "（预筛过滤：与凝聚态物理方向无关）",
-        "abstract_excerpt": "",
-        "deep_analysis": "",
-        "included": false
-      },
-      {
-        "title": "A cautious voice on the closure of China’s journal ranking list",
-        "authors": "Xiaochuang Li, Wenhao Qian",
-        "url": "https://www.nature.com/articles/d41586-026-01663-w",
-        "source": "Nature",
-        "published": "2026-05-26",
-        "arxiv_id": null,
-        "is_stm": false,
-        "is_premium": true,
-        "score": 0,
-        "score_reason": "未命中任何凝聚态关键词",
-        "summary_cn": "（预筛过滤：与凝聚态物理方向无关）",
-        "abstract_excerpt": "",
-        "deep_analysis": "",
-        "included": false
-      },
-      {
-        "title": "Iran’s Internet blackout: a scholar’s month in the dark",
-        "authors": "Mohammad Sal Moslehian",
-        "url": "https://www.nature.com/articles/d41586-026-01666-7",
-        "source": "Nature",
-        "published": "2026-05-26",
-        "arxiv_id": null,
-        "is_stm": false,
-        "is_premium": true,
-        "score": 0,
-        "score_reason": "未命中任何凝聚态关键词",
-        "summary_cn": "（预筛过滤：与凝聚态物理方向无关）",
-        "abstract_excerpt": "",
-        "deep_analysis": "",
-        "included": false
-      },
-      {
-        "title": "Too dangerous to release: is Mythos the start of the restricted-AI era?",
-        "authors": "Chris Stokel-Walker",
-        "url": "https://www.nature.com/articles/d41586-026-01617-2",
-        "source": "Nature",
-        "published": "2026-05-26",
-        "arxiv_id": null,
-        "is_stm": false,
-        "is_premium": true,
-        "score": 0,
-        "score_reason": "未命中任何凝聚态关键词",
-        "summary_cn": "（预筛过滤：与凝聚态物理方向无关）",
-        "abstract_excerpt": "",
-        "deep_analysis": "",
-        "included": false
-      },
-      {
-        "title": "Innovation starts in schools — lessons from China",
-        "authors": "Dan Tao, Rui Wei, Yonghe Zheng",
-        "url": "https://www.nature.com/articles/d41586-026-01620-7",
-        "source": "Nature",
-        "published": "2026-05-26",
-        "arxiv_id": null,
-        "is_stm": false,
-        "is_premium": true,
-        "score": 0,
-        "score_reason": "未命中任何凝聚态关键词",
-        "summary_cn": "（预筛过滤：与凝聚态物理方向无关）",
-        "abstract_excerpt": "",
-        "deep_analysis": "",
-        "included": false
-      },
-      {
-        "title": "How I eavesdrop on frog conversations",
-        "authors": "Elizabeth Preston",
-        "url": "https://www.nature.com/articles/d41586-026-01621-6",
-        "source": "Nature",
-        "published": "2026-05-25",
-        "arxiv_id": null,
-        "is_stm": false,
-        "is_premium": true,
-        "score": 0,
-        "score_reason": "未命中任何凝聚态关键词",
-        "summary_cn": "（预筛过滤：与凝聚态物理方向无关）",
-        "abstract_excerpt": "",
-        "deep_analysis": "",
-        "included": false
-      },
-      {
-        "title": "How to breathe life back into brain theory",
-        "authors": "Àlex Gómez-Marín",
-        "url": "https://www.nature.com/articles/d41586-026-01619-0",
-        "source": "Nature",
-        "published": "2026-05-25",
-        "arxiv_id": null,
-        "is_stm": false,
-        "is_premium": true,
-        "score": 0,
-        "score_reason": "未命中任何凝聚态关键词",
-        "summary_cn": "（预筛过滤：与凝聚态物理方向无关）",
-        "abstract_excerpt": "",
+        "score_reason": "论文内容为柔性石墨烯/水凝胶传感器，与实验室铁基超导、拓扑超导、STM等研究方向完全无关。",
+        "summary_cn": "本文制备了基于化学气相沉积石墨烯与水凝胶的层状复合传感器，利用离子-电子协同传导、多重动态相互作用及褶皱/裂纹结构，实现了低界面阻抗、高自修复效率（95.24%）、宽传感范围（~500%）和优异耐久性。该传感器在生理信号检测、信息传输、空间力映射及膀胱活动监测中展示了自修复生物电子学的实用性。",
+        "abstract_excerpt": "\"Herein, stretchable mechanical‐bioelectric multi‐modal sensors with low interfacial impedance, excellent environmental stability, excellent self‐healing ability and biocompatibility, are fabricated by integrating hydrogels with chemical vapor deposition grown graphene films. … Benefiting from these judicious designs, the layered composites exhibit low swelling ratio (∼22%), low skin interfacial impedance (28.70 kΩ at 100 Hz), high self‐healing efficiency (95.24%), wide sensing range (∼500%), and excellent durability (∼1000 cycles to 150% strain).\"",
         "deep_analysis": "",
         "included": false
       },
