@@ -155466,5 +155466,104 @@ window.PAPER_DATA = {
         "included": false
       }
     ]
+  },
+  "2026-06-07": {
+    "date": "2026-06-07",
+    "generated": "2026-06-08 00:04",
+    "lookback_days": 4.0,
+    "total": 0,
+    "included": 0,
+    "has_raw": true,
+    "fetch_status": {
+      "arxiv:cond-mat.supr-con": {
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='export.arxiv.org', port=443): Max retries exceeded with url: /api/query?search_query=cat%3Acond-mat.supr-con&start=0&max_results=150&sortBy=submittedDate&sortOrder=descending (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset by pee",
+        "rss_error": "HTTPSConnectionPool(host='rss.arxiv.org', port=443): Max retries exceeded with url: /rss/cond-mat.supr-con (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset "
+      },
+      "arxiv:cond-mat.str-el": {
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='export.arxiv.org', port=443): Max retries exceeded with url: /api/query?search_query=cat%3Acond-mat.str-el&start=0&max_results=150&sortBy=submittedDate&sortOrder=descending (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of ",
+        "rss_error": "HTTPSConnectionPool(host='rss.arxiv.org', port=443): Max retries exceeded with url: /rss/cond-mat.str-el (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset by"
+      },
+      "arxiv:cond-mat.mes-hall": {
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='export.arxiv.org', port=443): Max retries exceeded with url: /api/query?search_query=cat%3Acond-mat.mes-hall&start=0&max_results=150&sortBy=submittedDate&sortOrder=descending (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation o",
+        "rss_error": "HTTPSConnectionPool(host='rss.arxiv.org', port=443): Max retries exceeded with url: /rss/cond-mat.mes-hall (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset "
+      },
+      "arxiv:cond-mat.mtrl-sci": {
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='export.arxiv.org', port=443): Max retries exceeded with url: /api/query?search_query=cat%3Acond-mat.mtrl-sci&start=0&max_results=150&sortBy=submittedDate&sortOrder=descending (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation o",
+        "rss_error": "HTTPSConnectionPool(host='rss.arxiv.org', port=443): Max retries exceeded with url: /rss/cond-mat.mtrl-sci (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in viola"
+      },
+      "Nature": {
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='feeds.nature.com', port=443): Max retries exceeded with url: /nature/rss/current (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))"
+      },
+      "Science": {
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='www.science.org', port=443): Max retries exceeded with url: /action/showFeed?type=etoc&feed=rss&jc=science (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))"
+      },
+      "Science (AOP)": {
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='www.science.org', port=443): Max retries exceeded with url: /action/showFeed?type=axatoc&feed=rss&jc=science (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))"
+      },
+      "Science Advances (AOP)": {
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='www.science.org', port=443): Max retries exceeded with url: /action/showFeed?type=axatoc&feed=rss&jc=sciadv (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))"
+      },
+      "Nature Physics": {
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='feeds.nature.com', port=443): Max retries exceeded with url: /nphys/rss/current (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))"
+      },
+      "Nature Materials": {
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='feeds.nature.com', port=443): Max retries exceeded with url: /nmat/rss/current (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))"
+      },
+      "npj Quantum Mater.": {
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='feeds.nature.com', port=443): Max retries exceeded with url: /npjquantmats/rss/current (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))"
+      },
+      "Communications Physics": {
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='feeds.nature.com', port=443): Max retries exceeded with url: /commsphys/rss/current (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))"
+      },
+      "PRL": {
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='feeds.aps.org', port=443): Max retries exceeded with url: /rss/recent/prl.xml (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))"
+      },
+      "PRB": {
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='feeds.aps.org', port=443): Max retries exceeded with url: /rss/recent/prb.xml (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))"
+      },
+      "PRX": {
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='feeds.aps.org', port=443): Max retries exceeded with url: /rss/recent/prx.xml (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset by peer')))"
+      },
+      "Physical Review Research": {
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='feeds.aps.org', port=443): Max retries exceeded with url: /rss/recent/prresearch.xml (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))"
+      },
+      "Reviews of Modern Physics": {
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='feeds.aps.org', port=443): Max retries exceeded with url: /rss/recent/rmp.xml (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))"
+      },
+      "Nature Communications": {
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='feeds.nature.com', port=443): Max retries exceeded with url: /ncomms/rss/current (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))"
+      },
+      "Nano Letters": {
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='pubs.acs.org', port=443): Max retries exceeded with url: /action/showFeed?type=axatoc&feed=rss&jc=nalefd (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))"
+      },
+      "ACS Nano": {
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='pubs.acs.org', port=443): Max retries exceeded with url: /action/showFeed?type=axatoc&feed=rss&jc=ancac3 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))"
+      },
+      "Small": {
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='onlinelibrary.wiley.com', port=443): Max retries exceeded with url: /action/showFeed?jc=16136829&type=etoc&feed=rss (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))"
+      }
+    },
+    "papers": []
   }
 };
