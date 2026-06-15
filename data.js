@@ -188234,5 +188234,122 @@ window.PAPER_DATA = {
         "included": false
       }
     ]
+  },
+  "2026-06-15": {
+    "date": "2026-06-15",
+    "generated": "2026-06-15 09:03",
+    "lookback_days": 2.0,
+    "total": 1,
+    "included": 0,
+    "has_raw": true,
+    "fetch_status": {
+      "arxiv:cond-mat.supr-con": {
+        "count": 0,
+        "error": null
+      },
+      "arxiv:cond-mat.str-el": {
+        "count": 0,
+        "error": null
+      },
+      "arxiv:cond-mat.mes-hall": {
+        "count": 0,
+        "error": null
+      },
+      "arxiv:cond-mat.mtrl-sci": {
+        "count": 0,
+        "error": "429 Client Error: Too Many Requests for url: https://export.arxiv.org/api/query?search_query=cat%3Acond-mat.mtrl-sci&start=0&max_results=150&sortBy=submittedDate&sortOrder=descending",
+        "rss_fallback": true
+      },
+      "Nature": {
+        "count": 1,
+        "error": null
+      },
+      "Science": {
+        "count": 0,
+        "error": null
+      },
+      "Science (AOP)": {
+        "count": 0,
+        "error": null
+      },
+      "Science Advances (AOP)": {
+        "count": 0,
+        "error": null
+      },
+      "PNAS": {
+        "count": 0,
+        "error": null
+      },
+      "Nature Physics": {
+        "count": 0,
+        "error": null
+      },
+      "Nature Materials": {
+        "count": 0,
+        "error": null
+      },
+      "npj Quantum Mater.": {
+        "count": 0,
+        "error": null
+      },
+      "Communications Physics": {
+        "count": 0,
+        "error": null
+      },
+      "PRL": {
+        "count": 0,
+        "error": null
+      },
+      "PRB": {
+        "count": 0,
+        "error": null
+      },
+      "PRX": {
+        "count": 0,
+        "error": null
+      },
+      "Physical Review Research": {
+        "count": 0,
+        "error": null
+      },
+      "Reviews of Modern Physics": {
+        "count": 0,
+        "error": null
+      },
+      "Nature Communications": {
+        "count": 0,
+        "error": null
+      },
+      "Nano Letters": {
+        "count": 0,
+        "error": "403 Client Error: Forbidden for url: https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=nalefd"
+      },
+      "ACS Nano": {
+        "count": 0,
+        "error": "403 Client Error: Forbidden for url: https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=ancac3"
+      },
+      "Small": {
+        "count": 0,
+        "error": null
+      }
+    },
+    "papers": [
+      {
+        "title": "Huge study hints at risks of switching from tobacco cigarettes to vapes",
+        "authors": "",
+        "url": "https://www.nature.com/articles/d41586-026-01834-9",
+        "source": "Nature",
+        "published": "2026-06-14",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": true,
+        "score": 1,
+        "score_reason": "该论文研究电子烟与肺癌风险，与实验室所有研究方向（超导、拓扑、磁性、重费米子、STM等）完全无关。",
+        "summary_cn": "该研究调查了从传统香烟转向电子烟的健康风险，发现改用电子烟的人群肺癌风险高于完全戒烟者。文章基于大规模数据分析了电子烟的健康影响，提示电子烟并非无害替代品。",
+        "abstract_excerpt": "Nature, Published online: 14 June 2026; doi:10.1038/d41586-026-01834-9Lung cancer risk was higher in people who took up electronic cigarettes than in those who quit smoking completely.",
+        "deep_analysis": "",
+        "included": false
+      }
+    ]
   }
 };
