@@ -188237,9 +188237,9 @@ window.PAPER_DATA = {
   },
   "2026-06-15": {
     "date": "2026-06-15",
-    "generated": "2026-06-15 09:03",
+    "generated": "2026-06-15 11:19",
     "lookback_days": 2.0,
-    "total": 1,
+    "total": 2,
     "included": 0,
     "has_raw": true,
     "fetch_status": {
@@ -188257,11 +188257,10 @@ window.PAPER_DATA = {
       },
       "arxiv:cond-mat.mtrl-sci": {
         "count": 0,
-        "error": "429 Client Error: Too Many Requests for url: https://export.arxiv.org/api/query?search_query=cat%3Acond-mat.mtrl-sci&start=0&max_results=150&sortBy=submittedDate&sortOrder=descending",
-        "rss_fallback": true
+        "error": null
       },
       "Nature": {
-        "count": 1,
+        "count": 2,
         "error": null
       },
       "Science": {
@@ -188335,6 +188334,22 @@ window.PAPER_DATA = {
     },
     "papers": [
       {
+        "title": "Bones of Iron Age skeleton were whittled into tools",
+        "authors": "",
+        "url": "https://www.nature.com/articles/d41586-026-01833-w",
+        "source": "Nature",
+        "published": "2026-06-15",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": true,
+        "score": 1,
+        "score_reason": "完全偏离实验室研究主题（量子材料、超导、拓扑、STM等），属于考古学内容。",
+        "summary_cn": "本文报道了铁器时代一具女性遗骸的骨骼被加工成工具的现象，其死后脑部被移除，但遗骸被仔细重组以进行埋葬。该研究属于考古学范畴，与实验室量子材料研究方向无关。",
+        "abstract_excerpt": "\"The female individual’s brain was removed after her death, but her remains were carefully reassembled for her interment.\"",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
         "title": "Huge study hints at risks of switching from tobacco cigarettes to vapes",
         "authors": "",
         "url": "https://www.nature.com/articles/d41586-026-01834-9",
@@ -188344,9 +188359,9 @@ window.PAPER_DATA = {
         "is_stm": false,
         "is_premium": true,
         "score": 1,
-        "score_reason": "该论文研究电子烟与肺癌风险，与实验室所有研究方向（超导、拓扑、磁性、重费米子、STM等）完全无关。",
-        "summary_cn": "该研究调查了从传统香烟转向电子烟的健康风险，发现改用电子烟的人群肺癌风险高于完全戒烟者。文章基于大规模数据分析了电子烟的健康影响，提示电子烟并非无害替代品。",
-        "abstract_excerpt": "Nature, Published online: 14 June 2026; doi:10.1038/d41586-026-01834-9Lung cancer risk was higher in people who took up electronic cigarettes than in those who quit smoking completely.",
+        "score_reason": "论文主题为电子烟健康风险，与实验室量子材料研究方向完全无关。",
+        "summary_cn": "该研究通过大规模数据分析，发现从传统烟草转向电子烟的人群患肺癌的风险高于完全戒烟的人群，提示电子烟并非无害替代品。",
+        "abstract_excerpt": "\"Nature, Published online: 14 June 2026; doi:10.1038/d41586-026-01834-9Lung cancer risk was higher in people who took up electronic cigarettes than in those who quit smoking completely.\"",
         "deep_analysis": "",
         "included": false
       }
