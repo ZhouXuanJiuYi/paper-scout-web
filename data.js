@@ -205354,5 +205354,538 @@ window.PAPER_DATA = {
         "included": false
       }
     ]
+  },
+  "2026-06-21": {
+    "date": "2026-06-21",
+    "generated": "2026-06-21 11:37",
+    "lookback_days": 2.0,
+    "total": 27,
+    "included": 0,
+    "has_raw": true,
+    "fetch_status": {
+      "arxiv:cond-mat.supr-con": {
+        "count": 0,
+        "error": "429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=cat%3Acond-mat.supr-con&start=0&max_results=150&sortBy=submittedDate&sortOrder=descending",
+        "rss_fallback": true
+      },
+      "arxiv:cond-mat.str-el": {
+        "count": 0,
+        "error": null
+      },
+      "arxiv:cond-mat.mes-hall": {
+        "count": 0,
+        "error": null
+      },
+      "arxiv:cond-mat.mtrl-sci": {
+        "count": 0,
+        "error": null
+      },
+      "Nature": {
+        "count": 0,
+        "error": null
+      },
+      "Science": {
+        "count": 0,
+        "error": null
+      },
+      "Science (AOP)": {
+        "count": 0,
+        "error": null
+      },
+      "Science Advances (AOP)": {
+        "count": 0,
+        "error": null
+      },
+      "PNAS": {
+        "count": 0,
+        "error": null
+      },
+      "Nature Physics": {
+        "count": 0,
+        "error": null
+      },
+      "Nature Materials": {
+        "count": 0,
+        "error": null
+      },
+      "npj Quantum Mater.": {
+        "count": 0,
+        "error": null
+      },
+      "Communications Physics": {
+        "count": 0,
+        "error": null
+      },
+      "PRL": {
+        "count": 0,
+        "error": null
+      },
+      "PRB": {
+        "count": 0,
+        "error": null
+      },
+      "PRX": {
+        "count": 0,
+        "error": null
+      },
+      "Physical Review Research": {
+        "count": 0,
+        "error": null
+      },
+      "Reviews of Modern Physics": {
+        "count": 0,
+        "error": null
+      },
+      "Nature Communications": {
+        "count": 8,
+        "error": null
+      },
+      "Nano Letters": {
+        "count": 0,
+        "error": "403 Client Error: Forbidden for url: https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=nalefd"
+      },
+      "ACS Nano": {
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='pubs.acs.org', port=443): Read timed out. (read timeout=30)"
+      },
+      "Small": {
+        "count": 19,
+        "error": null
+      }
+    },
+    "papers": [
+      {
+        "title": "Longitudinal antibody profiling after dengue reveals distinct dynamics by antibody specificity over 18 months",
+        "authors": "Sandra Bos, Tulika Singh, José Victor Zambrana, Elias Duarte, Reinaldo Mercado-Hernandez, Julia Huffaker, Aaron Graber, Angel Balmaseda, Eva Harris",
+        "url": "https://www.nature.com/articles/s41467-026-74406-0",
+        "source": "Nature Communications",
+        "published": "2026-06-21",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "论文研究登革热抗体，与实验室量子材料、超导、STM等研究方向完全无关，仅因属于一般科学文献给予基础分。",
+        "summary_cn": "本研究基于尼加拉瓜儿童登革热队列，通过18个月纵向抗体谱分析发现，初次感染后针对包膜蛋白的交叉反应性IgG抗体水平不降反升，且抗体动力学因病毒蛋白和结构域而异。",
+        "abstract_excerpt": "\"Longitudinal antibody profiling in a Nicaraguan pediatric dengue cohort shows that cross-reactive IgG against the envelope protein rises, not wanes, over 18 months post-primary infection, with antibody kinetics differing by viral protein and domain.\"",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Axion electrodynamics in a topologically trivial antiferromagnet",
+        "authors": "Abhilash Mishra, Robin Karothiya, Syed Qamar Abbas Shah, Arti Kashyap, Christian Binek",
+        "url": "https://www.nature.com/articles/s41467-026-74634-4",
+        "source": "Nature Communications",
+        "published": "2026-06-20",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 3,
+        "score_reason": "仅与实验室“多铁”方向弱相关（磁电效应），未涉及超导、STM、拓扑、铁基/铜基/镍基等核心方向。",
+        "summary_cn": "本文在粉末铬氧化物（Chromia）中实现了理论上预言但长期未实验验证的线性各向同性磁电响应，从而在拓扑平庸的反铁磁体中实现了轴子电动力学。该发现为探索轴子电动力学效应提供了新的材料平台，无需依赖拓扑非平庸的能带结构。",
+        "abstract_excerpt": "It is possible to realize axion electrodynamics in a material with an isotropic and linear magnetoelectric response, however, such a material has thus far evaded experimental realization. Here, Mishra et al succeed in creating such a linear isotropic magnetoelectric response in powdered Chromia.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Direction-resolved nanoscale optical imaging with near-nanometer resolution by emerging infrared torsional force microscopy",
+        "authors": "Yonatan Gazit, Son T. Le, Aubrey T. Hanbicki, Adam L. Friedman, Min Ouyang",
+        "url": "https://www.nature.com/articles/s41467-026-74654-0",
+        "source": "Nature Communications",
+        "published": "2026-06-20",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "论文是红外光学成像技术，与实验室超导、拓扑、磁性、量子相变等研究方向完全无关。",
+        "summary_cn": "本文开发了一种新型红外扭转力显微镜（TFM-IR），通过检测光诱导的扭转力实现近纳米分辨率的光学成像。该技术能够对样品的光学各向异性进行方向分辨的纳米级映射，突破了传统光学显微镜的衍射极限，为研究纳米尺度光-物质相互作用提供了新工具。",
+        "abstract_excerpt": "Probing nanoscale light-matter interactions requires simultaneous access to optical anisotropy and ultrahigh spatial resolution. Here, authors develop torsional force microscopy-infrared imaging, enabling near-nanometer optical imaging and direction-resolved mapping of local optical responses.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Dynamic palladium catalysis enables chiral amplification toward acyclic Schiff base atropisomers",
+        "authors": "Qi Liu, Jun Gu, Shu-Yun Cui, Linghua Tan, Ying He",
+        "url": "https://www.nature.com/articles/s41467-026-74668-8",
+        "source": "Nature Communications",
+        "published": "2026-06-20",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "论文为有机催化合成方向，与实验室量子材料、超导、STM等研究方向完全无关。",
+        "summary_cn": "本文报道了一种钯催化不对称N-烯丙基化反应，通过底物引导的催化剂演化，实现了无环席夫碱阻转异构体的高效合成。该方法解决了长期以来该类型化合物合成和立体控制的挑战，获得了高收率和对映选择性的Z选择性产物。",
+        "abstract_excerpt": "Acyclic Schiff base atropisomers have remained inaccessible because of longstanding synthetic and stereocontrol challenges. Here, the authors report a palladium-catalysed asymmetric N-allylation enabled by substrate guided catalyst evolution, delivering Z selective atropisomeric Schiff bases with high yields and enantioselectivities.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Solving the vibrational Schrödinger equation with artificial neural networks",
+        "authors": "Shuaishuai Zhao, Dong H. Zhang",
+        "url": "https://www.nature.com/articles/s41467-026-74537-4",
+        "source": "Nature Communications",
+        "published": "2026-06-20",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "论文主题为计算化学中的神经网络方法，与实验室所有研究方向（超导、拓扑、磁性、STM等）均无关联。",
+        "summary_cn": "本文提出一种基于人工神经网络的高效方法，用于求解多原子分子（超过十个原子）的全维振动薛定谔方程。该方法能够准确计算振动能级，克服了传统方法在处理大分子时计算量巨大的困难。研究展示了神经网络在量子化学振动问题中的强大潜力。",
+        "abstract_excerpt": "Solving the full-dimensional vibrational Schrödinger equation remains challenging for polyatomic molecules. The authors present an efficient neural-network approach for accurate vibrational energy calculations for molecules with more than ten atoms.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Divergent 3D genome architecture of male germ cells across vertebrates",
+        "authors": "Laia Marín-Gual, Lucía Álvarez-González, Laura González-Rodelas, Fleur Coppen, Ashley M. Milton, Rachel J. O’Neill, Andrew J. Pask, Marilyn B. Renfree, Arthur Georges, Paul D. Waters, Aurora Ruiz-Herr",
+        "url": "https://www.nature.com/articles/s41467-026-74695-5",
+        "source": "Nature Communications",
+        "published": "2026-06-20",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "完全不涉及实验室研究方向（超导、拓扑、磁性、STM等），属于基因组学与进化生物学领域。",
+        "summary_cn": "本研究利用Hi-C等基因组学手段，分析了跨越3.5亿年进化史的脊椎动物雄性生殖细胞形成过程中的三维基因组构型变化。发现不同物种间既有共享的折叠模式，也存在物种特异性特征，并揭示了基因组大小和染色体形状是驱动DNA三维折叠的关键因素。该工作提供了进化视角下生殖细胞基因组架构的全局图谱。",
+        "abstract_excerpt": "\"The study reveals how the 3D genome changes during germ cell formation across vertebrates that split over 350 million years ago, uncovering shared and species‑specific patterns and showing that genome size and chromosome shape drive DNA folding.\"",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Biomimetic ferroelectric-semiconductor transistor enables neuronal multisensory integration",
+        "authors": "Shuo Liu, Ligong Zhang, Ruiqing Xie, Zhiyuan Wu, Aojie Chen, Lixia Han, Linbo Shan, Zuoyuan Dong, Junling Liu, Xinrui Guo, Yu Zhu, Zhenghua Zhou, Fei Liu, Linxiao Shen, Peng Huang, Xinran Wang, Zongwe",
+        "url": "https://www.nature.com/articles/s41467-026-74648-y",
+        "source": "Nature Communications",
+        "published": "2026-06-20",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "不涉及实验室任何研究方向（超导、拓扑、磁性、重费米子、STM等均为零命中）。",
+        "summary_cn": "本文报道了一种仿生铁电-半导体场效应晶体管，通过硬件本征的多物理场耦合实现视听信号整合，模拟大脑的感官融合功能，为人工智能提供新思路。",
+        "abstract_excerpt": "Replicating the brain’s multisensory integration is vital for artificial intelligences. Liu et al. have developed biomimetic ferroelectric-semiconductor field-effect transistors to mimick the brain’s audiovisual integration driven by hardware-native multi-physics coupling.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Overcoming chromium poisoning in solid oxide cells through multiscale perovskite engineering",
+        "authors": "Min Li, Huixian Liu, Yunfei Bu, Xiang Wang, Haoran Wang, Jiawei Chen, Jiawei Li, Yantao Zhao, Zhibin Yang",
+        "url": "https://www.nature.com/articles/s41467-026-74650-4",
+        "source": "Nature Communications",
+        "published": "2026-06-20",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "论文研究固体氧化物电池中的铬中毒问题，与实验室超导、拓扑、磁性等所有研究方向均无关，未命中任何加分项。",
+        "summary_cn": "该研究针对固体氧化物电池中氧电极的铬中毒和缓慢氧动力学问题，通过多尺度钙钛矿工程设计了三重屏障型钙钛矿材料。该结构可抑制锶偏析、捕获铬并调控表面化学，从而显著提升铬耐受性和长期稳定性，为开发高性能可逆固体氧化物电池提供了新策略。",
+        "abstract_excerpt": "Chromium poisoning and sluggish oxygen kinetics limit oxygen electrodes in reversible solid oxide cells. Here, the authors report a triple-barrier perovskite that suppresses Sr segregation, traps chromium, and tunes surface chemistry, enabling strong chromium tolerance and long-term stability.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Design of Well‐Defined Meso‐ or Macroporous Carbon Nitride with an Amorphous Framework via Perovskite Fluoride Templating",
+        "authors": "Kazuya Kozumi, \nYusuke Asakura, \nYusuke Yamauchi",
+        "url": "https://onlinelibrary.wiley.com/doi/10.1002/smll.74242?af=R",
+        "source": "Small",
+        "published": "2026-06-19",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "该论文为多孔碳氮化物合成与传感应用，与实验室超导、拓扑、磁性、STM等方向完全无关。",
+        "summary_cn": "本文报道了一种利用钙钛矿型金属氟化物（KMF₃, M=Co,Ni）作为硬模板，通过两步热处理合成介孔或大孔氮化碳（C₃N₄）的策略。低温预聚稳定模板/前驱体复合物，高温进一步缩聚形成C₃N₄并保留模板结构。电化学葡萄糖传感测试表明，介孔KNiF₃模板样品具有更高的灵敏度和更低的检测限，证实孔结构对活性位点可及性的重要影响，为高温聚合物体系的结构控制提供了简单方法。",
+        "abstract_excerpt": "Here, we report a synthetic strategy for meso‐ or macroporous carbon nitride (C₃N₄) using perovskite‐type metal fluorides (KMF₃, M = Co, Ni) as hard templates. The synthesis involves a two‐step thermal treatment. After removal of the templates, meso‐ or macroporous C₃N₄ are successfully obtained, demonstrating that KMF₃ can serve as effective templates even under high‐temperature polycondensation conditions through appropriate reaction stage control.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Atomic‐Level Regiospecific Engineering of Asymmetric Acceptors for Efficient Organic Solar Cells With Reduced Energetic Disorder",
+        "authors": "Jingyu Shi, \nHaotian Hu, \nPengfei Ding, \nJintao Zhu, \nChangming Han, \nZhichao Mao, \nMengmeng Yang, \nJinFeng Ge, \nDaobin Yang, \nZiyi Ge",
+        "url": "https://onlinelibrary.wiley.com/doi/10.1002/smll.74207?af=R",
+        "source": "Small",
+        "published": "2026-06-19",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "论文研究有机太阳能电池分子设计，与实验室量子材料（超导、拓扑、磁性等）研究方向完全无关。",
+        "summary_cn": "通过原子级区域特异性工程，在非富勒烯受体中引入β-位氯取代，协同提升LUMO能级并优化静电势表面，抑制非辐射复合与能量无序，实现二元有机太阳能电池20.32%的冠军效率（填充因子80.93%），三元器件效率达20.51%。",
+        "abstract_excerpt": "\"To address the intrinsic trade‐off between open‐circuit voltage and charge transport in symmetric non‐fullerene acceptors, we report an asymmetric molecular engineering strategy based on regiospecific monochloro‐isomeric substitution. ... Regiospecific β‐substitution steers the blend toward an idealized film‐formation kinetic regime and ensures superior energy‐level homogeneity. ... This precise control reconciles nucleation dynamics with crystal growth, fostering a high‐purity, bi‐continuous interpenetrating network that substantially suppresses non‐radiative recombination losses and minimiz",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Nanoelectronic Detection of Opioids: Machine Learning‐Powered Screening With Carbon Nanotube Field‐Effect Transistor Sensor Array",
+        "authors": "Zhengru Liu, \nMehdy Dousty, \nWenting Shao, \nJieyu Wang, \nSamia Afrin, \nWuqi Li, \nErvin Sejdić, \nAlexander Star",
+        "url": "https://onlinelibrary.wiley.com/doi/10.1002/smll.74244?af=R",
+        "source": "Small",
+        "published": "2026-06-19",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "论文内容为纳米传感器检测阿片类药物，与实验室超导、拓扑、磁性等所有研究方向完全无关。",
+        "summary_cn": "本文构建了基于单壁碳纳米管场效应晶体管传感器阵列并结合机器学习模型，用于快速筛选芬太尼等四种阿片类药物。从FET数据中提取15个特征训练传统监督学习模型，线性判别分析和随机森林分类准确率达82.6%。卷积神经网络模型达98.3%准确率，揭示了栅源电流在区分阿片分子中的关键作用。",
+        "abstract_excerpt": "\"In this work, a nanoelectronic detection method was developed for opioids using machine learning. Fentanyl and three other opioids (codeine, hydrocodone, and morphine) were tested with field‐effect transistor (FET) sensor array composed of single‐walled carbon nanotubes (SWCNTs) decorated with gold and platinum nanoparticles. ... A convolutional neural network (CNN) achieved 98.3% accuracy for the manual test group and revealed the significant role of gate‐source current in distinguishing opioid molecules.\"",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Spider Silk‐Like Nanodomain Spacings Enable Mechanically Robust and Healable Elastomers with Record‐High Puncture Resistance",
+        "authors": "Yujie Jia, \nBin Hong, \nBo Qian, \nPing Liu, \nLizhen Hu, \nGuangchen Liu, \nYingqian Li, \nJunfen Sun, \nYong Chen, \nZhengwei You",
+        "url": "https://onlinelibrary.wiley.com/doi/10.1002/smll.202514193?af=R",
+        "source": "Small",
+        "published": "2026-06-19",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "论文关于仿生弹性体材料，与实验室超导、拓扑、磁性、STM/ARPES等所有研究方向均无任何关联。",
+        "summary_cn": "受蜘蛛丝β-折叠纳米晶域（晶格间距~10 nm）启发，设计原位形成氢键阵列与氟化酚-氨基甲酸酯键相分离纳米域（晶格间距10.02 nm）的氟化超分子聚氨酯脲弹性体。该材料兼具高强度（39.6 MPa）、高断裂能（90.8 kJ m⁻²）、优异自修复效率（99.1%）和创纪录抗刺穿能量（889 mJ），并可用于多功能摩擦纳米发电机。",
+        "abstract_excerpt": "Spider silk is an exceptionally strong, extensible, and tough natural material, the outstanding mechanical properties of which arise from β‐sheet nanocrystalline protein domains with an average lattice spacing of approximately 10 nm. Herein, inspired by the microstructure of spider silk, a mechanically robust, healable, and reprocessable fluorinated supramolecular poly(urethane‐urea) (F‐SPUU) elastomer with record‐high puncture energy (889 mJ), is reported. The high‐performance stems from the cross‐linking of polytetrahydrofuran chains with in situ‐formed phase‐separated nanodomains (lattice s",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Bamboo‐Jointed Bismuth Vanadate Structural Engineering and In Situ Atomic‐Scale Insights into Anisotropy and Sodium Ion Storage",
+        "authors": "Ran Cai, \nWenqi Zhang, \nZelin Ma, \nYan Xiong, \nQuan An, \nYichen Li, \nShiying Guo, \nJinhua Zhou, \nWeiwei Xia, \nLixin Dong, \nBin Hu",
+        "url": "https://onlinelibrary.wiley.com/doi/10.1002/smll.73840?af=R",
+        "source": "Small",
+        "published": "2026-06-19",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "完全不相关。论文研究钠离子电池电极材料，未涉及实验室任何超导、拓扑、磁性、STM等核心方向。",
+        "summary_cn": "本文通过静电纺丝制备竹节状BiVO4纳米棒，结合原位透射电镜与密度泛函理论计算，揭示了钠离子插入过程中的各向异性膨胀及循环后向各向同性转变的机制。竹节结构有效缓解轴向应力、抑制粉化，为设计高性能钠离子存储材料提供了新见解。",
+        "abstract_excerpt": "\"This work reveals anisotropic Na‐ion insertion and structure evolution in bamboo‐jointed BiVO4 nanorods through in situ TEM and DFT calculation. The segmented architecture mitigates stress, suppresses pulverization, and transforms toward isotropic behavior upon cycling, providing new mechanistic insights for designing high‐performance sodium‐ion storage materials.\"",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "2M Phase Engineering of W1‐xMoxS2 Alloy Nanosheets for Enhanced Catalytic Hydrogen Evolution Reaction",
+        "authors": "Ju Yeon Kim, \nYoun Jun Choi, \nIn Hye Kwak, \nSeo Yun Jeong, \nJunaid Ihsan, \nIrtiqa Mishal, \nJun Hyeok Choi, \nIk Seon Kwon, \nHong Seok Kang, \nJeunghee Park",
+        "url": "https://onlinelibrary.wiley.com/doi/10.1002/smll.74226?af=R",
+        "source": "Small",
+        "published": "2026-06-19",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 2,
+        "score_reason": "命中TMD材料方向（+2分），但研究内容为催化性能，与实验室超导/拓扑/磁性等核心方向无关。",
+        "summary_cn": "通过胶体合成制备了晶相可调（2H、2M、1T′）的W1-xMoxS2合金纳米片。发现W-rich合金化可稳定金属2M相，从而提高酸性介质中析氢反应（HER）活性。第一性原理计算表明，合金化、NH4+插层及硫/金属空位共同增强了亚稳相的稳定性，并揭示2M相合金能有效激活基底S原子，为TMD基电催化剂性能调控提供新见解。",
+        "abstract_excerpt": "\"In this work, WS2‐MoS2 (W1‐xMoxS2) alloy nanosheets with tunable crystal structures (2H, 2 M, and 1T′) were prepared via a colloidal synthesis conducted at 220–300°C. ... W‐rich alloying was found to stabilize further the metastable structure of 2 M phase. ... In acidic media, the W‐rich alloy nanosheets exhibited improved hydrogen evolution reaction (HER) activity, which is likely associated with their 2 M phase.\"",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Sulfur‐Enriched Porphyrin‐Based Covalent Organic Frameworks as Redox‐Active Electrode for Aqueous Symmetric Supercapacitors",
+        "authors": "Nivedita Rana, \nIkrar Ahmad, \nMuniappan Sankar",
+        "url": "https://onlinelibrary.wiley.com/doi/10.1002/smll.74184?af=R",
+        "source": "Small",
+        "published": "2026-06-19",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "论文研究有机超级电容器电极材料，与实验室超导、拓扑、STM等所有方向均无关，故给1分。",
+        "summary_cn": "该研究设计了三种含硫卟啉基共价有机框架(TTP-COF、BTP-COF、TP-COF)，通过亚胺缩合将富硫π共轭醛连接体与卟啉单元结合。其中TTP-COF在三电极体系中比电容达193.3 F g−1，对称超级电容器能量密度35.2 Wh kg−1，循环25000次后容量保持92.3%，并成功驱动LED，展现出双电层与赝电容协同储能机制。",
+        "abstract_excerpt": "In this study, we report the design, synthesis and electrochemical evaluation of three porphyrin-based covalent organic frameworks (COFs), TTP-COF, BTP-COF, and TP-COF, integrating sulfur-rich π-conjugated aldehyde linkers... Among the tested materials, TTP-COF exhibited superior electrochemical performance... delivering a high specific capacitance of 193.3 F g−1. Furthermore, the symmetric supercapacitor (TTP-COF // TTP-COF) demonstrated a remarkable specific capacitance of 129.2 F g−1, a high energy density of 35.2 Wh kg−1, and outstanding cyclic stability... This work underscores the potent",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Interface Engineering in MOF‐Derived NiOOH/FeOOH Heterostructures: Boosting OER Performance via Lattice Oxygen Redox Regulation and AEM/LOM Synergy",
+        "authors": "Siyi Li, \nMeng Tian, \nDawei Qi, \nTianxia Chen, \nZhiping Liu, \nShouhao Yang, \nYunqi Song, \nXinyu Tian, \nXiangyu Liu",
+        "url": "https://onlinelibrary.wiley.com/doi/10.1002/smll.74310?af=R",
+        "source": "Small",
+        "published": "2026-06-19",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "与实验室铁基/铜基/镍基超导、拓扑超导、磁性拓扑、重费米子等所有研究方向均无关，属于电催化领域。",
+        "summary_cn": "本文通过电化学重构双金属MOF前驱体，原位转化为具有致密异质界面的NiOOH/FeOOH活性相。界面工程调控晶格氧氧化还原，激活晶格氧机制（LOM），并与吸附物演化机制（AEM）协同，优化*OOH中间体吸附/脱附动力学，显著提升析氧反应（OER）性能。催化剂在10和100 mA cm⁻²下过电位仅235和285 mV，稳定性超500小时。",
+        "abstract_excerpt": "\"Precisely modulating lattice oxygen redox to activate the lattice oxygen mechanism (LOM) is paramount for surmounting the constraints of the traditional adsorbate evolution mechanism (AEM) and maximizing the catalytic activity of the oxygen evolution reaction (OER). Herein, we employ an electrochemical reconstruction strategy leveraging a bimetallic MOF precursor (NiPP/NM88B), which undergoes self‐optimized in situ transformation into a NiOOH/FeOOH active phase with dense heterointerfaces. ... The catalyst attains current densities of 10 and 100 mA cm⁻² with low overpotentials of 235 and 285 ",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Interfacial Regulation–Driven Dual‐Enrichment SERS Coupled With Deep Learning Enable Ultrasensitive and In Situ Identification of Microplastics in Natural Waters",
+        "authors": "Chaochao Ma, \nXiaojiao Zhao, \nJiacheng Li, \nXinyu Liu, \nMingxu Zhang, \nZhidan Liu, \nJing Wu, \nZhifeng Liu, \nYunpeng Wang, \nYang Li",
+        "url": "https://onlinelibrary.wiley.com/doi/10.1002/smll.74231?af=R",
+        "source": "Small",
+        "published": "2026-06-19",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "与实验室所有研究方向（铁基超导、铜基超导、镍基超导、拓扑超导、磁性拓扑、重费米子、量子相变、STM/ARPES等）均无任何关联，故给最低分。",
+        "summary_cn": "该研究开发了一种膜限界SERS平台，利用PSS-Na修饰的Au@Ag纳米立方体构建电荷调控的垂直堆叠热点结构，实现对天然水环境中痕量微塑料（如聚苯乙烯）的灵敏检测（低至50 ng mL⁻¹）。结合基于注意力机制的1D-CNN深度学习模型，实现聚合物种类识别和二元/三元混合物的半定量分析（R²>0.83），为复杂水体中微塑料智能监测提供了新方法。",
+        "abstract_excerpt": "Here, we develop a membrane-confined SERS platform integrated with machine-learning-assisted spectral analysis for sensitive and reproducible microplastic detection. ... the membrane-guided configuration enables reproducible detection of polystyrene down to 50 ng mL⁻¹. ... a multi-polymer SERS library covering PS, PMMA, PVC, and PC was integrated with an attention-based 1D-CNN, enabling reliable polymer identification and semi-quantitative analysis of binary and ternary mixtures (R² > 0.83).",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Dynamically Bonded MXene‑Composite Hydrogel via Confined‑Space Gelation for Multimodal Sensing, Photothermal Response and Human‑Machine Interaction",
+        "authors": "Xin Guo, \nJian Sun, \nShiyue Liu, \nKeyi Li, \nXueting Yang, \nYanyan Zhao, \nJin'e Wang, \nMingqiong Tong, \nXiangling Gu",
+        "url": "https://onlinelibrary.wiley.com/doi/10.1002/smll.74285?af=R",
+        "source": "Small",
+        "published": "2026-06-19",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "与实验室所有方向（超导、拓扑、磁性、STM、ARPES等）完全无关，属于水凝胶材料。",
+        "summary_cn": "该工作提出“热激活-退火协同”策略，在密闭高温高压环境中促进聚合物链间氢键形成（分子模拟g(r)值提高近十倍），构建致密物理网络。结合κ-卡拉胶刚性网络、动态硼酸酯键增强及MXene导电/光热功能，成功制备KPM-B复合水凝胶，具有高强度（2.4 MPa）、高韧性（567.3 kJ/m³）和抗疲劳性（3000次循环），应用于生理信号监测、关节运动检测及智能手套人机交互。",
+        "abstract_excerpt": "“Achieving synergistic optimization of the hydrogel network through proactive molecular‐level design is key to developing flexible electronic materials that combine excellent mechanical, electrical, and multifunctional properties. Regarding this issue, we propose a “thermal activation–annealing synergy” preparation strategy…the confined high‐temperature and high‐pressure environment greatly promotes effective collisions and hydrogen bond formation between polymer chains (the molecular simulation g(r) value increases nearly tenfold), thereby constructing a denser physical network. …This work pr",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Large‐Scale Structural Dynamics in the Tail Fiber Modulate the Infective Transition of the T7 Bacteriophage",
+        "authors": "Luca Elizabet Kosik, \nMiklós Cervenak, \nDominik Sziklai, \nAndrea Balogh‐Molnár, \nNegar Rahimi, \nBence Fehér, \nSoma Yamamoto, \nHiroki Konno, \nNoriyuki Kodera, \nHolger Flechsig, \nRomain Amyot, \nHeinz Am",
+        "url": "https://onlinelibrary.wiley.com/doi/10.1002/smll.74269?af=R",
+        "source": "Small",
+        "published": "2026-06-19",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "完全不相关，与实验室任何研究方向（铁基/铜基/镍基超导、拓扑超导、磁性拓扑、重费米子、量子相变等）无交集。",
+        "summary_cn": "本文利用高速原子力显微镜、分子动力学模拟和小角X射线散射，研究了T7噬菌体尾纤维的结构动力学。发现尾纤维的扭结区充当分子铰链，允许大幅弯曲；近端三螺旋卷曲螺旋结构部分解旋-重旋导致纤维旋转和扭转。这些柔性区域使纤维快速伸缩，实现宿主表面拓扑搜索，为噬菌体感染机制提供新见解。",
+        "abstract_excerpt": "\"By using high‐speed atomic force microscopy (HS‐AFM) and molecular dynamics (MD) simulations combined with small angle X‐ray scattering (SAXS), we analyzed the molecular structure and movements of isolated tail fibers and tail‐fiber complexes. We found that the kink region separating the proximal and distal sections of the fiber acts as a molecular hinge, which allows large‐scale dynamic bending. ... The two dynamic regions allow for large‐scale, rapid fiber flexing and extension, thus enabling an efficient topological search for anchorage sites by the phage on the host surface.\"",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "A Multifunctional Nucleic Acid Nanomedicine Coregulates Angiogenesis and Fibrosis to Treat Oral Submucous Fibrosis",
+        "authors": "Xiao Fu, \nMei Zhang, \nJiahui Xiong, \nJunhui Ma, \nWuxiao Cui, \nYao He, \nYunfeng Lin, \nTao Wang",
+        "url": "https://onlinelibrary.wiley.com/doi/10.1002/smll.74277?af=R",
+        "source": "Small",
+        "published": "2026-06-19",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "完全为生物医学纳米材料研究，与实验室所有凝聚态物理方向无关。",
+        "summary_cn": "本研究开发了一种多功能核酸纳米药物A-T-S，由四面体框架核酸共递送抗TGF-β siRNA和促血管生成适配体Apt02。该药物能同时调控巨噬细胞炎症表型、成纤维细胞纤维化程序和内皮细胞血管生成功能，在大鼠口腔黏膜下纤维化模型中有效减少胶原沉积、减轻炎症浸润并恢复血管稳态，无显著毒性，为纤维炎症疾病提供协同微环境重塑策略。",
+        "abstract_excerpt": "We developed a multifunctional nucleic acid nanomedicine, Apt02–tFNAs–siTGF‐β (A‐T‐S), in which tetrahedral framework nucleic acids co‐deliver siRNA against TGF‐β (siTGF‐β) and the proangiogenic aptamer Apt02, enabling programmable integration and stable delivery. In a rat OSF model, A‐T‐S reduced collagen deposition and profibrotic signaling while mitigating inflammatory infiltration and vascular abnormalities, without evident toxicity in major organs. These findings indicate that A‐T‐S can synergistically remodel the OSF lesion microenvironment and represents a promising strategy for OSF and",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Tailoring the Porosity of Mesoporous Polyphenol Nanoparticles for Enhanced Photothermal Antibacterial Therapy",
+        "authors": "Chenyi Zhu, \nHaonan Jia, \nZhenxing Yan, \nLvyao Xiao, \nShuya Wang, \nJiao Wang, \nXiaoyong Deng, \nYijun Xie",
+        "url": "https://onlinelibrary.wiley.com/doi/10.1002/smll.74281?af=R",
+        "source": "Small",
+        "published": "2026-06-19",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "论文研究抗菌纳米材料，与实验室所有量子材料、超导、STM、拓扑等方向完全无关，未命中任何加分项。",
+        "summary_cn": "本文报道了通过聚合诱导自组装制备Mn螯合介孔聚L-DOPA纳米颗粒（Mn-mDOPA），通过调节表面活性剂/油比和Mn负载优化介孔结构，获得约28-39 nm的介孔和高达75.4 m²/g的比表面积。该材料实现高效近红外光热转换，对金黄色葡萄球菌和大肠杆菌杀菌率分别达99.9%和99.7%，同时具有暗抗菌活性（>90%）和ROS清除能力，在感染伤口模型中有效抑制炎症、促进血管新生和伤口愈合。",
+        "abstract_excerpt": "“We report the synthesis of Mn‐chelated mesoporous poly(L‐DOPA) nanoparticles (Mn‐mDOPA) via polymerization‐induced self‐assembly, where the surfactant/oil ratio and Mn loading are precisely tuned to optimize mesoporosity and photothermal performance. The resulting Mn‐mDOPA nanoparticles exhibit enlarged mesopores (≈28–39 nm) and a high specific surface area (up to 75.4 m2·g−1), enabling superior light absorption and heat generation. … these results highlight Mn‐mDOPA as a multifunctional, antibiotic‐free nanoplatform that integrates enhanced photothermal conversion, intrinsic antibacterial ac",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Edge‐Bound Doping Effect in Oxidation‐Etched CVD MoS2",
+        "authors": "Ying Zhang, \nZhipeng Xin, \nTianxiang Zhao, \nPengcheng Wang, \nYanyu Liu, \nJunjia Wang, \nLiyi Li, \nBo Zhang, \nChaopeng Wang, \nDejun Li, \nBirong Luo",
+        "url": "https://onlinelibrary.wiley.com/doi/10.1002/smll.74247?af=R",
+        "source": "Small",
+        "published": "2026-06-19",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 2,
+        "score_reason": "命中TMD方向（+2分），但未涉及超导、磁性、STM等实验室核心方向。",
+        "summary_cn": "本文报道氧化刻蚀CVD MoS₂中的边缘束缚掺杂效应，氧及氧化物（MoSₓOᵧ/MoO₃）优先嵌入刻蚀边缘位点，导致局域电子耗尽。理论计算与实验结合证实该效应源于氧钝化与氧化物级联空穴注入的协同作用。通过调控刻蚀时间可精确调节耗尽程度，将n型FET转变为p型，为二维TMD空间掺杂与电学调控提供新策略。",
+        "abstract_excerpt": "Here, we report a dominant edge‐bound doping effect in the oxidation etching (OE) of chemical vapor deposited (CVD) MoS₂, where oxygen and the oxides (MoSₓOᵧ/MoO₃) are preferentially incorporated at etched edge sites. Integrated theoretical and experimental analyses confirm that this one‐dimensional edge‐bound doping causes localized electron depletion via a synergy of donor‐level oxygen passivation and cascade hole injection from the oxides. The electron depletion magnitude can be adjusted by the OE time, allowing for deterministic tuning of the electrical properties in OE‐MoS₂ field‐effect t",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Boosting Ion Transport in MXene Films via In‐Plane Nanopores and Embedded TiO2 Nanoparticles: Toward Ultrafast Supercapacitors",
+        "authors": "Suxia Jiang, \nPei Li, \nZiyan Zhou, \nNa Xing, \nYu Dai, \nXiaojian Xu, \nDou Lin, \nWeihan Li, \nFangming Han",
+        "url": "https://onlinelibrary.wiley.com/doi/10.1002/smll.74273?af=R",
+        "source": "Small",
+        "published": "2026-06-19",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "论文研究MXene超级电容器电极，与实验室超导、拓扑、磁性量子材料等研究方向完全无关，属于电化学储能领域。",
+        "summary_cn": "本文通过简单H₂O₂处理随后真空抽滤，制备了嵌入TiO₂纳米颗粒的多孔MXene（Ti₃C₂Tₓ）薄膜电极。面内纳米孔提供垂直捷径加速离子扩散，原位生长的TiO₂纳米颗粒作为结构支柱扩大层间距并防止重新堆叠，协同降低离子传输曲折度并暴露更多活性位点。该超级电容器在120 Hz下实现了1164 µF cm⁻²和14.9 F cm⁻³的优异电容及−80°相角，性能超越多数赝电容滤波电容器和铝电解电容器。",
+        "abstract_excerpt": "Herein, we design and fabricate a TiO₂‐embedded holey Ti₃C₂Tₓ (TiO₂/H‐Ti₃C₂Tₓ) film electrode via a simple hydrothermal H₂O₂ treatment followed by vacuum filtration. This design implements a dual‐mechanism strategy: the creation of in‐plane nanopores provides vertical shortcuts for rapid ion diffusion, while the in‐situ grown TiO₂ nanoparticles act as structural pillars to widen interlayer spacing and prevent restacking, thereby synergistically reducing ion transport tortuosity and exposing abundant ion‐accessible active sites. As a direct consequence of this structural engineering, the assemb",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Optoelectronics of Single Mixed Dislocations in Van Der Waals Core‐Shell Nanowires",
+        "authors": "Eli Sutter, \nPeter Sutter",
+        "url": "https://onlinelibrary.wiley.com/doi/10.1002/smll.74258?af=R",
+        "source": "Small",
+        "published": "2026-06-19",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 2,
+        "score_reason": "论文研究位错光电特性，与实验室超导、拓扑、磁性、重费米子等核心方向无任何交集，不命中任何加分关键词。",
+        "summary_cn": "本文研究了Ge₁₋ₓSnₓS范德华核壳纳米线中单根混合位错的光电效应。通过控制核壳晶格失配，实现了位错从纯螺型到主要刃型的调控。阴极发光光谱显示，引入刃型分量后自发发射量子效率显著降低，归因于深能级非辐射复合。结果为将位错用作有源器件元件提供了基础。",
+        "abstract_excerpt": "\"To identify and ultimately harness such functionality, approaches are needed for embedding single dislocations with tunable geometry (edge/screw ratio) in small‐volume host crystals. Here, we address this challenge by mixing screw‐ and edge‐dislocations in Ge1‐xSnxS layered (van der Waals) core‐shell nanowires. ... CL shows that the luminescence intensity depends on the distance from the dislocation line. Efficient radiative recombination is found for the pristine material near the nanowire tip whereas the dislocated part of the nanowires shows a sharp reduction of the spontaneous emission qu",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Supratopological Ion‐Coordinated Binder Networks for Durable and Kinetically Efficient Silicon Anodes",
+        "authors": "Dejian Cheng, \nBin Tan, \nYong Zeng, \nTaoying Rao, \nZhencong Ma, \nJingyuan Wang, \nRuijie Du, \nYonghong Deng, \nHongxia Liu, \nChaoyang Wang",
+        "url": "https://onlinelibrary.wiley.com/doi/10.1002/smll.74233?af=R",
+        "source": "Small",
+        "published": "2026-06-19",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "论文完全属于锂离子电池硅负极粘结剂研究，与实验室超导、拓扑、磁性等方向无任何关联。",
+        "summary_cn": "本文构建了一种超拓扑离子配位粘结剂网络，通过原位交联超支化PVA-AA框架与磺化芳香小分子实现。该拓扑锁定的三维结构抑制聚合物链滑移，同时建立连续的锂离子配位通道，显著提升硅负极的机械稳定性和锂离子传输动力学，在1 Ah级软包电池中386次循环后容量保持率79.2%。",
+        "abstract_excerpt": "\"Here, a supratopological ion‐coordinated binder (PVA‐AA‐5SAS) by integrating a hyperbranched PVA‐AA framework with the sulfonated aromatic small molecule 5‐sulfoisophthalic acid sodium salt (SAS) via in situ esterification is developed. The resulting 3D network effectively suppresses polymer chain slippage while simultaneously forming continuous Li+‐coordination pathways via cooperative interactions between ester and sulfonate groups. These results demonstrate that rational binder design can decouple and resolve the long‐standing conflict between structural durability and ion conduction, prov",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "MXene‐Based Piezoelectric and Triboelectric Energy Harvesters for Personalized Monitoring and Therapeutics",
+        "authors": "Bangul Khan, \nRana Talha Khalid, \nBilawal Khan, \nMuhammad Hasan Masrur, \nMohamed Elhousseini Hilal, \nMohamed Elgendi, \nBee Luan Khoo",
+        "url": "https://onlinelibrary.wiley.com/doi/10.1002/smll.74020?af=R",
+        "source": "Small",
+        "published": "2026-06-19",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "研究内容为MXene能源器件综述，与实验室铁基/铜基/镍基超导、拓扑超导、磁性拓扑、重费米子、量子相变、STM/ARPES等方向完全无关。",
+        "summary_cn": "本文综述了MXene（二维过渡金属碳化物/氮化物）在压电与摩擦电纳米发电机中的最新进展，涵盖材料合成、器件架构、电荷生成机制及系统集成。重点讨论了MXene基复合材料（水凝胶、气凝胶、纳米纤维、智能纺织品）在生理监测、人机交互、运动分析、可穿戴治疗及体内应用中的协同能量采集、传感与机械鲁棒性。同时分析了氧化不稳定性、机械疲劳、生物相容性及规模化制造等挑战与缓解策略，展望了与人工智能、物联网及可持续材料融合的未来方向。",
+        "abstract_excerpt": "\"MXenes, a rapidly expanding family of two‐dimensional transition‐metal carbides and nitrides, have emerged as a key material of self‐powered wearable electronics and therapeutics owing to their metallic conductivity, mechanical flexibility, and highly tunable surface chemistry. Their integration into piezoelectric nanogenerators and triboelectric nanogenerators (PENGs and TENGs) has substantially advanced mechanical‐to‐electrical energy conversion in flexible, skin‐conformal devices. This review critically examines recent progress in MXene‐enabled nanogenerators, covering material synthesis, ",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Nanoscale Tailoring of Bulk High Entropy Alloys for Structural and Functional Applications",
+        "authors": "Mengchao Niu, \nJuntong Song, \nGang Liu",
+        "url": "https://onlinelibrary.wiley.com/doi/10.1002/smll.74254?af=R",
+        "source": "Small",
+        "published": "2026-06-19",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "完全不涉及实验室任一研究方向（超导、拓扑、磁性、STM等），属于高熵合金材料科学，无任何加分项。",
+        "summary_cn": "本文综述了通过晶粒细化、分级结构、沉淀及界面工程等纳米尺度调控策略优化块体高熵合金性能的最新进展。这些方法能够同时提升强度、延展性、热稳定性及多功能性，并赋予材料优异的电催化、磁热、抗辐射及热电性能。文章还讨论了可扩展合成、结构均匀性及纳米尺度变形机制的挑战，并提出结合原位表征、多尺度模拟和机器学习加速材料设计的前景。",
+        "abstract_excerpt": "High‐entropy alloys (HEAs) represent a transformative class of materials whose exceptional mechanical and functional properties arise from their compositional complexity and adaptable microstructures. Recent advances in nanoscale tailoring of bulk HEAs—via grain refinement, hierarchical architecture, precipitation, and interface engineering—have unlocked unprecedented opportunities to simultaneously enhance strength, ductility, thermal stability, and multifunctionality. This review highlights emerging strategies for translating nanoscale design principles into cost‐effective, application‐speci",
+        "deep_analysis": "",
+        "included": false
+      }
+    ]
   }
 };
