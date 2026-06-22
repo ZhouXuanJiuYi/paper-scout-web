@@ -205582,5 +205582,234 @@ window.PAPER_DATA = {
         "included": false
       }
     ]
+  },
+  "2026-06-22": {
+    "date": "2026-06-22",
+    "generated": "2026-06-22 10:29",
+    "lookback_days": 2.0,
+    "total": 8,
+    "included": 0,
+    "has_raw": true,
+    "fetch_status": {
+      "arxiv:cond-mat.supr-con": {
+        "count": 0,
+        "error": "429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=cat%3Acond-mat.supr-con&start=0&max_results=150&sortBy=submittedDate&sortOrder=descending",
+        "rss_fallback": true
+      },
+      "arxiv:cond-mat.str-el": {
+        "count": 0,
+        "error": "XML解析错误: no element found: line 1413, column 577"
+      },
+      "arxiv:cond-mat.mes-hall": {
+        "count": 0,
+        "error": null
+      },
+      "arxiv:cond-mat.mtrl-sci": {
+        "count": 0,
+        "error": null
+      },
+      "Nature": {
+        "count": 0,
+        "error": null
+      },
+      "Science": {
+        "count": 0,
+        "error": null
+      },
+      "Science (AOP)": {
+        "count": 0,
+        "error": null
+      },
+      "Science Advances (AOP)": {
+        "count": 0,
+        "error": null
+      },
+      "PNAS": {
+        "count": 0,
+        "error": null
+      },
+      "Nature Physics": {
+        "count": 0,
+        "error": null
+      },
+      "Nature Materials": {
+        "count": 0,
+        "error": null
+      },
+      "npj Quantum Mater.": {
+        "count": 0,
+        "error": null
+      },
+      "Communications Physics": {
+        "count": 0,
+        "error": null
+      },
+      "PRL": {
+        "count": 0,
+        "error": null
+      },
+      "PRB": {
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='feeds.aps.org', port=443): Max retries exceeded with url: /rss/recent/prb.xml (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))"
+      },
+      "PRX": {
+        "count": 0,
+        "error": "HTTPSConnectionPool(host='feeds.aps.org', port=443): Max retries exceeded with url: /rss/recent/prx.xml (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))"
+      },
+      "Physical Review Research": {
+        "count": 0,
+        "error": null
+      },
+      "Reviews of Modern Physics": {
+        "count": 0,
+        "error": null
+      },
+      "Nature Communications": {
+        "count": 8,
+        "error": null
+      },
+      "Nano Letters": {
+        "count": 0,
+        "error": "403 Client Error: Forbidden for url: https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=nalefd"
+      },
+      "ACS Nano": {
+        "count": 0,
+        "error": "403 Client Error: Forbidden for url: https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=ancac3"
+      },
+      "Small": {
+        "count": 0,
+        "error": null
+      }
+    },
+    "papers": [
+      {
+        "title": "Neural similarity between choice options predicts group-level context effects",
+        "authors": "Asaf Madar, Tom Zemer, Ido Tavor, Dino J. Levy",
+        "url": "https://www.nature.com/articles/s41467-026-74462-6",
+        "source": "Nature Communications",
+        "published": "2026-06-21",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "论文涉及认知神经科学/决策心理学，与实验室量子材料、超导、STM等所有研究方向均无任何关联。",
+        "summary_cn": "本研究通过功能性磁共振成像（fMRI）发现，选择选项的神经表征相似性能够预测群体层面的情境效应（如吸引力效应和折衷效应）。作者利用大脑的特征编码机制，改进了对经典决策偏差的预测，揭示了神经活动如何影响情境依赖的决策行为。",
+        "abstract_excerpt": "\"Madar et al. show that neural representations of choice options predict how context shifts decisions. By leveraging the brain’s feature encoding, previously inaccessible to decision researchers, they improve predictions of well-known choice biases.\"",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Attention modulates value normalization in human reinforcement learning by shaping reward encoding",
+        "authors": "Romane Cecchi, Sebastian Gluth, Stefano Palminteri",
+        "url": "https://www.nature.com/articles/s41467-026-74747-w",
+        "source": "Nature Communications",
+        "published": "2026-06-21",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "论文属于认知神经科学，与实验室所有超导、拓扑、磁性、STM等方向完全无关。",
+        "summary_cn": "本文通过行为实验和计算建模，发现人类强化学习中的奖励编码受注意力调节，从而导致价值归一化偏差。注意力影响奖励的主观表征，进而改变学习过程。",
+        "abstract_excerpt": "“People’s reward learning is shaped by context, but the cognitive origins of this bias remain poorly understood. Here, the authors provide evidence that attention may underlie these distortions by shaping how rewards are encoded during reinforcement learning.”",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "A structurally unique effector shared between vascular wilt fungi drives cotton and olive defoliation",
+        "authors": "Andrea Doddi, Gabriel Lorencini Fiorin, Jinling Li, Ilaria Zannini, Yukiyo Sato, Giulia Lancia, Giacomo Giuliari, Carmen Gómez-Lama Cabanás, Antonio Valverde-Corredor, Tingli Liu, Hui Tian, Grardy C. ",
+        "url": "https://www.nature.com/articles/s41467-026-74504-z",
+        "source": "Nature Communications",
+        "published": "2026-06-21",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "论文研究真菌效应子导致植物落叶，与实验室量子材料、超导、拓扑等方向完全无关。",
+        "summary_cn": "本文报道了在引起血管枯萎病的不同真菌病原体中存在一对相同的效应基因，这些基因导致棉花和橄榄的落叶。去除这些基因可阻止疾病发生，而可移动DNA元件似乎能在真菌病原体之间传播这种毒力性状。",
+        "abstract_excerpt": "Here the authors report a pair of identical effector genes in different fungal pathogens that cause vascular wilt diseases to cause defoliation in crops. Removing these genes stops disease, and mobile DNA elements appear to spread this virulence trait between fungal pathogens.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Structural superlubricity triboelectric nanogenerator with negligible wear and high triboelectrification efficiency",
+        "authors": "Chaojie Chen, Jinhui Nie, Ying Liu, Xiaojian Xiang, Xuanyu Huang, Quanshui Zheng, Yunlong Zi",
+        "url": "https://www.nature.com/articles/s41467-026-74450-w",
+        "source": "Nature Communications",
+        "published": "2026-06-21",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "论文研究摩擦纳米发电机，与实验室超导、拓扑、磁性、STM等方向完全无关，未命中任何加分项。",
+        "summary_cn": "本研究利用石墨与二氧化硅之间的结构超滑特性，构建了一种滑动摩擦纳米发电机。原子尺度的接触实现了近零摩擦，有效抑制了空气击穿，消除了磨损，并在长时间循环中提供了稳定且增强的电荷输出。",
+        "abstract_excerpt": "The work builds a sliding triboelectric generator using structural superlubricity between graphite and silicon oxide. Atomic-scale contact yields near-zero friction, suppresses air breakdown, eliminates wear, and delivers stable, enhanced charge output over long cycling.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Sensing centrosome amplification: the interface between centriole duplication and autophagy",
+        "authors": "Paula A. Coelho, Agnieszka Fatalska, Marco Geymonat, Ramona Lattao, David M. Glover",
+        "url": "https://www.nature.com/articles/s41467-026-74702-9",
+        "source": "Nature Communications",
+        "published": "2026-06-21",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "纯细胞生物学研究，无任何量子材料、超导、STM或凝聚态物理相关关键词，与实验室研究完全无关。",
+        "summary_cn": "该研究通过全基因组筛选发现，下调Wnt、Hippo、Tpr53、PIDDosome、纤毛生成或自噬通路可克服PLK4介导的中心体扩增对细胞增殖的抑制作用。抑癌因子ARHGAP15的缺失会激活自噬以减少中心体数量，而ARHGEF2被中心粒蛋白CEP170激活产生RAC1-GTP，促进自噬。",
+        "abstract_excerpt": "A genome wide screen reveals down-regulating the Wnt, Hippo, Tpr53, PIDDosome, ciliary biogenesis, or autophagy pathways overcomes inhibitory effects of PLK4-mediated centrosome amplification on cell proliferation. Depletion of tumor suppressor, ARHGAP15, activates autophagy to reduce centrosomes.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Therapeutic targeting of AREL1 in hepatic stellate cells attenuates MASH-related liver fibrosis",
+        "authors": "Yang-Wen-Qing Zhang, Xiaoyu Pan, Minghe Zhang, Junyu Zhang, Hui Ren, Xinyu Zong, Xiaomian Li, Kequan Xu, Peng Xia, Tiangen Wu, Weijie Ma, Xi Chen, Chengming Qu, Wenzhi He, Yufeng Yuan",
+        "url": "https://www.nature.com/articles/s41467-026-74481-3",
+        "source": "Nature Communications",
+        "published": "2026-06-21",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "与实验室量子材料、超导、STM等核心研究方向完全无关，属于生物医学肝纤维化领域。",
+        "summary_cn": "本文发现凋亡抵抗E3泛素蛋白连接酶1（AREL1）在代谢相关脂肪性肝炎（MASH）患者的肝星状细胞（HSC）中表达上调，并通过ILK–PI3K–AKT通路促进肝纤维化。利用维生素A修饰的脂质纳米颗粒靶向AREL1可减轻雄性小鼠的MASH相关纤维化，为治疗提供新靶点。",
+        "abstract_excerpt": "Hepatic stellate cell (HSC) activation drives liver fibrosis. Here, the authors show that apoptosis-resistant E3 ubiquitin protein ligase 1 (AREL1) is upregulated in HSCs of patients with metabolic-associated steatohepatitis (MASH) and promotes fibrosis via the ILK–PI3K–AKT pathway. Targeting AREL1 with vitamin A-modified lipid nanoparticles (LNPs) reduces MASH-associated fibrosis in male mice.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Longitudinal antibody profiling after dengue reveals distinct dynamics by antibody specificity over 18 months",
+        "authors": "Sandra Bos, Tulika Singh, José Victor Zambrana, Elias Duarte, Reinaldo Mercado-Hernandez, Julia Huffaker, Aaron Graber, Angel Balmaseda, Eva Harris",
+        "url": "https://www.nature.com/articles/s41467-026-74406-0",
+        "source": "Nature Communications",
+        "published": "2026-06-21",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "与实验室所有研究方向（超导、拓扑、磁性、重费米子、STM/ARPES等）完全无关，属于传染病免疫学领域。",
+        "summary_cn": "该研究对尼加拉瓜儿童登革热队列进行纵向抗体分析，发现原发感染后18个月内，针对包膜蛋白的交叉反应性IgG水平上升而非下降，且抗体动力学因病毒蛋白和结构域而异。",
+        "abstract_excerpt": "Longitudinal antibody profiling in a Nicaraguan pediatric dengue cohort shows that cross-reactive IgG against the envelope protein rises, not wanes, over 18 months post-primary infection, with antibody kinetics differing by viral protein and domain.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Lipopolysaccharide hydrolysis-targeting nano-chimeras detoxify endotoxin through specific adsorption and efficient degradation",
+        "authors": "Lulu Jin, Chenyin Zhang, Hongli Yi, Jing Tang, Kexin Yu, Yuanyuan Wang, Feihe Huang, Ketao Jin, Zhengwei Mao, Lidan Hu, Xiaozhou Mou",
+        "url": "https://www.nature.com/articles/s41467-026-74689-3",
+        "source": "Nature Communications",
+        "published": "2026-06-21",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "与实验室超导、拓扑、磁性、STM等研究方向完全无关，属于生物纳米医学领域。",
+        "summary_cn": "本文开发了一种基于Brassicaceae植物LORE蛋白和铈基纳米酶的植物源纳米囊泡，通过特异性吸附和高效率水解脂多糖（LPS）实现内毒素解毒。LORE蛋白对LPS具有高亲和力，纳米酶能催化水解LPS，从而降低其免疫原性。",
+        "abstract_excerpt": "Detoxifying the immunogenic lipopolysaccharide (LPS) remains challenging. Here, the authors show that the Brassicaceae protein LORE binds LPS with high affinity and develop plant-derived nanovesicles displaying native LORE, combined with cerium-based nanozymes, to enable LPS hydrolysis.",
+        "deep_analysis": "",
+        "included": false
+      }
+    ]
   }
 };
