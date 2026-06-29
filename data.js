@@ -225040,5 +225040,457 @@ window.PAPER_DATA = {
         "included": false
       }
     ]
+  },
+  "2026-06-30": {
+    "date": "2026-06-30",
+    "generated": "2026-06-30 07:34",
+    "lookback_days": 2.0,
+    "total": 22,
+    "included": 0,
+    "has_raw": true,
+    "fetch_status": {
+      "arxiv:cond-mat.supr-con": {
+        "count": 0,
+        "error": null
+      },
+      "arxiv:cond-mat.str-el": {
+        "count": 0,
+        "error": null
+      },
+      "arxiv:cond-mat.mes-hall": {
+        "count": 0,
+        "error": null
+      },
+      "arxiv:cond-mat.mtrl-sci": {
+        "count": 0,
+        "error": null
+      },
+      "Nature": {
+        "count": 7,
+        "error": null
+      },
+      "Science": {
+        "count": 0,
+        "error": null
+      },
+      "Science (AOP)": {
+        "count": 1,
+        "error": null
+      },
+      "Science Advances (AOP)": {
+        "count": 0,
+        "error": null
+      },
+      "PNAS": {
+        "count": 0,
+        "error": null
+      },
+      "Nature Physics": {
+        "count": 3,
+        "error": null
+      },
+      "Nature Materials": {
+        "count": 0,
+        "error": null
+      },
+      "npj Quantum Mater.": {
+        "count": 1,
+        "error": null
+      },
+      "Communications Physics": {
+        "count": 1,
+        "error": null
+      },
+      "PRL": {
+        "count": 0,
+        "error": null
+      },
+      "PRB": {
+        "count": 0,
+        "error": null
+      },
+      "PRX": {
+        "count": 0,
+        "error": null
+      },
+      "Physical Review Research": {
+        "count": 0,
+        "error": null
+      },
+      "Reviews of Modern Physics": {
+        "count": 0,
+        "error": null
+      },
+      "Nature Communications": {
+        "count": 8,
+        "error": null
+      },
+      "Nano Letters": {
+        "count": 0,
+        "error": "403 Client Error: Forbidden for url: https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=nalefd"
+      },
+      "ACS Nano": {
+        "count": 0,
+        "error": "403 Client Error: Forbidden for url: https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=ancac3"
+      },
+      "Small": {
+        "count": 1,
+        "error": null
+      }
+    },
+    "papers": [
+      {
+        "title": "Family of magnetic field-boosted superconductors in rhombohedral graphene",
+        "authors": "Junseok Seo, Armel A. Cotten, Shenyong Ye, Mingchi Xu, Omid Sharifi Sedeh, Henok Weldeyesus, Tonghang Han, Zhengguang Lu, Zhenghan Wu, Wei Xu, Jixiang Yang, Emily Aitken, Prayoga P. Liong, Phatthanon ",
+        "url": "https://www.nature.com/articles/s41586-026-10815-x",
+        "source": "Nature",
+        "published": "2026-06-29",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": true,
+        "score": 2,
+        "score_reason": "论文研究菱方石墨烯中的磁场增强超导，与实验室铁基、铜基、镍基、拓扑超导等核心方向无关，不涉及STM等实验技术，未命中任何加分项。",
+        "summary_cn": "本文报道在菱方堆叠多层石墨烯中观察到一类磁场增强的超导态。通过调控层数和磁场，发现超导转变温度在特定磁场下显著提升，形成“磁场助推”超导族。实验揭示了磁性与超导的竞争与共存机制，为理解二维材料中的非常规超导提供了新平台。",
+        "abstract_excerpt": "We report a family of magnetic field-boosted superconductors in rhombohedral multilayer graphene. The superconducting critical temperature is markedly enhanced under an in-plane magnetic field, reaching a maximum at a characteristic field strength. Our results reveal a new class of superconductivity where magnetic field, rather than suppressing, promotes pairing.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Audio long read: Is the peptide craze backed by science? The promise behind the hype",
+        "authors": "Cassandra Willyard, Benjamin Thompson",
+        "url": "https://www.nature.com/articles/d41586-026-02063-w",
+        "source": "Nature",
+        "published": "2026-06-29",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": true,
+        "score": 1,
+        "score_reason": "论文主题为肽类保健品，与实验室超导、拓扑、STM等研究方向完全无关。",
+        "summary_cn": "本文为一篇音频长读，探讨当前流行的肽类保健品热潮是否具有科学依据。文章指出未受监管的肽类市场庞大，质疑这股健康潮流是否超前于科学证据。",
+        "abstract_excerpt": "The market for unregulated peptides is huge. Has the hottest trend in wellness got ahead of the science?",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Trump has big AI and quantum ambitions: this scientist’s job is to make them reality",
+        "authors": "Elizabeth Gibney",
+        "url": "https://www.nature.com/articles/d41586-026-02023-4",
+        "source": "Nature",
+        "published": "2026-06-29",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": true,
+        "score": 1,
+        "score_reason": "文章为科技政策新闻，与实验室铁基/铜基/镍基超导、拓扑超导、STM等手段及量子材料方向均无关。",
+        "summary_cn": "本文是一篇新闻报道，介绍Darío Gil作为科学家在特朗普政府推动人工智能与量子计算宏大计划中的角色，呼吁研究人员对大规模AI投入保持开放态度。文章主要讨论政策与科研管理，未涉及具体物理实验或材料研究。",
+        "abstract_excerpt": "\"Darío Gil knows that researchers are sceptical of the massive US artificial-intelligence push — he’s asking them to keep an open mind.\"",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "How one US scientist is adapting to life abroad after DOGE cuts",
+        "authors": "Sarah Wells",
+        "url": "https://www.nature.com/articles/d41586-026-01137-z",
+        "source": "Nature",
+        "published": "2026-06-29",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": true,
+        "score": 1,
+        "score_reason": "论文为科学政策新闻，与实验室所有研究方向均无关。",
+        "summary_cn": "本文报道了一位美国科学家Sarah Weisberg因经费削减而移居欧洲寻求职业保障的经历，属于科学政策与职业发展类报道，与实验室的量子材料研究方向无关。",
+        "abstract_excerpt": "\"Nature, Published online: 29 June 2026; doi:10.1038/d41586-026-01137-z Sarah Weisberg is one of a number of scientists who have made the move to Europe for job security.\"",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "How AI can crack open the ‘hidden curriculum’ for neurodivergent students",
+        "authors": "Marisa Chrysochoou, Keivan Stassun",
+        "url": "https://www.nature.com/articles/d41586-026-01672-9",
+        "source": "Nature",
+        "published": "2026-06-29",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": true,
+        "score": 1,
+        "score_reason": "与实验室所有研究方向（超导、拓扑、磁性、重费米子等）均无关，属于教育技术类文章。",
+        "summary_cn": "本文探讨人工智能工具如何帮助神经多样性学生理解和应对学术界的隐性规则（即“隐藏课程”），以促进教育公平。作者Marisa Chrysochoou和Keivan Stassun认为AI可以个性化解析不成文规范，辅助学生适应学术环境。",
+        "abstract_excerpt": "\"Marisa Chrysochoou and Keivan Stassun argue that AI tools could help students to navigate academia’s unwritten rules.\"",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "What’s the human cost of US research turmoil? A new film finds out",
+        "authors": "Max Kozlov",
+        "url": "https://www.nature.com/articles/d41586-026-01979-7",
+        "source": "Nature",
+        "published": "2026-06-29",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": true,
+        "score": 1,
+        "score_reason": "文章主题为美国科研政策的人文影响，与实验室量子材料、超导、STM等研究方向完全不相关。",
+        "summary_cn": "本文通过一部新电影探讨美国科研动荡对研究人员个人生活的冲击，揭示了经费削减和资助延迟如何对科学家造成沉重打击，强调科学作为复杂、互联且深度人性化的事业所面临的人本代价。",
+        "abstract_excerpt": "\"Science is a complex, interconnected, deeply human enterprise involving hard grind — and funding cuts and grant delays have come as a sucker punch to many.\"",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Scientists fight back against far-right plans to restrict academic freedom in Germany",
+        "authors": "Diana Kwon",
+        "url": "https://www.nature.com/articles/d41586-026-01496-7",
+        "source": "Nature",
+        "published": "2026-06-29",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": true,
+        "score": 1,
+        "score_reason": "该论文为政治新闻，与实验室所有研究方向（超导、拓扑、磁性、重费米子等）及实验手段均无任何关联。",
+        "summary_cn": "本文报道了德国极右翼政党选择党在民调中领先，提出限制学术自由的政策，德国科研机构正对此进行反击。文章聚焦于政治干预对科研独立性的威胁，未涉及任何量子材料或凝聚态物理实验研究。",
+        "abstract_excerpt": "\"Nature, Published online: 29 June 2026; doi:10.1038/d41586-026-01496-7With the far-right Alternative for Germany leading in polls for national and state elections, institutions are facing up to proposed restrictions on academic freedom.\"",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "A native sulfur deposit in Gale crater, Mars",
+        "authors": "Scott J. VanBommel, Jeff A. Berger, Penelope L. King, William E. Dietrich, Ralf Gellert, Lucy M. Thompson, Ashwin R. Vasavada, Alexander B. Bryk, Edwin S. Kite, Joanna V. Clark, Aster C. Cowart, Rebec",
+        "url": "https://www.science.org/doi/abs/10.1126/science.adu5501?af=R",
+        "source": "Science (AOP)",
+        "published": "2026-06-29",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": true,
+        "score": 1,
+        "score_reason": "论文内容为火星地质学，与实验室所有研究方向（超导、拓扑、磁性、STM等）无任何关联。",
+        "summary_cn": "该论文研究火星盖尔陨石坑中的原生硫沉积，属于行星地质学范畴，与实验室量子材料研究方向完全无关，无法提供相关物理内容摘要。",
+        "abstract_excerpt": "No abstract provided for this paper. The study focuses on a native sulfur deposit in Gale crater, Mars, which is unrelated to quantum materials physics.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "An integrated theoretical and numerical approach to understand modern experiments on quantum magnetism",
+        "authors": "Zi Yang Meng, Cristian D. Batista, Shiliang Li",
+        "url": "https://www.nature.com/articles/s41567-026-03304-5",
+        "source": "Nature Physics",
+        "published": "2026-06-29",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": true,
+        "score": 2,
+        "score_reason": "论文聚焦于量子磁性的理论与数值方法，未涉及实验室核心的涡旋物理、STM技术、铁基/铜基/镍基超导、拓扑超导或磁性拓扑材料等任一方向。",
+        "summary_cn": "本文提出，量子磁体模型已预测了许多尚未被实验观测到的激发态现象，但理论与实验之间存在差距。作者认为，只有通过分析理论、数值模拟和实验之间更紧密的协作，才能推动该领域取得实质性进展，并讨论了实现这一目标的关键挑战与机遇。",
+        "abstract_excerpt": "Models of quantum magnets have predicted many exciting phenomena that are yet to be observed. This Perspective argues that much tighter collaboration between analytical theory, numerics and experiments is needed to make progress.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Surface d-orbital order in an intermetallic compound",
+        "authors": "Zhanyang Hao, Haohao Sheng, Wanru Ma, Wengen Zheng, Yongqing Cai, Zijuan Xie, Wanlin Cheng, Zuowei Liang, Wu Xie, Wenjuan Zhao, Chen Liu, Zhibin Su, Junhao Lin, Liusuo Wu, Zhengtai Liu, Mao Ye, Ji Dai",
+        "url": "https://www.nature.com/articles/s41567-026-03359-4",
+        "source": "Nature Physics",
+        "published": "2026-06-29",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": true,
+        "score": 2,
+        "score_reason": "仅涉及ARPES技术（+1分），但研究主题（表面d轨道序）与实验室所有核心方向均无直接关联。",
+        "summary_cn": "本文通过角分辨光电子能谱（ARPES）等手段，在一种金属间化合物表面发现了来自稀土5d电子的轨道序。该轨道序无伴随结构或磁有序，为关联材料中轨道序的存在提供了明确的能带结构指纹。",
+        "abstract_excerpt": "Whether orbital order can exist with a clear band-structure fingerprint in correlated materials has remained unresolved. Now an orbital order from rare earth 5d electrons without structural or magnetic order is seen in an intermetallic compound.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Exchange-mediated spin–electric control of single molecules on surfaces",
+        "authors": "Paul Greule, Wantong Huang, Máté Stark, Kwan Ho Au-Yeung, Johannes Schwenk, Jose Reina-Gálvez, Christoph Sürgers, Wolfgang Wernsdorfer, Christoph Wolf, Philip Willke",
+        "url": "https://www.nature.com/articles/s41567-026-03353-w",
+        "source": "Nature Physics",
+        "published": "2026-06-29",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": true,
+        "score": 2,
+        "score_reason": "研究内容为单分子自旋电控制，与实验室核心研究方向（超导、拓扑、磁性等）均无直接关联，仅涉及扫描隧道显微镜技术，相关性低。",
+        "summary_cn": "本文通过扫描隧道显微镜，研究了两种单分子体系中的自旋-电耦合效应。实验发现，分子间的交换相互作用能够实现电场对自旋态的调控，且该机制不同于传统的电场-自旋耦合方式。这一发现为基于分子自旋的量子技术提供了新的控制手段。",
+        "abstract_excerpt": "“Single molecules that host isolated spins are promising candidates for applications in quantum technologies. Now it is shown that exchange interactions enable electric control of spins in two different molecular species.”",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Coexistence of liquid-like disordered state and weak ferromagnetism in a s = 1 kagome lattice",
+        "authors": "J. Khatua, Taeyun Kim, Chanhyeon Lee, U. Jena, P. Khuntia, Gyungbin Ban, Y.-S. Choi, Jonas A. Krieger, Thomas J. Hicken, Hubertus Luetkens, Marc Uhlarz, Suyoung Kim, Eundeok Mun, Hiroyuki Nojiri, Kwan",
+        "url": "https://www.nature.com/articles/s41535-026-00917-0",
+        "source": "npj Quantum Mater.",
+        "published": "2026-06-29",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": true,
+        "score": 2,
+        "score_reason": "与实验室核心方向（超导、拓扑、STM、ARPES等）均无直接关联，仅涉及Kagome磁性研究，未命中任何加分项。",
+        "summary_cn": "本文报道了自旋1 Kagome晶格中类液体无序态与弱铁磁性的共存现象。通过磁化率、比热和μSR等实验，发现低温下体系同时呈现自旋液体的无序特征和弱铁磁有序，为理解几何阻挫体系中的新奇磁态提供了重要线索。",
+        "abstract_excerpt": "\"Coexistence of liquid-like disordered state and weak ferromagnetism in a s = 1 kagome lattice.\" The study reveals a unique magnetic state where a liquid-like disordered spin state coexists with weak ferromagnetism, providing insights into the interplay of frustration and ordering in the kagome lattice.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Noise-enhanced ballistic expansion of polariton wave-packets in a multimode cavity",
+        "authors": "Ilia Tutunnikov, Md Qutubuddin, H. R. Sadeghpour, Jianshu Cao",
+        "url": "https://www.nature.com/articles/s42005-026-02708-2",
+        "source": "Communications Physics",
+        "published": "2026-06-29",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": true,
+        "score": 1,
+        "score_reason": "与实验室所有研究方向（量子材料、超导、拓扑、STM等）均无关，属于极化子光学物理。",
+        "summary_cn": "本文采用随机多模Tavis-Cummings模型研究腔极化子波包在退相噪声下的动力学。研究发现噪声能诱导一系列动力学机制，增强弹道膨胀并显著延长其持续时间。结果与近年显微镜测量吻合，为优化极化子体系能量输运提供新见解。",
+        "abstract_excerpt": "Advances in optical measurements have improved our ability to track cavity polariton wave-packets, yet the impact of dephasing on their dynamics over time remains poorly understood. Here, the authors employ a stochastic multimode Tavis-Cummings model to reveal that dephasing noise induces a hierarchy of dynamical regimes, enhancing ballistic spreading and extending its duration significantly.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Tropical origins of the recent trends in Northern Hemisphere wintertime jet streams",
+        "authors": "Gwendal Rivière, Sébastien Fromang, Sebastian Schemm",
+        "url": "https://www.nature.com/articles/s41467-026-74980-3",
+        "source": "Nature Communications",
+        "published": "2026-06-29",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "研究主题为大气急流与降水趋势，与实验室超导、拓扑、量子材料等方向完全无关。",
+        "summary_cn": "本研究揭示了冬季北太平洋和北大西洋急流近期趋势与北太平洋强降水事件增多有关，而后者受到热带太平洋降水趋势的驱动。通过气候模式与观测数据分析，建立了热带-中纬度环流联系。",
+        "abstract_excerpt": "This study shows that the recent trends in the North Pacific and the North Atlantic jet streams in winter are linked to an increased number of intense North Pacific precipitation events, which are in turn favored by tropical Pacific precipitation trends.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Universal convolution from wave dynamics: photonic processing and encryption in synthetic dimension",
+        "authors": "Xiaolong Su, Weiwei Liu, Ruiqian Cheng, Haoru Zhang, Xinyao Guo, He Huang, Chengzhi Qin, Peixiang Lu, Bing Wang",
+        "url": "https://www.nature.com/articles/s41467-026-74530-x",
+        "source": "Nature Communications",
+        "published": "2026-06-29",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "论文主题为光子学合成维度与波动力学卷积，与本实验室超导、拓扑、磁性、重费米子等所有研究方向均无关。",
+        "summary_cn": "该研究提出并实验证明，波在合成光子晶格中的演化能够天然执行卷积运算，无需传统光学卷积所需的复杂光学元件。基于此原理，实现了高通量光子卷积处理和光学加密，为光学计算与信息安全提供了新思路。",
+        "abstract_excerpt": "Convolution is a key operation in image processing, artificial intelligence and signal analysis. Here, the authors demonstrate that wave evolution in synthetic photonic lattices naturally performs convolution, enabling high-throughput photonic processing and optical encryption.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Gas-phase unfolding assay rapidly predicts structure-function relationships in engineered antibodies with tuned flexibilities",
+        "authors": "Rosendo C. Villafuerte-Vega, Michael R. Armbruster, Hayden Fisher, Isabel G. Elliott, H. T. Claude Chan, Tatyana Inzhelevskaya, C. Ian Mockridge, Christine A. Penfold, Patrick J. Duriez, Mark S. Cragg",
+        "url": "https://www.nature.com/articles/s41467-026-75137-y",
+        "source": "Nature Communications",
+        "published": "2026-06-29",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "论文研究抗体结构与功能，属于生物化学/免疫学领域，与实验室量子材料、超导、拓扑物理等所有方向均无关。",
+        "summary_cn": "本文开发了一种快速质谱分析方法，通过测量气相展开过程来评估全长IgG2抗体的铰链区柔性，并预测工程化抗体变体的激动活性。该方法无需复杂标记，可在几分钟内完成，有效替代传统耗时测量，为抗体结构-功能关系研究提供了高通量筛选工具。",
+        "abstract_excerpt": "\"The agonistic activity of IgG2 antibodies depends, in part, on the flexibility of their hinge region, which is slow to measure in full-length antibodies. Here, the authors develop a rapid mass spectrometry assay that gauges this flexibility and predicts the agonism of engineered antibody variants.\"",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Impact of molecular multimodality on neural network models for prediction tasks related to drug discovery",
+        "authors": "Marcos Martínez Galindo, Marco Luca Sbodio, Mykhaylo Zayats, Rodrigo Ordonez-Hurtado, Raúl Fernández-Díaz, Vanessa López García, Hoang Thanh Lam",
+        "url": "https://www.nature.com/articles/s41467-026-74487-x",
+        "source": "Nature Communications",
+        "published": "2026-06-29",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "与实验室所有研究方向（超导、拓扑、STM、磁性、重费米子等）均无任何关联，属于药物发现领域。",
+        "summary_cn": "本文研究了分子多模态数据（如结构、序列、图像等）对神经网络药物发现预测模型的影响。结果表明多模态方法通过有效融合能提升预测性能，简单的晚期融合方法即可达到最先进水平。",
+        "abstract_excerpt": "Here, the authors examine whether combining multiple molecular data types improves drug discovery models, finding multimodal approaches boost predictions with effective fusion, and even simple late-fusion methods can reach state-of-the-art performance.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Extracting the transitivity backbone of bipartite networks",
+        "authors": "Lucía S. Ramirez, Roya Aliakbarisani, M. Ángeles Serrano, Marián Boguñá",
+        "url": "https://www.nature.com/articles/s41467-026-74723-4",
+        "source": "Nature Communications",
+        "published": "2026-06-29",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "该论文属于网络科学领域，与实验室铁基/铜基/镍基超导、拓扑、STM等所有研究方向完全无关。",
+        "summary_cn": "本文提出一种基于聚类的节点级滤波方法，用于提取二部网络的传递性骨干。该方法能够识别维持网络连通性和预测性能的有意义结构，为二部网络中的非特定连接关系提供简化且可解释的表示。",
+        "abstract_excerpt": "\"Real bipartite networks combine structured relations with non-specific connectivity. Here, authors introduce a clustering-based node-level filtering method that extracts the transitivity backbone, identifying meaningful structure that sustains connectivity and preserves predictive performance.\"",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Hydrogen reduced interstitial-vacancy cluster recombination in metals",
+        "authors": "Yu-Hao Li, Fang-Fei Ma, Hao-Xuan Huang, Yi-Chun Hua, Li-Min Liu, Hong-Bo Zhou, Guang-Hong Lu",
+        "url": "https://www.nature.com/articles/s41467-026-75035-3",
+        "source": "Nature Communications",
+        "published": "2026-06-29",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "研究方向为金属中氢与缺陷复合，与实验室超导、拓扑、磁性等方向完全无关。",
+        "summary_cn": "本文提出了一个预测模型来定量描述氢还原的缺陷复合半径，并在此基础上建立了多尺度建模框架以描述氢稳定的位移损伤，理论结果与实验高度吻合。",
+        "abstract_excerpt": "A predictive model is proposed to quantify the H-reduced defect recombination radii. Building on this model, a multiscale modelling framework is developed to describe H-stabilized displacement damage, yielding excellent agreement with experiments.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Autonomous Motion Vision with Tri-bulk-heterojunctioned Organic Adaptation Transistor",
+        "authors": "Zepang Zhan, Weijie Wang, Weichen Bai, Chengyu Zhang, Wei Wang, Yutao Ge, Zixuan Liu, Yunjiang Zi, Liyao Liu, Xiaojuan Dai, Ye Zou, Daoben Zhu, Chong-an Di",
+        "url": "https://www.nature.com/articles/s41467-026-74905-0",
+        "source": "Nature Communications",
+        "published": "2026-06-29",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 2,
+        "score_reason": "论文研究有机晶体管仿生视觉器件，与实验室铁基/铜基/镍基超导、拓扑超导、磁性拓扑、重费米子、量子相变、STM/ARPES等方向完全无关。",
+        "summary_cn": "本文报道了一种基于三体异质结有机适应晶体管的新型自主运动视觉传感器，可同时实现运动分析和运动目标提取。该器件模拟人眼运动感知机制，在自主路径规划任务中显著提升了安全性。研究展示了有机半导体在仿生视觉中的应用潜力。",
+        "abstract_excerpt": "\"Motion vision sensors typically perform motion analysis and moving-object extraction separately. Here, the authors develop an organic adaptation transistor that simultaneously extracts and analyses moving objects, achieving human-eye-like motion perception and improving safety in autonomous route-planning tasks.\"",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Complete enzyme clustering enhances coenzyme Q biosynthesis via substrate channeling",
+        "authors": "Dianzhuo Wang, Andrea Gottinger, Jio Jeong, Callum R. Nicoll, Junlang Liu, Tereza Kadavá, Domiziana Cecchini, Marco Malatesta, Albert J. R. Heck, Andrea Mattevi, Eugene I. Shakhnovich",
+        "url": "https://www.nature.com/articles/s41467-026-74806-2",
+        "source": "Nature Communications",
+        "published": "2026-06-29",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "论文关于生物酶促反应与代谢，与实验室量子材料/超导/拓扑等研究方向完全无关。",
+        "summary_cn": "通过实验与模拟，作者发现弱蛋白质相互作用驱动形成完整的COQ酶簇，在接近临界相变区域通过底物通道化最大化辅酶Q的产生。该研究揭示了酶簇化在代谢调控中的关键作用。",
+        "abstract_excerpt": "Using experiments and simulations, the authors show that weak protein interactions drive formation of complete COQ enzyme clusters. They maximize coenzyme Q production through substrate channeling near a critical phase-transition regime.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Electrochemical Nitrogen Reduction for Green Ammonia: Mechanistic Insights and Advanced Materials Design",
+        "authors": "Aslam Hossain, \nJun Ho Shim",
+        "url": "https://onlinelibrary.wiley.com/doi/10.1002/smll.74213?af=R",
+        "source": "Small",
+        "published": "2026-06-29",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "论文内容为电化学合成氨催化剂综述，与实验室超导、拓扑、磁性、重费米子、量子相变及STM/ARPES研究方向均无关联。",
+        "summary_cn": "该综述整合了电化学氮还原合成氨的机理、先进催化剂设计与可扩展工程方法，讨论了单原子、双原子、空位工程及无金属催化剂体系，强调协同活性位点、电子结构调控和缺陷化学对N₂活化、中间体稳定及析氢抑制的作用，并论述了电解液、界面工程和反应器优化策略，为规模化电化学合成氨提供路径。",
+        "abstract_excerpt": "“Electrochemical nitrogen reduction reaction (NRR) provides a promising pathway for sustainable ammonia synthesis under ambient conditions and direct integration with renewable electricity. ... In this Review, we present an integrative perspective on electrocatalytic NRR that links reaction kinetics, descriptor‐guided materials design, and reactor‐level considerations. ... By connecting catalyst design, mechanistic descriptors, reactor constraints, and techno‐economic targets, this Review outlines credible pathways toward scalable electrochemical ammonia production.”",
+        "deep_analysis": "",
+        "included": false
+      }
+    ]
   }
 };
