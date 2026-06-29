@@ -224767,7 +224767,7 @@ window.PAPER_DATA = {
   },
   "2026-06-29": {
     "date": "2026-06-29",
-    "generated": "2026-06-29 09:05",
+    "generated": "2026-06-29 11:21",
     "lookback_days": 2.0,
     "total": 11,
     "included": 0,
@@ -224779,18 +224779,15 @@ window.PAPER_DATA = {
       },
       "arxiv:cond-mat.str-el": {
         "count": 0,
-        "error": "HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=40)",
-        "rss_fallback": true
+        "error": null
       },
       "arxiv:cond-mat.mes-hall": {
         "count": 0,
-        "error": "429 Client Error: Too Many Requests for url: https://export.arxiv.org/api/query?search_query=cat%3Acond-mat.mes-hall&start=0&max_results=150&sortBy=submittedDate&sortOrder=descending",
-        "rss_fallback": true
+        "error": null
       },
       "arxiv:cond-mat.mtrl-sci": {
         "count": 0,
-        "error": "429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=cat%3Acond-mat.mtrl-sci&start=0&max_results=150&sortBy=submittedDate&sortOrder=descending",
-        "rss_fallback": true
+        "error": null
       },
       "Nature": {
         "count": 0,
@@ -224876,8 +224873,8 @@ window.PAPER_DATA = {
         "is_stm": false,
         "is_premium": false,
         "score": 1,
-        "score_reason": "与实验室研究方向（铁基/铜基/镍基超导、拓扑、磁性、重费米子等）完全无关，属于植物基因组学领域。",
-        "summary_cn": "该研究组装了多个野生番茄品种的基因组，揭示结构变异和重复序列作为重组屏障，影响减数分裂重组。通过比较基因组分析，发现繁殖性别和结构变异对重组频率和分布有显著作用。这些发现为利用野生番茄基因改良栽培品种提供了基因组资源。",
+        "score_reason": "论文研究对象为野生番茄基因组，与实验室超导、拓扑、磁性等研究方向完全无关。",
+        "summary_cn": "该研究组装了多个野生番茄的基因组，通过比较分析发现结构变异和重复序列是减数分裂重组的主要障碍。研究揭示了性别与基因组结构如何共同影响重组频率，为作物遗传改良提供了基因组资源。",
         "abstract_excerpt": "Introgression of genes from wild tomato species can enhance the robustness of modern tomatoes. Here van Rengs et al. describe the genomes of wild tomato species and show how reproductive gender and structural variation influence meiotic recombination.",
         "deep_analysis": "",
         "included": false
@@ -224892,9 +224889,9 @@ window.PAPER_DATA = {
         "is_stm": false,
         "is_premium": false,
         "score": 1,
-        "score_reason": "论文为锂电池催化剂综述，与实验室所有量子材料研究方向（超导、拓扑、磁性、重费米子等）及实验手段均无关联。",
-        "summary_cn": "本文系统综述了锰氧化物（MnOx）作为锂-氧气电池正极催化剂的研究进展，重点阐述其隧道、层状和尖晶石结构对氧反应路径的调控机制，以及通过缺陷工程、杂原子掺杂、复合构筑等策略优化Li₂O₂形成/分解行为、降低过电位、提高循环稳定性的方法。",
-        "abstract_excerpt": "\"How do the morphologies, crystal structures, and electronic properties of manganese oxides influence oxygen reaction pathways in lithium–oxygen batteries (LOBs)? This review systematically summarizes structure‐dependent catalytic mechanisms and recent engineering strategies, highlighting how defect engineering, compositional modulation, and reaction‐pathway regulation enhance reversibility and advance practical high‐energy LOB systems.\"",
+        "score_reason": "完全不相关，论文研究锂氧电池催化剂，与实验室量子材料、超导、拓扑等方向无任何交集。",
+        "summary_cn": "本文系统综述了锰氧化物（MnOx）作为锂氧电池正极催化剂的晶体结构、电子性质及催化机制，重点讨论了孔结构调控、表面位点调制、缺陷工程、杂原子掺杂和复合材料构建等策略对过氧化锂形成/分解行为的影响，旨在通过结构-活性关系指导高可逆性、长循环锂氧电池催化剂的设计。",
+        "abstract_excerpt": "“Manganese oxides (MnOx) have emerged as promising cathode catalysts because of their abundance, low cost, tunable oxidation states, and diverse structural features. … This review summarizes recent advances in MnOx‐based catalysts for non‐aqueous LOBs, emphasizing structure‐activity relationships and mechanistic understanding. By outlining remaining challenges and key design guidelines, we aim to support the rational development of next‐generation catalysts for practical LOB deployment.”",
         "deep_analysis": "",
         "included": false
       },
@@ -224908,9 +224905,9 @@ window.PAPER_DATA = {
         "is_stm": false,
         "is_premium": false,
         "score": 1,
-        "score_reason": "完全不涉及实验室核心方向（超导、拓扑、磁性、重费米子等）及任何加分项，属于电池材料领域，仅给基础分。",
-        "summary_cn": "本文提出高熵P2/O3双相策略，通过多元素过渡金属取代优化P2型层状氧化物正极，抑制不可逆P2→O2相变和有害晶格滑移，增强平面滑移可逆性与结构稳定性。优化后的Na0.7Ni0.33Mn0.4Ti0.1Fe0.07Co0.1O2电极展现出优异倍率性能、高倍率循环稳定性、空气/湿气稳定性及全电池应用潜力。",
-        "abstract_excerpt": "\"The optimized P2/O3 biphasic high‐entropy strategy effectively suppresses irreversible phase transition and harmful lattice gliding that typically occur in the pristine P2‐phase structure with Na+/vacancy ordering. The obtained electrode delivers slight planar gliding and excellent structural reversibility, showcasing prominent rate capability and good cycling stability at high rates, good air and moisture environment stability, and full‐cell application potential.\"",
+        "score_reason": "完全不相关。研究内容为钠离子电池正极材料，与实验室量子材料、超导、拓扑、STM等方向无关。",
+        "summary_cn": "本文通过多元素过渡金属取代设计高熵P2/O3双相正极材料（Na₀.₇Ni₀.₃₃Mn₀.₄Ti₀.₁Fe₀.₀₇Co₀.₁O₂），抑制了有害的P2→O2相变和不可逆晶格滑移，增强了结构可逆性。优化后的电极展现出优异的倍率性能、高倍率循环稳定性及空气/水分稳定性，适用于全电池应用。",
+        "abstract_excerpt": "\"The rational coupling of high-entropy engineering with a P2/O3 biphasic strategy enables precise tuning of phase ratios and uniform cation distribution, which effectively suppresses the detrimental P2→O2 transition and improves the reversibility of planar gliding while enhancing Na+ diffusion kinetics. The optimized biphasic high-entropy Na₀.₇Ni₀.₃₃Mn₀.₄Ti₀.₁Fe₀.₀₇Co₀.₁O₂ (P2/O3‐N0.7) electrode delivers prominent rate capability and good cycling stability at high rates.\"",
         "deep_analysis": "",
         "included": false
       },
@@ -224924,9 +224921,9 @@ window.PAPER_DATA = {
         "is_stm": false,
         "is_premium": false,
         "score": 1,
-        "score_reason": "论文属于生物医学工程与胶质母细胞瘤研究，与实验室量子材料、超导、拓扑等所有方向均不相关。",
-        "summary_cn": "该研究开发了一种微流控芯片模型，模拟胶质母细胞瘤边缘的血脑肿瘤屏障，整合了正常星形胶质细胞和患者来源的胶质瘤细胞3D网络。模型揭示了患者间屏障完整性和药物敏感性的差异，并通过与临床结果对比验证了其预测个性化药物反应的能力，为胶质母细胞瘤的个性化治疗评估提供了新工具。",
-        "abstract_excerpt": "\"Here we report a microengineered model that mimics the BBTB within the GBM margin, incorporating a 3D network of normal astrocytes and GBM cells isolated from patients newly diagnosed with GBM. ... We compare patient‐specific tumor responses to conventional chemotherapy and immune polarization in our BBTB on a chip model with clinical outcomes, demonstrating the capability of the model to predict personalized drug responses.\"",
+        "score_reason": "论文为生物医学微流控芯片模型，与实验室量子材料、超导、STM/ARPES等研究方向完全无关。",
+        "summary_cn": "该研究开发了一种微流控芯片模型，模拟胶质母细胞瘤（GBM）边缘的血脑肿瘤屏障（BBTB），整合了正常星形胶质细胞和患者来源的GBM细胞的三维网络。模型揭示了患者间屏障完整性和药物敏感性的差异，并能预测个性化化疗和免疫极化反应，为GBM的个性化治疗评估提供了工具。",
+        "abstract_excerpt": "Here we report a microengineered model that mimics the BBTB within the GBM margin, incorporating a 3D network of normal astrocytes and GBM cells isolated from patients newly diagnosed with GBM. ... We compare patient-specific tumor responses to conventional chemotherapy and immune polarization in our BBTB on a chip model with clinical outcomes, demonstrating the capability of the model to predict personalized drug responses.",
         "deep_analysis": "",
         "included": false
       },
@@ -224940,9 +224937,9 @@ window.PAPER_DATA = {
         "is_stm": false,
         "is_premium": false,
         "score": 1,
-        "score_reason": "论文研究锂电池电解液，与实验室超导、拓扑、STM等所有方向均无关，无任何命中项。",
-        "summary_cn": "本文开发了一种耐高湿、高电压的锂金属电池电解液，通过引入全氟辛基三乙氧基硅烷（PFOTS）作为共溶剂。PFOTS与Li⁺弱相互作用形成分子级疏水屏障，同时水解Si-O键主动清除残留水，抑制LiPF₆水解。此外，PFOTS优先分解形成梯度电极-电解液界面。Li/LiNi₀.₈Co₀.₁Mn₀.₁O₂电池在4.4 V下循环600次后容量保持90%，并在含0.5 vol%水条件下仍保持稳定。",
-        "abstract_excerpt": "\"The weak solvation of PFOTS with Li⁺ forms a molecular hydrophobic shield, enabling efficient water scavenging and suppressing LiPF₆ hydrolysis. PFOTS also preferentially decomposes to form a robust electrode–electrolyte interphase. Consequently, Li/LiNi₀.₈Co₀.₁Mn₀.₁O₂ cells achieves 90% capacity retention after 600 cycles at 4.4 V and 87% after 400 cycles at 4.7 V.\"",
+        "score_reason": "完全偏离实验室研究方向（超导、拓扑、磁性、重费米子等），属于电池电解质领域，无任何相关关键词。",
+        "summary_cn": "本文报道了一种耐高湿的高压锂金属电池电解液。通过引入全氟辛基三乙氧基硅烷（PFOTS）作为共溶剂，形成分子疏水屏障，有效清除残留水分并抑制LiPF6水解。PFOTS优先分解形成稳定的电极/电解液界面。Li/LiNi0.8Co0.1Mn0.1O2电池在4.4 V下循环600次后容量保持90%，在4.7 V下循环400次后保持87%，且在添加0.5 vol%水（露点15°C）时仍能稳定循环。",
+        "abstract_excerpt": "\"Lithium–metal batteries (LMBs) paired with high‐voltage cathodes hold considerable commercial promise. ... Consequently, Li/LiNi0.8Co0.1Mn0.1O2 cells achieves 90% capacity retention after 600 cycles at 4.4 V and 87% after 400 cycles at 4.7 V. ... This unique electrolyte system not only significantly enhances the high‐voltage performance of LMBs, but also alleviates the stringent humidity control requirements during manufacturing.\"",
         "deep_analysis": "",
         "included": false
       },
@@ -224956,8 +224953,8 @@ window.PAPER_DATA = {
         "is_stm": false,
         "is_premium": false,
         "score": 1,
-        "score_reason": "完全不相关。论文研究锂电池电解质，与实验室超导、拓扑、磁性等凝聚态物理方向无关。",
-        "summary_cn": "本文设计了一种两性离子动态超分子弹性体电解质，通过两性离子和脲-嘧啶酮链段实现高离子电导率（9.55×10⁻⁴ S cm⁻¹）和宽电化学窗口（5.3 V），从强粘附锂负极、均匀锂通量和富无机界面三方面抑制枝晶，实现稳定的高能锂金属电池。",
+        "score_reason": "与实验室研究方向（超导、拓扑、磁性、量子相变等）完全无关，属于电池电解质材料。",
+        "summary_cn": "设计了一种柔性两性离子动态超分子弹性体电解质，通过两性离子和脲-嘧啶酮连接体实现高离子电导率（9.55×10⁻⁴ S cm⁻¹）和宽电化学窗口（5.3 V）。该电解质通过强粘附锂负极、均匀锂离子通量和富无机界面三个机制抑制枝晶生长，最终实现稳定高能量密度锂金属电池。",
         "abstract_excerpt": "\"To simultaneously address the challenges of lithium (Li) dendrite growth, low ionic conductivity, and limited oxidative stability in lithium metal batteries (LMBs), flexible zwitterionic dynamic supramolecular elastomer electrolytes (DSEEs) with (bis(2‐hydroxyethyl)‐methyl‐(3‐sulfopropyl) azanium) and (2‐ureido‐4‐pyrimidinone) as chain extenders are proposed. ... Notably, the DSEE with balanced zwitterion and hydrogen‐bonding density exhibits robust adhesion with a high shear strength (21.0 N cm⁻²), a high ionic conductivity (9.55 × 10⁻⁴ S cm⁻¹), and a wide electrochemical stability window (5",
         "deep_analysis": "",
         "included": false
@@ -224972,9 +224969,9 @@ window.PAPER_DATA = {
         "is_stm": false,
         "is_premium": false,
         "score": 1,
-        "score_reason": "完全偏离实验室超导、拓扑、磁性、STM等核心研究方向，属于光电催化材料，无任何相关加分项。",
-        "summary_cn": "本文通过水热法合成了具有梯度Mo掺杂和[100]择优取向的CuWO4薄膜（CuWxMo1-xO4）。利用钨、钼多酸物种结晶行为差异，构建了垂直于基底方向的连续W/Mo组分梯度，形成阶梯能带结构。该梯度能带与晶体取向协同作用，有效加速光生载流子分离与传输，使薄膜获得1.53 mA cm⁻²的高光电流密度，并在50小时内保持稳定。工作表明梯度能带工程可克服CuWO4电荷传输限制。",
-        "abstract_excerpt": "“Herein, a gradient Mo‐doped CuWO4 film (CuWxMo1‐xO4) with preferential [100] crystal orientation was constructed via a facile hydrothermal route… Such stepwise band engineering, synergistically coupled with crystallographic orientation control, effectively accelerates the separation and transport of photogenerated carriers. As a result, the CuWxMo1‐xO4 film delivers a high photocurrent density of 1.53 mA cm−2, and presenting limited decay in 50 h.”",
+        "score_reason": "论文内容为光电化学水分解，与实验室所有超导、拓扑、磁性、重费米子、STM/ARPES等研究方向完全无关。",
+        "summary_cn": "本文通过水热法构建了具有梯度Mo掺杂和[100]择优取向的CuWO₄薄膜（CuWₓMo₁₋ₓO₄），利用异多钨酸与异多钼酸物种的不同结晶行为形成垂直于衬底的连续W/Mo组分梯度，产生阶梯能带弯曲，协同晶体取向控制加速光生载流子分离与传输，获得1.53 mA cm⁻²的高光电流密度及50小时稳定性。",
+        "abstract_excerpt": "“Herein, a gradient Mo‐doped CuWO₄ film (CuWₓMo₁₋ₓO₄) with preferential [100] crystal orientation was constructed via a facile hydrothermal route. Owing to the distinct crystallization behaviors of isopolytungstate and isopolymolybdate species, a continuous W/Mo compositional gradient is established along the direction perpendicular to the conductive substrate, giving rise to a stepwise band profile across the film thickness. Such stepwise band engineering, synergistically coupled with crystallographic orientation control, effectively accelerates the separation and transport of photogenerated ",
         "deep_analysis": "",
         "included": false
       },
@@ -224988,9 +224985,9 @@ window.PAPER_DATA = {
         "is_stm": false,
         "is_premium": false,
         "score": 1,
-        "score_reason": "论文研究电催化制氨，与实验室超导、拓扑、磁性材料等研究方向完全无关，未命中任何加分项。",
-        "summary_cn": "本文通过铜泡沫重构设计不对称Cu0/Cu+界面，用于中性介质中低浓度硝酸盐电催化还原制氨。Cu2O/Cu泡沫催化剂在14 ppm NO3--N浓度下实现15分钟内100%转化为NH3，去除率99.9%，产能0.39 mmol/h/cm2，达到WHO安全标准，为可持续氮管理提供新路径。",
-        "abstract_excerpt": "\"The electrocatalytic conversion of nitrate to ammonia in neutral media offers profound potential for sustainable nitrogen management, albeit it has been critically impeded by persistent hurdles such as the sluggish kinetics and competitive adsorption of H2O molecules. Herein, we report the reconstruction of copper foam to engineer asymmetric Cu0/Cu+ interfaces for electrocatalytic nitrate to ammonia conversion in neutral conditions with ultralow nitrate concentration. ... under conditions of ultralow nitrate concentration (14 ppm NO3−-N), the Cu2O/Cu foam electrocatalyst demonstrates a remark",
+        "score_reason": "论文涉及电催化制氨，与实验室量子材料、超导、STM/ARPES等所有研究方向均无关联，未命中任何加分项。",
+        "summary_cn": "本文通过铜泡沫重构设计不对称Cu⁰/Cu⁺界面（Cu₂O/Cu电催化剂），在中性介质中实现超低浓度硝酸盐向氨的高效电催化转化。在14 ppm NO₃⁻-N浓度下，15分钟内NO₃⁻完全转化为NH₃，去除率99.9%，产氨速率0.39 mmol/h/cm²，达到WHO安全标准，为可持续氮管理提供新途径。",
+        "abstract_excerpt": "\"The electrocatalytic conversion of nitrate to ammonia in neutral media offers profound potential for sustainable nitrogen management, albeit it has been critically impeded by persistent hurdles such as the sluggish kinetics and competitive adsorption of H₂O molecules. Herein, we report the reconstruction of copper foam to engineer asymmetric Cu⁰/Cu⁺ interfaces for electrocatalytic nitrate to ammonia conversion in neutral conditions with ultralow nitrate concentration. ... the Cu₂O/Cu foam electrocatalyst demonstrates a remarkable 100% conversion of NO₃⁻ to NH₃ within 15 min, with a NO₃⁻ remov",
         "deep_analysis": "",
         "included": false
       },
@@ -225004,9 +225001,9 @@ window.PAPER_DATA = {
         "is_stm": false,
         "is_premium": false,
         "score": 1,
-        "score_reason": "论文研究CZTS太阳能电池的填充因子损失，与实验室超导、拓扑、磁性等所有方向完全无关。",
-        "summary_cn": "本文通过集成实验-模拟框架，定量解耦了硫化物CZTS太阳能电池的填充因子（FF）损失通道。结合多种电学和光学表征与二极管方程建模，将FF亏损分解为缺陷复合、肖特基背接触势垒和载流子提取效率损失。发现Cd合金化可抑制Sn相关缺陷、消除背接触势垒并改善收集，使FF从53.9%提升至65.2%，效率达12.1%。Ag协同合金化进一步将FF提升至71.0%，效率达12.5%。",
-        "abstract_excerpt": "\"Here, we establish an integrated experimental‐simulation framework to quantitatively disentangle FF loss channels in solution‐processed sulfide CZTS solar cells. ... Using Cd‐alloyed CZTS as a model system, we find that Cd incorporation suppresses Sn‐related defect recombination, eliminates back‐contact barriers, and improves carrier collection, collectively enhancing the FF from 53.9% to 65.2%, accompanied by an efficiency increase from 7.3% to 12.1%.\"",
+        "score_reason": "完全偏离实验室研究方向（超导、拓扑、磁性、重费米子等），属于光伏材料领域，无任何交叉得分项。",
+        "summary_cn": "本文建立了一个集成实验-模拟框架，定量分解了硫族CZTS太阳能电池中的填充因子损失渠道。通过结合温度依赖光致发光、深能级瞬态光谱、阻抗谱和瞬态光电流/光电压测量与二极管方程建模，将填充因子缺陷分解为缺陷复合、肖特基背接触势垒和载流子提取效率损失。Cd和Ag合金化抑制了Sn相关缺陷，消除了背接触势垒，将填充因子提升至71%，效率达12.5%。",
+        "abstract_excerpt": "Here, we establish an integrated experimental-simulation framework to quantitatively disentangle FF loss channels in solution-processed sulfide CZTS solar cells. ... the total FF deficit is decomposed into contributions from defect-mediated recombination, Schottky-type back-contact barriers, and carrier extraction inefficiencies. ... Cd incorporation suppresses Sn-related defect recombination, eliminates back-contact barriers, and improves carrier collection, collectively enhancing the FF from 53.9% to 65.2%, accompanied by an efficiency increase from 7.3% to 12.1%.",
         "deep_analysis": "",
         "included": false
       },
@@ -225019,10 +225016,10 @@ window.PAPER_DATA = {
         "arxiv_id": null,
         "is_stm": false,
         "is_premium": false,
-        "score": 1,
-        "score_reason": "论文研究二维MOF热传导，与实验室所有超导、拓扑、磁性、重费米子等方向均无关，无任何关键词命中。",
-        "summary_cn": "本文通过多尺度分子模拟结合深度神经网络势，以镍基双硫烯及其衍生物为例，揭示了如何利用层次结构设计（配位几何修饰、缺陷与无序工程、尺寸控制）调控二维MOF的热导率，实现了跨越三个数量级的可调热导率和可控各向异性。",
-        "abstract_excerpt": "\"Our findings based on multiscale molecular simulations with deep neural‐network potential provide a unified understanding on how to take full advantage of their structural pre‐designability to manipulate thermal conductivity in 2D MOFs. It is proven that hierarchical structural modifications (including coordination geometry modification, defect and disorder engineering, and size control) endow them with ultrahighly tunable thermal conductivities and controllable anisotropy.\"",
+        "score": 2,
+        "score_reason": "论文研究二维MOF热输运，与实验室超导、拓扑、磁性等方向均无关联，仅属材料物理一般领域。",
+        "summary_cn": "本文利用多尺度分子模拟结合深度神经网络势，以镍基双二硫醇烯及其衍生物为例，系统研究了二维MOF热导率的调控机制。发现层级结构修饰（配位几何、缺陷与无序、尺寸控制）可实现热导率跨越三个数量级的调控以及可控各向异性，为设计MOF基热功能材料提供了新思路。",
+        "abstract_excerpt": "Our findings based on multiscale molecular simulations with deep neural‐network potential provide a unified understanding on how to take full advantage of their structural pre‐designability to manipulate thermal conductivity in 2D MOFs. It is proven that hierarchical structural modifications (including coordination geometry modification, defect and disorder engineering, and size control) endow them with ultrahighly tunable thermal conductivities and controllable anisotropy.",
         "deep_analysis": "",
         "included": false
       },
@@ -225036,9 +225033,9 @@ window.PAPER_DATA = {
         "is_stm": false,
         "is_premium": false,
         "score": 1,
-        "score_reason": "论文研究有机半导体共混薄膜的电荷传输，与实验室所有量子材料、超导、STM等方向完全无关。",
-        "summary_cn": "本文研究绝缘聚合物（PS与ZEONEX）对共轭聚合物J61薄膜相分离动力学和空穴传输的影响。发现PS加速固化，形成垂直连续导电结构并抑制H-聚集体，提高空穴迁移率；而ZEONEX延迟固化，导致横向相分离。揭示了溶剂亲和力驱动的动力学控制作为增强共轭聚合物电荷传输的普适设计原则。",
-        "abstract_excerpt": "Blending J61 with PS significantly shortens the solidification time of J61 domains and more effectively suppresses the formation of H‐aggregates compared to blending with ZEONEX. This rapid solidification kinetically preserves the solution‐state planar backbone conformation of J61, resulting in superior hole mobility relative to both the J61 neat film and J61/ZEONEX blend film. These findings provide mechanistic insights into how insulating polymers regulate film‐formation kinetics and molecular aggregation, offering a rational strategy for enhancing charge transport in conjugated polymers thr",
+        "score_reason": "完全不涉及实验室任何研究方向（超导、拓扑、磁性、重费米子等），属于有机半导体聚合物领域，无任何加分项。",
+        "summary_cn": "本文研究绝缘聚合物（聚苯乙烯PS与环烯烃共聚物ZEONEX）对共轭聚合物J61薄膜成膜动力学和相分离的影响。发现与PS共混加速固化，保持溶液态平面骨架构象，提升空穴迁移率；而ZEONEX延迟固化，导致横向相分离。揭示了溶剂亲和驱动的动力学控制是增强共轭聚合物电荷传输的通用设计原则。",
+        "abstract_excerpt": "\"Blending J61 with PS significantly shortens the solidification time of J61 domains and more effectively suppresses the formation of H‐aggregates compared to blending with ZEONEX. This rapid solidification kinetically preserves the solution‐state planar backbone conformation of J61, resulting in superior hole mobility relative to both the J61 neat film and J61/ZEONEX blend film. These findings provide mechanistic insights into how insulating polymers regulate film‐formation kinetics and molecular aggregation, offering a rational strategy for enhancing charge transport in conjugated polymers th",
         "deep_analysis": "",
         "included": false
       }
