@@ -241328,5 +241328,281 @@ window.PAPER_DATA = {
         "included": false
       }
     ]
+  },
+  "2026-07-06": {
+    "date": "2026-07-06",
+    "generated": "2026-07-06 09:59",
+    "lookback_days": 2.0,
+    "total": 11,
+    "included": 0,
+    "has_raw": true,
+    "fetch_status": {
+      "arxiv:cond-mat.supr-con": {
+        "count": 0,
+        "error": null
+      },
+      "arxiv:cond-mat.str-el": {
+        "count": 0,
+        "error": null
+      },
+      "arxiv:cond-mat.mes-hall": {
+        "count": 0,
+        "error": null
+      },
+      "arxiv:cond-mat.mtrl-sci": {
+        "count": 0,
+        "error": null
+      },
+      "Nature": {
+        "count": 0,
+        "error": null
+      },
+      "Science": {
+        "count": 0,
+        "error": null
+      },
+      "Science (AOP)": {
+        "count": 0,
+        "error": null
+      },
+      "Science Advances (AOP)": {
+        "count": 0,
+        "error": null
+      },
+      "PNAS": {
+        "count": 0,
+        "error": null
+      },
+      "Nature Physics": {
+        "count": 0,
+        "error": null
+      },
+      "Nature Materials": {
+        "count": 0,
+        "error": null
+      },
+      "npj Quantum Mater.": {
+        "count": 1,
+        "error": null
+      },
+      "Communications Physics": {
+        "count": 2,
+        "error": null
+      },
+      "PRL": {
+        "count": 0,
+        "error": null
+      },
+      "PRB": {
+        "count": 0,
+        "error": null
+      },
+      "PRX": {
+        "count": 0,
+        "error": null
+      },
+      "Physical Review Research": {
+        "count": 0,
+        "error": null
+      },
+      "Reviews of Modern Physics": {
+        "count": 0,
+        "error": null
+      },
+      "Nature Communications": {
+        "count": 8,
+        "error": null
+      },
+      "Nano Letters": {
+        "count": 0,
+        "error": "403 Client Error: Forbidden for url: https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=nalefd"
+      },
+      "ACS Nano": {
+        "count": 0,
+        "error": "403 Client Error: Forbidden for url: https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=ancac3"
+      },
+      "Small": {
+        "count": 0,
+        "error": null
+      }
+    },
+    "papers": [
+      {
+        "title": "Observation of ubiquitous charge correlations and hidden quantum critical point in hole-doped kagome superconductors",
+        "authors": "Ilija K. Nikolov, Giuseppe Allodi, Adrien Rosuel, Ginevra Corsale, Anshu Kataria, Pietro Bonfà, Roberto De Renzi, Andrea Capa Salinas, Stephen D. Wilson, Marc-Henri Julien, Samuele Sanna, Vesna F. Mit",
+        "url": "https://www.nature.com/articles/s41535-026-00916-1",
+        "source": "npj Quantum Mater.",
+        "published": "2026-07-04",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": true,
+        "score": 0,
+        "score_reason": "Request timed out.",
+        "summary_cn": "（AI摘要生成失败）",
+        "abstract_excerpt": "",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Many-body superconductivity in topological flat bands",
+        "authors": "Jonah Herzog-Arbeitman, Aaron Chew, Kukka-Emilia Huhtinen, Päivi Törmä, B. Andrei Bernevig",
+        "url": "https://www.nature.com/articles/s42005-026-02732-2",
+        "source": "Communications Physics",
+        "published": "2026-07-04",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": true,
+        "score": 3,
+        "score_reason": "理论模型研究，未涉及实验室核心材料（铁基/铜基/镍基超导、磁性拓扑等）或实验手段（STM/ARPES），仅与拓扑超导方向有微弱关联。",
+        "summary_cn": "本文提出一族平带Hubbard模型，其基态、Bogoliubov-de-Gennes准粒子及Cooper对均可在解析上严格求解，并得到可解析计算的色散关系。该工作展示了平带超导中多体量子几何效应的精确解框架。",
+        "abstract_excerpt": "\"Superconductivity in flat bands is a central feature of quantum geometric effects, supported by mean-field theory and numerics. Here, the authors exhibit a large family of flat band Hubbard models whose ground states, Bogoliubov-de-Gennes particles, and Cooper pairs are exactly solvable with analytically calculable dispersions.\"",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "On the Euclidean random matrix model of vibrations in glass",
+        "authors": "Florian Vogel, Philipp Baumgärtel, Grzegorz Szamel, Matthias Fuchs",
+        "url": "https://www.nature.com/articles/s42005-026-02730-4",
+        "source": "Communications Physics",
+        "published": "2026-07-04",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": true,
+        "score": 1,
+        "score_reason": "论文主题为玻璃振动理论模型，与实验室所有研究方向（超导、拓扑、磁性、重费米子等）均无关联，未命中任何加分项。",
+        "summary_cn": "本文提出将欧几里得随机矩阵模型（结合随机位置与谐振相互作用）作为描述玻璃中振动异常的最小理论框架。该模型为理解无序固体的振动特性提供了新视角。",
+        "abstract_excerpt": "\"Disordered solids are ubiquitous yet still lack a complete theoretical description. This perspective proposes the Euclidean random matrix model, combining disorder via random positions with harmonic interactions, as a minimal framework for vibrational anomalies in glasses.\"",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Proton shuttling at electrochemical interfaces under alkaline hydrogen evolution",
+        "authors": "Naoki Kuroda, Airi Katase, Tomohiro Hayashi, Katsuyoshi Ikeda",
+        "url": "https://www.nature.com/articles/s41467-026-75400-2",
+        "source": "Nature Communications",
+        "published": "2026-07-04",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "论文研究电化学析氢反应，与实验室全部研究方向（超导、拓扑、磁性、重费米子等）均无任何关联。",
+        "summary_cn": "本文通过原位光谱观察，揭示了碱性析氢反应中阳离子水合壳内的质子穿梭机制，发现该过程可促进水分子解离，为理解碱性水电解的分子级机理提供了新见解。",
+        "abstract_excerpt": "Alkaline water electrolysis is a cost-effective route to hydrogen production, but its mechanism remains unclear at the molecular level. Here, the authors report an in-situ spectroscopic observation of proton shuttling in hydration shells of cations that can improve water dissociation.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Widespread controls of precipitation sensitivity on drought recovery of global forests",
+        "authors": "Yixue Hong, Matthew D. Petrie, Yu Zhang, Yaping Chen, Heng Huang, Hao Chen",
+        "url": "https://www.nature.com/articles/s41467-026-75320-1",
+        "source": "Nature Communications",
+        "published": "2026-07-04",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "论文研究生态学与气候科学，与实验室超导、拓扑、磁性、量子材料方向完全无关。",
+        "summary_cn": "本文通过全球森林数据分析了降水敏感性对干旱恢复的控制作用，发现中等降水敏感性可最大化干旱恢复，而气候变化导致的敏感性增加会降低许多森林的恢复能力。",
+        "abstract_excerpt": "\"Forest recovery after drought is critical for ecosystem resilience under climate change. The authors show that intermediate precipitation sensitivity maximizes drought recovery, whereas climate-driven increases reduce recovery in many forests.\"",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Dielectric-dependent hybrid functional based on meta-GGA",
+        "authors": "Stefan Riemelmoser, Xun Xu, Alfredo Pasquarello",
+        "url": "https://www.nature.com/articles/s41467-026-75146-x",
+        "source": "Nature Communications",
+        "published": "2026-07-04",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "纯计算方法开发，完全未涉及实验室任何超导、拓扑、磁性或STM等研究方向。",
+        "summary_cn": "本文提出一种基于meta-GGA的介电依赖混合泛函，将现代半局域相互作用处理与长程介电屏蔽的精确约束相结合。该方法在能级精度上达到金标准，同时保持计算快速与用户友好。",
+        "abstract_excerpt": "A density functional is proposed that combines a modern treatment of semilocal interactions with an exact constraint for long-range dielectric screening. The method achieves gold-standard accuracy for energy levels while being fast and user-friendly.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "The BRCA1-A complex restricts replication fork reversal-dependent DNA repair in ATM deficient cells",
+        "authors": "Arindam Datta, Jessica Jackson, Yaroslav I. Morozov, Jinghan Qiu, Alessandro Vindigni, Roger A. Greenberg",
+        "url": "https://www.nature.com/articles/s41467-026-75271-7",
+        "source": "Nature Communications",
+        "published": "2026-07-04",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "论文研究DNA修复与化疗耐药，完全不属于量子材料、超导、拓扑或STM等实验室方向，无任何匹配点。",
+        "summary_cn": "本文发现BRCA1-A复合物在ATM缺陷细胞中限制复制叉逆转依赖的DNA修复。ATM激酶缺失时，BRCA1-A复合物的缺失可恢复复制叉逆转，从而通过同源重组修复促进化疗耐药性。研究揭示了ATM与BRCA1-A在DNA损伤应答中的新互作机制。",
+        "abstract_excerpt": "\"ATM kinase activity is required for cellular survival to replication fork damaging chemotherapies. Here the authors show that deficiency in the BRCA1-A complex promotes chemotherapy resistance of ATM mutated cells by restoring fork reversal to allow homologous recombination repair.\"",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "North Pacific meltwater weakens the Atlantic Meridional Overturning Circulation and preconditions Heinrich Stadial 1",
+        "authors": "Chijun Sun, Jiang Zhu, Bette L. Otto-Bliesner, Esther C. Brady, Sophia I. Macarewich",
+        "url": "https://www.nature.com/articles/s41467-026-75199-y",
+        "source": "Nature Communications",
+        "published": "2026-07-04",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "论文研究古气候与海洋环流，与实验室所有量子材料、超导、STM等方向完全无关。",
+        "summary_cn": "本研究通过气候模拟揭示，科迪勒拉冰盖向北太平洋的淡水排放可显著削弱大西洋经向翻转环流（AMOC），为海因里希冰阶1的发生提供前提条件。该机制可能通过影响欧洲和劳伦泰德冰盖稳定性，最终触发海因里希事件。",
+        "abstract_excerpt": "This study shows that Cordilleran ice discharge to the North Pacific may have triggered AMOC weakening during Heinrich Stadials, potentially destabilizing the European and Laurentide Ice Sheets and leading to Heinrich events.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Closed-loop readout of anterior insula high-gamma activity steers value-based decisions",
+        "authors": "Clarissa Baratin, Mathias Pessiglione, Philippe Kahane, Alexis Robin, Lorella Minotti, Guillaume Jean-Paul Claude Becq, Julien Bastin",
+        "url": "https://www.nature.com/articles/s41467-026-75265-5",
+        "source": "Nature Communications",
+        "published": "2026-07-04",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "与实验室研究方向（超导、拓扑、磁性材料、STM等）完全无关，未命中任何加分项。",
+        "summary_cn": "本文利用闭环颅内脑机接口，实时解码前岛叶高伽马活动，并通过反馈刺激影响人的价值决策。研究发现，自发的神经活动波动能够因果性地塑造选择行为，揭示了大脑持续活动在决策变异性中的作用。",
+        "abstract_excerpt": "Using a closed-loop intracranial brain–computer interface, the authors demonstrate that spontaneous neural fluctuations can causally shape value-based decisions, highlighting the role of ongoing brain activity in human choice variability.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Glutamatergic signaling underlies brain structural organization for mathematical and reading abilities in children",
+        "authors": "Yuan Zhang, Hyesang Chang, Dawlat El-Said, Vinod Menon",
+        "url": "https://www.nature.com/articles/s41467-026-75102-9",
+        "source": "Nature Communications",
+        "published": "2026-07-04",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "与实验室所有研究方向（超导、拓扑、磁性、重费米子等）均无任何关联，属于神经科学领域。",
+        "summary_cn": "本研究基于两个独立儿童队列，利用脑影像与受体分布数据，发现谷氨酸能信号（尤其是NMDA受体分布）与支撑数学和阅读能力的脑结构组织之间存在可重复的空间对应关系，揭示了神经递质系统对高级认知功能脑结构基础的调节作用。",
+        "abstract_excerpt": "\"Across two independent child cohorts, this study shows that glutamatergic signaling, particularly NMDA receptor distribution, shows reproducible spatial correspondence with brain structural organization supporting math and reading abilities.\"",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "A likelihood-based method for identifying replay from spike sequences",
+        "authors": "Namjung Huh, Injae Yun, Jong Won Lee, Min Whan Jung",
+        "url": "https://www.nature.com/articles/s41467-026-74822-2",
+        "source": "Nature Communications",
+        "published": "2026-07-04",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "研究方向为神经科学回放检测，与实验室超导、拓扑、磁性、量子材料等方向完全无关。",
+        "summary_cn": "本文提出一种基于似然比的统计方法，通过分析神经元放电顺序来识别大脑中的序列回放事件。该方法适用于海马体和视觉皮层记录数据，能够检测非空间记忆的编码重放。研究验证了该方法在多种实验条件下的有效性，为理解大脑记忆巩固机制提供了新工具。",
+        "abstract_excerpt": "How the brain replays past experiences beyond spatial memories remains unclear. Here the authors introduce a new method based on neural firing order, revealing structured replay in both the hippocampus and visual cortex.",
+        "deep_analysis": "",
+        "included": false
+      }
+    ]
   }
 };
