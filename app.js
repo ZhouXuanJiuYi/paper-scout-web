@@ -35,7 +35,6 @@ let currentDate = null;
 let currentTab  = 'curated';
 let allDates    = [];
 let activeGroup = null;
-let cardObserver = null;
 
 function onReady(fn) {
   if (document.readyState === 'loading') {
@@ -119,45 +118,6 @@ function fmtFullDate(dateStr) {
        + `（${weekdays[d.getDay()]}）`;
 }
 
-function animateMetricValue(id, value) {
-  const el = document.getElementById(id);
-  if (!el) return;
-  const target = Number(value) || 0;
-  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    el.textContent = target;
-    return;
-  }
-  const start = performance.now();
-  const duration = 620;
-  function tick(now) {
-    const progress = Math.min(1, (now - start) / duration);
-    const eased = 1 - Math.pow(1 - progress, 3);
-    el.textContent = Math.round(target * eased);
-    if (progress < 1) requestAnimationFrame(tick);
-  }
-  requestAnimationFrame(tick);
-}
-
-function activateCardMotion(container) {
-  if (!container || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  const cards = container.querySelectorAll('.paper-card');
-  if (!cardObserver && 'IntersectionObserver' in window) {
-    cardObserver = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add('motion-in');
-        cardObserver.unobserve(entry.target);
-      });
-    }, { rootMargin: '0px 0px -7% 0px', threshold: 0.04 });
-  }
-  cards.forEach((card, index) => {
-    card.classList.add('motion-pending');
-    card.style.setProperty('--motion-delay', `${Math.min(index, 7) * 45}ms`);
-    if (cardObserver) cardObserver.observe(card);
-    else requestAnimationFrame(() => card.classList.add('motion-in'));
-  });
-}
-
 // ── Paper 卡片构建 ─────────────────────────────────────────────────────────
 function buildPaperCard(paper, index, compact = false) {
   const sc = scoreClass(paper.score);
@@ -199,7 +159,7 @@ function buildPaperCard(paper, index, compact = false) {
     <span>${esc(paper.authors || '')}</span>
     ${pubStr ? `<span>· ${pubStr}</span>` : ''}
   </div>
-  <div class="score-row ${sc}" aria-label="相关度 ${paper.score} 分，共 10 分">
+  <div class="score-row ${sc}">
     <span class="score-num">${paper.score}/10</span>
     <div class="score-bar-track"><div class="score-bar-fill" style="width:${barW}%"></div></div>
   </div>
@@ -208,7 +168,7 @@ function buildPaperCard(paper, index, compact = false) {
   ${reasonBlock}
   <div class="paper-actions">
     ${expandBtn}
-    <a class="link-btn" href="${esc(paper.url)}" target="_blank" rel="noreferrer">阅读原文 ↗</a>
+    <a class="link-btn" href="${esc(paper.url)}" target="_blank" rel="noreferrer">打开论文 ↗</a>
   </div>
   ${enBlock}
 </div>`.trim();
@@ -276,12 +236,7 @@ function selectTab(tab) {
   document.querySelectorAll('.tab-content').forEach(el => {
     el.classList.add('hidden');
   });
-  const panel = document.getElementById(`tab-${tab}`);
-  panel.classList.remove('hidden');
-  panel.animate?.([
-    { opacity: 0, transform: 'translateY(6px)' },
-    { opacity: 1, transform: 'translateY(0)' },
-  ], { duration: 260, easing: 'cubic-bezier(.2,.75,.25,1)' });
+  document.getElementById(`tab-${tab}`).classList.remove('hidden');
 }
 
 // ── 精选 Tab ──────────────────────────────────────────────────────────────
@@ -313,19 +268,19 @@ function renderCurated(day) {
     const others      = included.filter(p => !p.is_stm && p.score < SCORE_MID);
     let num = 1;
     if (highlighted.length) {
-      list.insertAdjacentHTML('beforeend', `<div class="section-heading red">强烈推荐 · ${SCORE_HIGH}–10 分</div>`);
+      list.insertAdjacentHTML('beforeend', `<div class="section-heading red">🔴 强烈推荐（${SCORE_HIGH}–10 分）</div>`);
       highlighted.forEach(p => { list.insertAdjacentHTML('beforeend', buildPaperCard(p, num++)); });
     }
     if (normal.length) {
-      list.insertAdjacentHTML('beforeend', `<div class="section-heading blue">推荐阅读 · ${SCORE_MID}–${SCORE_HIGH - 1} 分</div>`);
+      list.insertAdjacentHTML('beforeend', `<div class="section-heading blue">🔵 推荐阅读（${SCORE_MID}–${SCORE_HIGH - 1} 分）</div>`);
       normal.forEach(p => { list.insertAdjacentHTML('beforeend', buildPaperCard(p, num++)); });
     }
     if (stmOnly.length) {
-      list.insertAdjacentHTML('beforeend', `<div class="section-heading purple">STM 必读 · 强制收录</div>`);
+      list.insertAdjacentHTML('beforeend', `<div class="section-heading purple">📡 STM 必读（强制收录）</div>`);
       stmOnly.forEach(p => { list.insertAdjacentHTML('beforeend', buildPaperCard(p, num++)); });
     }
     if (others.length) {
-      list.insertAdjacentHTML('beforeend', `<div class="section-heading gray">其他精选</div>`);
+      list.insertAdjacentHTML('beforeend', `<div class="section-heading gray">📋 其他精选</div>`);
       others.forEach(p => { list.insertAdjacentHTML('beforeend', buildPaperCard(p, num++)); });
     }
     empty.classList.toggle('hidden', included.length > 0);
@@ -333,7 +288,6 @@ function renderCurated(day) {
 
   document.getElementById('tab-curated-count').textContent = included.length;
   renderMath(list);
-  activateCardMotion(list);
 }
 
 // ── 全部 Tab ──────────────────────────────────────────────────────────────
@@ -371,7 +325,6 @@ function applyAllFilters(day) {
     list.insertAdjacentHTML('beforeend', buildPaperCard(p, i + 1, true));
   });
   renderMath(list);
-  activateCardMotion(list);
 }
 
 // ── 统计 Tab ──────────────────────────────────────────────────────────────
@@ -512,22 +465,7 @@ function selectDate(date) {
   document.getElementById('day-title').textContent = fmtFullDate(date);
   const lookback = day.lookback_days || 1;
   document.getElementById('day-meta').textContent =
-    `近 ${lookback} 日研究窗口 · ${day.generated ? `更新于 ${day.generated}` : '自动扫描已完成'}`;
-
-  const includedCount = Number.isFinite(day.included)
-    ? day.included
-    : day.papers.filter(p => p.included).length;
-  const stmCount = day.papers.filter(p => p.is_stm).length;
-  animateMetricValue('metric-total', day.total || day.papers.length);
-  animateMetricValue('metric-included', includedCount);
-  animateMetricValue('metric-stm', stmCount);
-
-  const hero = document.querySelector('#day-view > .day-header');
-  if (hero) {
-    hero.style.animation = 'none';
-    void hero.offsetWidth;
-    hero.style.animation = '';
-  }
+    `来自最近 ${lookback} 天 · 检索 ${day.total} 篇 · 精选 ${day.included} 篇 · ${day.generated || ''}`;
 
   renderCurated(day);
   renderAll(day);
@@ -573,9 +511,8 @@ function doSearch(query) {
   });
 
   titleEl.textContent = totalMatches
-    ? `搜索 “${query}” · ${totalMatches} 篇`
-    : `搜索 “${query}” · 无结果`;
-  activateCardMotion(resultList);
+    ? `搜索"${query}"· ${totalMatches} 篇`
+    : `搜索"${query}"· 无结果`;
 }
 
 // ── 初始化 ────────────────────────────────────────────────────────────────
@@ -616,15 +553,6 @@ function init() {
     if (e.key === 'Escape') {
       e.target.value = '';
       doSearch('');
-    }
-  });
-
-  document.addEventListener('keydown', e => {
-    const target = e.target;
-    const isTyping = target && (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA' || target.isContentEditable);
-    if ((e.key === '/' && !isTyping) || ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k')) {
-      e.preventDefault();
-      document.getElementById('search-input').focus();
     }
   });
 
