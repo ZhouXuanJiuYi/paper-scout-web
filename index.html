@@ -3,27 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Paper Scout · 量子材料实验室</title>
+  <meta name="theme-color" content="#071a20">
+  <meta name="description" content="为复杂量子材料实验室持续追踪、筛选与解读全球最新研究。">
+  <title>Paper Scout · 复杂量子材料情报台</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23071a20'/%3E%3Ccircle cx='32' cy='32' r='5' fill='%235ee6d1'/%3E%3Cellipse cx='32' cy='32' rx='24' ry='10' fill='none' stroke='%235ee6d1' stroke-width='2' transform='rotate(28 32 32)'/%3E%3Cellipse cx='32' cy='32' rx='24' ry='10' fill='none' stroke='%235ee6d1' stroke-width='2' transform='rotate(-28 32 32)'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
 </head>
 <body>
+  <div class="ambient" aria-hidden="true">
+    <span class="ambient-orb orb-one"></span>
+    <span class="ambient-orb orb-two"></span>
+    <span class="ambient-grid"></span>
+    <span class="ambient-noise"></span>
+  </div>
+
   <!-- 顶部导航 -->
   <header id="header">
     <div class="header-left">
-      <span class="logo">PAPER SCOUT</span>
-      <span class="logo-sub">复杂量子材料实验室 · 复旦大学</span>
+      <div class="brand-mark" aria-hidden="true">
+        <span class="brand-core"></span>
+        <span class="brand-orbit orbit-a"></span>
+        <span class="brand-orbit orbit-b"></span>
+      </div>
+      <div class="brand-copy">
+        <span class="logo">PAPER SCOUT</span>
+        <span class="logo-sub">复杂量子材料实验室 · 复旦大学</span>
+      </div>
     </div>
     <div class="header-right">
       <div id="next-refresh-badge" class="next-refresh-badge" title="每天 09:00 自动抓取新文献">
-        <span class="refresh-icon">&#x23F0;</span>
+        <span class="refresh-status-dot" aria-hidden="true"></span>
         <span id="next-refresh-text">计算中…</span>
       </div>
       <button id="run-btn" class="run-btn" style="display:none" onclick="runScout()">运行今日</button>
       <button id="rerun-btn" class="run-btn rerun-btn" style="display:none" onclick="rerunScout()" title="删除今日已有报告，重新抓取并生成">重新生成</button>
       <div class="search-wrap">
-        <input type="text" id="search-input" placeholder="搜索标题、作者、摘要…" autocomplete="off">
-        <span class="search-icon">⌕</span>
+        <input type="text" id="search-input" placeholder="搜索论文、作者或方向" autocomplete="off" aria-label="全局搜索">
+        <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.4-4.4m2.4-5.1a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z"/></svg>
+        <kbd class="search-shortcut">/</kbd>
       </div>
     </div>
   </header>
@@ -31,8 +49,13 @@
   <div class="layout">
     <!-- 左侧边栏 -->
     <aside id="sidebar">
+      <div class="sidebar-intro">
+        <span class="sidebar-eyebrow">ARCHIVE</span>
+        <strong>研究日报</strong>
+        <span>按日期回溯每一次扫描</span>
+      </div>
       <div class="sidebar-section">
-        <div class="sidebar-title">日期</div>
+        <div class="sidebar-title">时间线</div>
         <ul id="date-list"></ul>
       </div>
       <div class="sidebar-section" id="source-stats-section">
@@ -59,15 +82,41 @@
       <!-- 日报主视图 -->
       <div id="day-view">
         <div class="day-header">
-          <h2 id="day-title"></h2>
-          <div id="day-meta" class="day-meta"></div>
+          <div class="day-heading-copy">
+            <div class="day-kicker"><span></span> DAILY INTELLIGENCE</div>
+            <h2 id="day-title"></h2>
+            <div id="day-meta" class="day-meta"></div>
+          </div>
+          <div class="day-signal" aria-hidden="true">
+            <span class="signal-ring ring-one"></span>
+            <span class="signal-ring ring-two"></span>
+            <span class="signal-sweep"></span>
+            <span class="signal-core"></span>
+          </div>
+          <div class="day-metrics" aria-label="当日概览">
+            <div class="metric-item">
+              <span class="metric-label">SCANNED</span>
+              <strong id="metric-total">—</strong>
+              <span>检索论文</span>
+            </div>
+            <div class="metric-item metric-featured">
+              <span class="metric-label">CURATED</span>
+              <strong id="metric-included">—</strong>
+              <span>精选入库</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-label">STM SIGNAL</span>
+              <strong id="metric-stm">—</strong>
+              <span>隧道谱相关</span>
+            </div>
+          </div>
         </div>
 
         <!-- Tab 栏 -->
         <div class="tab-bar">
-          <button class="tab active" data-tab="curated">精选 <span id="tab-curated-count" class="count"></span></button>
-          <button class="tab" data-tab="all">全部 <span id="tab-all-count" class="count"></span></button>
-          <button class="tab" data-tab="stats">统计</button>
+          <button class="tab active" data-tab="curated"><span class="tab-index">01</span> 今日精选 <span id="tab-curated-count" class="count"></span></button>
+          <button class="tab" data-tab="all"><span class="tab-index">02</span> 全部文献 <span id="tab-all-count" class="count"></span></button>
+          <button class="tab" data-tab="stats"><span class="tab-index">03</span> 扫描统计</button>
         </div>
 
         <!-- 精选 Tab -->
@@ -125,9 +174,14 @@
 
     <!-- 右侧信息面板 -->
     <aside id="right-panel">
+      <div class="rp-intro">
+        <div class="rp-intro-line"><span></span> SCOUT PROTOCOL</div>
+        <strong>筛选方法</strong>
+        <p>从全球期刊与预印本中持续捕捉复杂量子材料的重要信号。</p>
+      </div>
       <!-- 搜索范围：期刊 -->
       <div class="rp-section">
-        <div class="rp-title">搜索范围</div>
+        <div class="rp-title"><span>01</span> 搜索范围</div>
 
         <div class="rp-group-label">重点期刊 <span class="rp-star">⭐</span></div>
         <ul class="rp-list">
@@ -159,7 +213,7 @@
 
       <!-- 评分维度 -->
       <div class="rp-section">
-        <div class="rp-title">评分维度（11 维，满分 10 分）</div>
+        <div class="rp-title"><span>02</span> 评分维度 · 11 维 / 10 分</div>
         <ul class="rp-score-list">
           <li>
             <span class="rp-score rp-score-high">+3</span>
