@@ -509290,5 +509290,457 @@ window.PAPER_DATA = {
         "included": false
       }
     ]
+  },
+  "2026-10-19": {
+    "date": "2026-10-19",
+    "generated": "2026-10-19 09:44",
+    "lookback_days": 2.0,
+    "total": 22,
+    "included": 0,
+    "has_raw": true,
+    "fetch_status": {
+      "arxiv:cond-mat.supr-con": {
+        "count": 0,
+        "error": null
+      },
+      "arxiv:cond-mat.str-el": {
+        "count": 0,
+        "error": null
+      },
+      "arxiv:cond-mat.mes-hall": {
+        "count": 0,
+        "error": null
+      },
+      "arxiv:cond-mat.mtrl-sci": {
+        "count": 0,
+        "error": null
+      },
+      "Nature": {
+        "count": 0,
+        "error": null
+      },
+      "Science": {
+        "count": 0,
+        "error": null
+      },
+      "Science (AOP)": {
+        "count": 0,
+        "error": null
+      },
+      "Science Advances (AOP)": {
+        "count": 0,
+        "error": null
+      },
+      "PNAS": {
+        "count": 0,
+        "error": null
+      },
+      "Nature Physics": {
+        "count": 0,
+        "error": null
+      },
+      "Nature Materials": {
+        "count": 0,
+        "error": null
+      },
+      "npj Quantum Mater.": {
+        "count": 0,
+        "error": null
+      },
+      "Communications Physics": {
+        "count": 0,
+        "error": null
+      },
+      "PRL": {
+        "count": 0,
+        "error": null
+      },
+      "PRB": {
+        "count": 0,
+        "error": null
+      },
+      "PRX": {
+        "count": 0,
+        "error": null
+      },
+      "Physical Review Research": {
+        "count": 0,
+        "error": null
+      },
+      "Reviews of Modern Physics": {
+        "count": 0,
+        "error": null
+      },
+      "Nature Communications": {
+        "count": 8,
+        "error": null
+      },
+      "Small": {
+        "count": 0,
+        "error": null
+      },
+      "Nano Letters": {
+        "count": 6,
+        "error": null
+      },
+      "ACS Nano": {
+        "count": 8,
+        "error": null
+      }
+    },
+    "papers": [
+      {
+        "title": "Solvent heterogeneity regulates assembly pathways in supramolecular polymerization",
+        "authors": "Goutam Ghosh, Jim Bachmann, Marvin Nyenhuis, Timo Krüger, Zulema Fernández, João Paulo Coelho, Antonia Albers, Max Köyer, Nikos Doltsinis, Gustavo Fernández",
+        "url": "https://www.nature.com/articles/s41467-026-78525-6",
+        "source": "Nature Communications",
+        "published": "2026-10-18",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "主题为超分子聚合与溶剂效应，与量子材料、超导、STM/ARPES等方向均无关。",
+        "summary_cn": "该文研究超分子聚合中溶剂混合物的异质性如何影响组装路径，发现溶剂异质性会偏置组装路径，且偏置程度由单体结构决定；结合实验与理论揭示溶剂环境调控超分子聚合机理。",
+        "abstract_excerpt": "“Supramolecular polymers often require solvent mixtures for their preparation but their impact on supramolecular polymerization remains poorly understood. Here, the authors demonstrate that solvent heterogeneity biases assembly pathways in supramolecular polymerization, with the extent of this effect determined by monomer structure.”",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Bacteroides–Escherichia interactions contribute to colonization resistance against Clostridioides difficile",
+        "authors": "Achuthan Ambat, Naomi Iris van den Berg, Francisco Zorrilla, Shruti Menon, Abhijit Maji, Tanim Islam, Arianna Basile, Sudeep Ghimire, Lajos Kalmar, Kiran R. Patil, Joy Scaria",
+        "url": "https://www.nature.com/articles/s41467-026-78132-5",
+        "source": "Nature Communications",
+        "published": "2026-10-18",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "该论文属肠道微生物与艰难梭菌定植抵抗研究，与超导、拓扑、磁性、STM等实验室方向完全无关，仅给基础分1分。",
+        "summary_cn": "该研究探讨拟杆菌与大肠杆菌相互作用如何塑造对艰难梭菌的定植抵抗，并结合微生物组与代谢分析识别生态和代谢特征，为微生物组疗法提供潜在指导。",
+        "abstract_excerpt": "\"Here the authors demonstrate that interactions between Bacteroides and Escherichia shape resistance to Clostridioides difficile and identify ecological and metabolic signatures with the potential to guide microbiome-based therapies.\"",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Molecular architecture of Cryptococcus cell walls reveals species-specific chitosan-dependent remodeling",
+        "authors": "Ankur Ankur, Rajendra Upadhya, Mahsa Doosti, Davis Ferreira, Sara E. Miller, Li Xie, Ivan Hung, Jennifer K. Lodge, Tuo Wang",
+        "url": "https://www.nature.com/articles/s41467-026-78940-9",
+        "source": "Nature Communications",
+        "published": "2026-10-18",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "真菌细胞壁结构生物学研究，与超导、拓扑、磁性、STM等实验室方向均无关。",
+        "summary_cn": "该研究比较两种致病隐球菌的细胞壁分子结构，发现壳聚糖缺失会触发物种特异性细胞壁重塑，并可能影响宿主互作。",
+        "abstract_excerpt": "This study reveals distinct cell-wall organization in two pathogenic Cryptococcus species, revealing that chitosan loss triggers species-specific structural remodeling that may influence host interactions.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Breaking water-structure constraints by Hofmeister effects in interfacial polymerization for polyamide membranes",
+        "authors": "Qingchen Tang, Hao Chen, Yu Chen, Hanyu Wu, Xingwang Meng, Wu Jin, Panjia Jiang, Yizhou Zhang, Xunda Feng",
+        "url": "https://www.nature.com/articles/s41467-026-78649-9",
+        "source": "Nature Communications",
+        "published": "2026-10-17",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "论文研究聚酰胺膜界面聚合与水合效应，与超导、拓扑、STM及量子材料方向均无关。",
+        "summary_cn": "本文利用弱水合阴离子的Hofmeister效应重塑本体与界面水结构，调控胺单体分配和界面传输，并抑制酰氯水解，从而突破界面聚合中的水结构限制，制备聚酰胺膜。",
+        "abstract_excerpt": "Water structures govern the behaviour of solutes across aqueous bulk and interfacial environments. Here the authors use weakly hydrated anions to reshape hydration in the bulk and at interfaces, thereby regulating amine monomer partitioning and interfacial transport while suppressing acyl chloride hydrolysis during polyamide-forming interfacial polymerization.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Spatially resolving isomeric trisaccharides on surfaces with Orbitrap-SIMS",
+        "authors": "Margaret Moloney, Richard Paterson, Bin Yan, Anya Eyres, Clare L. Newell, Jean-Luc Vorng, Alexander Pirkl, John F. Watts, Ian S. Gilmore, Gustavo F. Trindade",
+        "url": "https://www.nature.com/articles/s41467-026-78604-8",
+        "source": "Nature Communications",
+        "published": "2026-10-17",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "主题为糖类异构体质谱成像，与超导、拓扑、磁性、STM/ARPES等实验室方向无关。",
+        "summary_cn": "该文利用Orbitrap-SIMS在表面直接分离并成像三糖结构异构体，展示无需色谱分离即可区分复杂糖类，为表面生物分子异构体研究提供新途径。",
+        "abstract_excerpt": "Structural isomers can be difficult to distinguish and map by mass alone. This study shows that Orbitrap-SIMS can separate and image isomeric sugars directly on surfaces, offering a new route to study complex biomolecules.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Optical-handedness-driven enantioselective synthesis and programmable chirality encoding of covalent organic frameworks",
+        "authors": "Taewoong Kim, Jaewon Kim, Joohee Oh, Seungyoon Kang, Song Gyun Kim, Jee Hyeon Kim, Min Su Han, Young Yong Kim, Chanho Pak, Jeong-Eun Park, Hyunseob Lim",
+        "url": "https://www.nature.com/articles/s41467-026-78524-7",
+        "source": "Nature Communications",
+        "published": "2026-10-17",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "主题为COF的圆偏振光手性合成与编码，与超导、拓扑、磁性、STM/SJSTM/SP-STM及量子相变等方向均无关。",
+        "summary_cn": "该文报道以圆偏振光作为唯一手性导向，实现化学手性共价有机框架（COF）的对映选择性合成，并实现可编程手性编码。研究突破了传统COF不对称合成依赖手性前驱体或催化剂的限制，展示了光学手性驱动在COF手性构筑与信息编码中的应用潜力。",
+        "abstract_excerpt": "\"Covalent organic frameworks (COFs) typically require chiral precursors or catalysts to achieve asymmetry. Here, the authors report the enantioselective synthesis of chemically chiral COFs using circularly polarized light as the sole chiral director.\"",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Brassinosteroids improve nitrogen utilization by antagonizing BIN2-mediated SnRK1 activation",
+        "authors": "Lianmei Yao, Jinyang Lyu, Yan Qiao, Guolan Zheng, Shurui Liu, Na Sun, Honglei Wang, Wouter Smagghe, Jelle Van Leene, Min Fan, Chao Han, Ming-Yi Bai",
+        "url": "https://www.nature.com/articles/s41467-026-78906-x",
+        "source": "Nature Communications",
+        "published": "2026-10-17",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "该文为植物激素与氮代谢研究，与超导、拓扑材料、STM/ARPES等实验室方向完全无关。",
+        "summary_cn": "该文研究油菜素内酯的作用机制，发现其通过抑制BIN2，促使KIN10降解，并激活相关基因表达和氮同化酶，从而改善植物氮利用效率。结论表明油菜素内酯拮抗BIN2介导的SnRK1激活，揭示其调控氮代谢的分子通路。",
+        "abstract_excerpt": "Brassinosteroids are widely used in agriculture, but their modes of action remain incompletely understood. Here, the authors show that brassinosteroids inhibit BIN2, leading to KIN10 degradation and activation of gene expression and nitrogen assimilation enzymes.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Size-dependent catalysis of Ru nanoparticles for selective reductive amination of PET plastic",
+        "authors": "Zuyi Zhang, Yawen Shi, Shengbo Zhang, Junyang Wang, Chen Meng, Xinyi Niu, Xinyong Diao, Na Ji",
+        "url": "https://www.nature.com/articles/s41467-026-78873-3",
+        "source": "Nature Communications",
+        "published": "2026-10-17",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "论文为Ru催化PET还原胺化，未涉及超导、拓扑、磁性、STM等实验室方向。",
+        "summary_cn": "本文研究通过调控Ru纳米颗粒尺寸，实现PET塑料选择性还原胺化制备对苯二甲胺，属于多相催化与塑料升级转化研究，与量子材料、超导及STM等方向无关。",
+        "abstract_excerpt": "\"Turning waste plastic into valuable chemicals requires precise control of competing reactions. This study shows that tuning ruthenium particle size enables selective conversion of polyethylene terephthalate into p-xylylenediamine.\"",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Plasmonic Coupling within Atomically Precise Nanocluster Dimers for Engineering Hot-Carrier Generation and Molecular Activation",
+        "authors": "Khushboo Bhardwaj, Samir Kumar Nayak, Pramod K. Verma, Sharma S. R. K. C. Yamijala",
+        "url": "https://doi.org/10.1021/acs.nanolett.6c03672",
+        "source": "Nano Letters",
+        "published": "2026-10-17",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "主题为等离激元纳米团簇与N2活化，与超导、拓扑、STM/STS等实验室方向无关。",
+        "summary_cn": "该文用实时含时密度泛函结合Ehrenfest分子动力学，研究四面体Ag20纳米团簇二聚体间的等离激元耦合如何驱动N2活化。发现6 Å纳米间隙可最大化近场增强和热电子转移，使N2在0.5 V Å−1场强下解离；较大间隙或孤立N2活性显著降低。提出纳米间隙工程优化等离激元催化。",
+        "abstract_excerpt": "Here, we combine real-time time-dependent density functional theory with Ehrenfest molecular dynamics to reveal how plasmonic coupling between tetrahedral Ag20 nanoclusters governs N2 activation and dissociation. Systematic variation of the intercluster separation shows that a 6 Å nanogap maximizes near-field enhancement and hot-electron transfer to the adsorbed N2, accompanied by N–N activation. Consequently, N2 dissociation is achieved at incident field strengths as low as 0.5 V Å–1, whereas larger-gap dimers exhibit substantially lower activity.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Third-Harmonic Generation in Crumpled Silicon Nanomembranes",
+        "authors": "Gwanjin Lee, Ajit Kumar Katiyar, Jong‐Hyun Ahn, Hyunmin Kim, JaeDong Lee",
+        "url": "https://doi.org/10.1021/acs.nanolett.6c04060",
+        "source": "Nano Letters",
+        "published": "2026-10-16",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "研究方向为硅纳米膜非线性光学，与超导、STM、拓扑、磁性等均无关。",
+        "summary_cn": "结合偏振分辨三次谐波显微与第一性原理，研究15/35 nm平整及褶皱硅纳米膜。平整膜响应源于本征三阶非线性；褶皱中局部应变使[110]方向破缺对称并诱导X/Y各向异性，三阶极化率随应变二次变化；形貌局域光场重分布亦调制响应。结论：应变改电子结构与局域光场重分布共同控制三次谐波。",
+        "abstract_excerpt": "“Here, we investigate third-harmonic generation in flat and crumpled silicon nanomembranes of 15 and 35 nm using polarization-resolved third-harmonic generation microscopy with ab initio calculations.” “In crumpled silicon nanomembranes, local strain variations between valleys and apexes generate distinct polarization-dependent responses.” “Therefore, the third-harmonic response of crumpled silicon nanomembranes is controlled by both strain-induced electronic structure modification and morphology-induced local optical-field redistribution.”",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Wrinkled Pd Metallene: Synergistic Geometric and Electronic Engineering for High-Performance Bioorthogonal Catalysis",
+        "authors": "Yiming Ma, Yanjie Zhang, Yanjun Ji, Huan Wang, Anjun Song, Ying Wang, Fang Pu, Jinsong Ren, Xiaogang Qu",
+        "url": "https://doi.org/10.1021/acs.nanolett.6c03180",
+        "source": "Nano Letters",
+        "published": "2026-10-16",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "论文聚焦Pd金属烯的纳米褶皱、晶格应变与生物正交催化/肿瘤治疗，未涉及超导、STM、拓扑、磁性、重费米子或ARPES等方向。",
+        "summary_cn": "该文构建具有纳米褶皱的Pd金属烯催化剂，利用褶皱产生丰富活性位点并引入晶格应变，优化催化中心电子与几何构型。相比Pd纳米颗粒及平整Pd金属烯，褶皱Pd金属烯催化活性显著增强；理论计算表明应变使Pd d带中心下移。经AS1411适配体功能化后，可实现靶向前药激活并在体内外有效抑瘤。",
+        "abstract_excerpt": "Herein, we report a wrinkled Pd metallene catalyst (Pd ML) in which nanoscale wrinkling generates abundant active sites and induces lattice strain, thereby optimizing the electronic and geometric configurations of the catalytic centers for high-performance bioorthogonal catalysis. The Pd MLs exhibit substantially enhanced catalytic activity compared to Pd nanoparticles and their wrinkle-free counterpart, flat Pd metallene. Theoretical calculations reveal that the wrinkle-induced lattice strain shifts the d-band center of Pd downward, thereby facilitating the bioorthogonal reaction.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Polarization-Dependent Topological Phase Reconstruction via Multipolarization-Controlled Dzyaloshinskii–Moriya Interaction",
+        "authors": "Haoming Su, Xiong‐Xiong Xue, Yee Sin Ang, Ke‐Qiu Chen, Li-Ming Tang",
+        "url": "https://doi.org/10.1021/acs.nanolett.6c04207",
+        "source": "Nano Letters",
+        "published": "2026-10-16",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 2,
+        "score_reason": "命中斯格明子/多铁与单层低维磁拓扑；但为第一性原理/原子模拟，无STM、涡旋、超导或谱学核心。",
+        "summary_cn": "文章结合第一性原理与原子模拟，研究单层CuCrP2Se6中极化驱动的DMI矢量场重构及拓扑磁相调控。通过FEu-AFE-FEd极化切换重构晶格对称性，使均匀DMI演化为各向异性DMI矢量场，实现拓扑非平庸斯格明子与平庸磁泡之间的可逆切换。提出非中心对称反铁电态中DMI矢量场重构可作为超越DMI反转或抑制的磁拓扑工程机制。",
+        "abstract_excerpt": "Here, combining first-principles calculations with atomistic simulations, we demonstrate polarization-driven reconstruction of the DMI vector field and topological magnetic phases in monolayer CuCrP2Se6. FEu-AFE-FEd polarization switching enables the evolution of a uniform DMI into an anisotropic DMI vector field by reconstructing the lattice symmetry, thereby achieving reversible control between topologically nontrivial skyrmions and topologically trivial magnetic bubbles. These findings establish DMI vector-field reconstruction in noncentrosymmetric AFE states as a mechanism for engineering ",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Toward Two-Dimensional MoS2 Electrets with Modulated Fluorescence",
+        "authors": "Eugenio Lunedei, Andrea Liscio, F. Borgatti, Edoardo Chini, Pasquale D’Angelo, Fiorenza Esposito, Niccolò Borghi, Matteo Mannini, Denis Gentili, L. Seravalli, Massimiliano Cavallini",
+        "url": "https://doi.org/10.1021/acs.nanolett.6c03760",
+        "source": "Nano Letters",
+        "published": "2026-10-16",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 2,
+        "score_reason": "仅命中TMD/二维材料（单层MoS2）加2分；未涉及超导、STM/STS、涡旋、拓扑、磁性或界面异质结等方向。",
+        "summary_cn": "论文用印章辅助、无电极电化学纳米光刻在单层MoS2中空间可控地产生硫空位，缺陷密度10^10–10^13 cm^-2可调。空位区作为电子陷阱使MoS2成为驻极体，表面电荷密度达1 μC cm^-2，环境保持超300天。静电图案与荧光猝灭区共定位，室温激子寿命由数十纳秒缩至数百皮秒，并调节激子/三子发射平衡。",
+        "abstract_excerpt": "We show how spatially controlled sulfur vacancy engineering enables monolayer MoS2 to act as an electret, storing quasi-permanent electrostatic charge within a single atomic layer and modulating its emission properties. Sulfur vacancies are created by stamp-assisted, electrode-free electrochemical nanolithography, yielding tunable defect densities from 1010 to 1013 cm–2. The vacancy domains act as electron traps, resulting in surface charge density up to 1 μC cm–2, with charge retention exceeding 300 days under ambient conditions.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Ultralow-Threshold NIR AgAuSe Colloidal Quantum Dot Laser",
+        "authors": "Zeyu Zhang, Yuhua Chen, Hongchao Yang, Yejun Zhang, Jiang Jiang, Yuliang Zhao, Xingwang Zhang, Qiangbin Wang",
+        "url": "https://doi.org/10.1021/acs.nanolett.6c04105",
+        "source": "Nano Letters",
+        "published": "2026-10-17",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "与实验室超导、拓扑、磁性、STM等方向均无关，故低分。",
+        "summary_cn": "该文报道AgAuSe胶体量子点激光器，利用扭曲晶格光子晶体纳米腔实现极强光限制与超高Q因子，并由单层自组装量子点超晶格降低散射损耗，在900 nm实现0.01 μJ cm−2超低阈值，较此前近红外量子点激光降低逾四个数量级，并实现室温准连续波激射。",
+        "abstract_excerpt": "“Here, we report AgAuSe QD lasing with a record-low threshold of 0.01 μJ cm–2 at 900 nm, representing a reduction of more than 4 orders of magnitude compared to those of previous near-infrared (NIR) QD lasing reports. This achievement is enabled by a well-designed twisted-lattice photonic crystal (PhC) nanocavity delivering extreme light confinement with an ultrahigh quality (Q) factor. Crucially, the robust system allows us to push the operational regime to quasi-continuous-wave (q-CW) lasing at room temperature.”",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Gold Nanourchins Potentiate Intravesical Chemotherapy by Accelerating Drug Internalization within a Short Instillation Window",
+        "authors": "Peiyu Yu, Menghua Gao, Xuefei Feng, Haowei Rong, Fei Feng, Lei Zhang, Yan Bao, Menghua Xiong, Yaofeng Zhou, Jianjun Cheng",
+        "url": "https://doi.org/10.1021/acsnano.6c10659",
+        "source": "ACS Nano",
+        "published": "2026-10-16",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "该文为膀胱癌纳米药物递送研究，与超导、STM、拓扑及量子材料方向均无关。",
+        "summary_cn": "本文报道聚谷氨酸修饰金纳米海胆PGU3@DOX，通过形貌优化促进膀胱癌细胞快速内吞阿霉素，诱导溶酶体肿胀和膜通透化，在短时灌注窗口增强化疗并降低正常尿路上皮毒性；动物模型中单次短时给药可抑制肿瘤进展且无明显急性毒性。",
+        "abstract_excerpt": "“Here, we report a poly-l-glutamic acid-modified gold nanourchin platform, PGU3@DOX, designed to enhance intravesical chemotherapy by accelerating drug internalization by bladder cancer cells.” “Under a 1 h pulse exposure that mimics the short intravesical dwell-time window, PGU3@DOX showed greater cytotoxicity against bladder cancer cells after extracellular drug removal while showing lower toxicity toward normal urothelial cells.” “In an orthotopic bladder cancer model, a single short-duration intravesical administration of PGU3@DOX significantly suppressed tumor progression without detectab",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Low-Dimensional Nanostructured Molecular Architectures for Advanced CO2 Electroreduction",
+        "authors": "Yinger Xin, Yun Song, Weihua Guo, Qiang Zhang, Mingming He, Zihao Li, Ruixuan Wang, Rui Xue, Jia Pan, Huiying Deng, Ruquan Ye",
+        "url": "https://doi.org/10.1021/acsnano.6c17097",
+        "source": "ACS Nano",
+        "published": "2026-10-16",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "主题为CO2电还原分子催化与纳米结构，未涉及超导、STM、拓扑、磁性、重费米子或量子相变，与实验室方向无关。",
+        "summary_cn": "文章以视角形式讨论纳米结构分子架构如何通过受控聚集、载体相互作用、网状框架、纳米限域和曲率应变等调控分子CO2还原催化性能，促进甲醇、乙醇等多电子产物生成，并提出计算加速分子发现、降低过电位及CO2捕集与电化学转化集成等未来方向。",
+        "abstract_excerpt": "Molecular catalysts have been found to be selective for the CO2 reduction reaction (CO2RR), with Faradaic efficiencies approaching 100% for two-electron products such as CO and formic acid. This perspective discusses how nanostructured molecular architectures, from controlled aggregation and support interactions to reticular frameworks, fundamentally alter catalytic performance beyond what is achievable through conventional coordination chemistry alone. By engineering the microenvironment surrounding molecular active sites, we argue that the next generation of molecular electrocatalysts can ac",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Beyond Static Architectures: Responsive Tetrahedral Framework Nucleic Acids for Precise Theranostics",
+        "authors": "Yang Gao, Geru Zhang, Xinyu Wu, Jiayi Deng, Tianqi Wang, Xiaoxiao Cai, Yao He, Xingyu Chen, Yunfeng Lin",
+        "url": "https://doi.org/10.1021/acsnano.6c09712",
+        "source": "ACS Nano",
+        "published": "2026-10-16",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "本文为DNA纳米诊疗综述，与超导、拓扑量子材料、磁性拓扑、STM/STS及ARPES等实验室方向均无关。",
+        "summary_cn": "本文综述响应性四面体框架核酸（tFNA）的设计原理与应用。作者按构象重排、化学键断裂和toehold介导链置换逻辑分类其响应机制，总结其在精准诊断、智能治疗及诊疗一体化中的应用，并讨论生物稳定性、规模化制造和生物安全等临床转化挑战，为动态DNA纳米器件合理设计提供参考。",
+        "abstract_excerpt": "Precise theranostics requires spatiotemporal control and high specificity to adapt to complex physiological microenvironments. Accordingly, we synthesize the design principles of responsive tFNA by categorizing their mechanisms into conformational rearrangement, chemical bond cleavage, and toehold-mediated strand displacement logic. We highlight their applications in precision diagnosis, smart therapeutics, and theranostics integration and discuss critical challenges in biological stability, scalable manufacturing, and biosecurity.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Dynamic Ti–Cl Bonding Enables Corrosion-Resistant and Robust Seawater Electrolysis",
+        "authors": "Yue Xu, S. Li, Yuxin Hao, Wenzong Song, Jingzi Zhang, Kaikai Li, Yan Huang, Samuel Jeong, Zeyun Cai, Kailong Hu",
+        "url": "https://doi.org/10.1021/acsnano.6c13059",
+        "source": "ACS Nano",
+        "published": "2026-10-16",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "非量子材料、超导、拓扑或STM方向，属海水电解催化剂研究，与实验室方向无关。",
+        "summary_cn": "文章提出“吸附引导保护”策略，在NiFe-LDH中引入Ti掺杂作为Cl−捕获中心；Ti位动态吸附Cl−以屏蔽Ni/Fe活性位并产生局域静电排斥，抑制Cl−进一步积累。NiFeTi-LDH在碱性海水中实现安培级OER电流密度和超过3000 h稳定性；原位光谱与理论计算表明Ti–Cl键降低OER决速步能垒并排斥Cl−。",
+        "abstract_excerpt": "Herein, we report an “adsorption-guided protection” strategy to achieve the trade-off between corrosion resistance and oxygen evolution reaction (OER) activity for NiFe layered double hydroxide (NiFe-LDH). NiFeTi-LDH exhibits high OER performance in alkaline seawater, achieving ampere-level current density with outstanding stability exceeding 3000 h. In situ spectroscopic analysis combined with theoretical calculations reveals that the Ti–Cl bonding not only lowers the energy barrier of the rate-determining step for OER intermediates but also induces an electrostatic repulsion effect that furt",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Data-Driven Flipping Engineering for High Thermal Anisotropy in Janus Two-Dimensional Materials",
+        "authors": "Xin Wu, Ting Liang, Weitao Wang, MA Jiangjiang, Zheyong Fan, Jianbin Xu, Sebastian G. Volz, Masahiro Nomura",
+        "url": "https://doi.org/10.1021/acsnano.6c07922",
+        "source": "ACS Nano",
+        "published": "2026-10-17",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 2,
+        "score_reason": "仅命中TMD二维材料(+2)；主题为热输运与堆垛工程，未涉及超导、拓扑、磁性或STM。",
+        "summary_cn": "该文用机器学习势分子动力学与贝叶斯优化研究Janus MoSSe多层堆垛翻转工程。14层优化结构在300 K下跨面热导率降至0.082 W m−1 K−1，面内导热保持，各向异性比约760；翻转破坏堆垛周期性、扰动2–8 THz声子并产生层局域平模，从而抑制跨面输运。提出可编程堆垛设计策略。",
+        "abstract_excerpt": "By integrating machine-learned potential molecular dynamics with Bayesian optimization for a 14-layer MoSSe stack, we identify a structure with strongly suppressed effective cross-plane thermal conductivity of 0.082 ± 0.002 W m–1 K–1 at 300 K while maintaining robust in-plane conduction, yielding an anisotropy ratio of about 760 and 35% higher than the crystalline reference. This effect arises from flipping-induced breaking of stacking periodicity, which perturbs midfrequency phonons (2–8 THz) and leads to band splitting and nearly flat, layer-localized modes. Flipping engineering thus provide",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Experimental Design Signatures Emerge from Topic Modeling of Graphene Oxide Literature",
+        "authors": "Henry Julio Kobs, Henrique Ferreira, Yang Liu, Amauri Jardim de Paula, Carlos E. Andrade, Andréia Fonseca de Faria",
+        "url": "https://doi.org/10.1021/acsnano.6c04548",
+        "source": "ACS Nano",
+        "published": "2026-10-17",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "未命中超导、STM、拓扑、磁性、重费米子等方向；仅涉及氧化石墨烯文献NLP挖掘，与实验室核心实验方向无关。",
+        "summary_cn": "文章用LDA对逾12万篇氧化石墨烯文献进行主题建模，识别8个宏观领域，并用神经主题模型刻画领域粒度与异质性；随后用大语言模型从8000篇全文提取参数，F1达94%，结合社区发现构建推荐系统，并生成CO2吸附数据集用于极端随机树回归预测，展示文献挖掘框架的适用性。",
+        "abstract_excerpt": "\"To address this challenge, Natural Language Processing techniques, including topic modeling, community discovery, and parameter extraction, are here employed to establish a framework. Latent Dirichlet Allocation (LDA) was applied to the full text of more than 120,000 articles, enabling the identification of eight macro-domains within the GO literature, and neural topic modeling was subsequently employed to characterize the granularity and heterogeneity of these domains. Parameter extraction was performed using Large Language Models (LLMs) on a subset of 8000 full-text articles, with a proto-o",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Reversible Ferroelastic Strain Engineering Enables Stabilization of a Hidden Ga2O3 Polymorph",
+        "authors": "Zijun Qi, Zhanpeng Sun, Rui Li, Qijun Wang, Jingyuan Ni, Sheng Liu, Wei Shen, Gai Wu",
+        "url": "https://doi.org/10.1021/acsnano.6c12416",
+        "source": "ACS Nano",
+        "published": "2026-10-17",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "研究Ga2O3铁弹应变相变，属宽禁带半导体相工程，未涉及超导、拓扑、磁性、STM/ARPES等实验室方向。",
+        "summary_cn": "该工作结合大规模分子动力学与高精度机器学习势，揭示Ga2O3中可逆应变诱导的铁弹β–P1̅相变，并分析P1̅相不稳定性来源，从力学稳定性和结晶动力学解释其此前未被实验观测的原因，拓展应变工程在宽禁带半导体单晶相变中的应用。",
+        "abstract_excerpt": "Here, combining large-scale molecular dynamics simulations with a high-accuracy machine learning potential, we reveal a reversible strain-induced ferroelastic β–P1̅ phase transition in Ga2O3 and further investigate the origin of instability of P1̅-Ga2O3. Our work not only explains the absence of experimental observations of P1̅-Ga2O3 from the perspectives of mechanical stability and crystallization kinetics but also extends the application of strain engineering in phase transitions of wide-bandgap semiconductor single-crystal materials.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Nanopore Signatures of High-Molecular-Weight Polysaccharides with Recurring Structural Motifs",
+        "authors": "Wenzheng Li, Yunqi Xiao, Xinmeng Gao, Panke Zhang, Shuo Huang, Kefan Wang",
+        "url": "https://doi.org/10.1021/acsnano.6c07846",
+        "source": "ACS Nano",
+        "published": "2026-10-17",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "未涉及超导、拓扑、磁性、STM/ARPES、量子材料等任何方向；属纳米孔生物分析，故低分。",
+        "summary_cn": "文章提出纳米孔图谱策略表征多糖：将多糖水解为信息片段，利用纳米孔事件分布形成分子指纹，成功识别七种多糖；结合机器学习分类器实现100%验证准确率，并用FCLS定量混合物组成。结论建立无标记高分辨框架。",
+        "abstract_excerpt": "Here, a nanopore profiling strategy was developed for polysaccharide characterization. Seven distinct polysaccharides, including xanthan gum, gum arabic, agarose, sodium alginate, gellan gum, heparin, and chondroitin sulfate A, were successfully identified and discriminated. A profile-based machine learning classifier was also developed, which utilizes the overall distribution profile of fragment events as training input, yielding 100% validation accuracy.",
+        "deep_analysis": "",
+        "included": false
+      }
+    ]
   }
 };
