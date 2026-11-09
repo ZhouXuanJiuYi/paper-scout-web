@@ -572951,5 +572951,313 @@ window.PAPER_DATA = {
         "included": false
       }
     ]
+  },
+  "2026-11-09": {
+    "date": "2026-11-09",
+    "generated": "2026-11-09 09:25",
+    "lookback_days": 2.0,
+    "total": 13,
+    "included": 0,
+    "has_raw": true,
+    "fetch_status": {
+      "arxiv:cond-mat.supr-con": {
+        "count": 0,
+        "error": null
+      },
+      "arxiv:cond-mat.str-el": {
+        "count": 0,
+        "error": null
+      },
+      "arxiv:cond-mat.mes-hall": {
+        "count": 0,
+        "error": null
+      },
+      "arxiv:cond-mat.mtrl-sci": {
+        "count": 0,
+        "error": null
+      },
+      "Nature": {
+        "count": 0,
+        "error": null
+      },
+      "Science": {
+        "count": 0,
+        "error": null
+      },
+      "Science (AOP)": {
+        "count": 0,
+        "error": null
+      },
+      "Science Advances (AOP)": {
+        "count": 0,
+        "error": null
+      },
+      "PNAS": {
+        "count": 0,
+        "error": null
+      },
+      "Nature Physics": {
+        "count": 0,
+        "error": null
+      },
+      "Nature Materials": {
+        "count": 0,
+        "error": null
+      },
+      "npj Quantum Mater.": {
+        "count": 0,
+        "error": null
+      },
+      "Communications Physics": {
+        "count": 0,
+        "error": null
+      },
+      "PRL": {
+        "count": 0,
+        "error": null
+      },
+      "PRB": {
+        "count": 0,
+        "error": null
+      },
+      "PRX": {
+        "count": 0,
+        "error": null
+      },
+      "Physical Review Research": {
+        "count": 0,
+        "error": null
+      },
+      "Reviews of Modern Physics": {
+        "count": 0,
+        "error": null
+      },
+      "Nature Communications": {
+        "count": 0,
+        "error": null
+      },
+      "Small": {
+        "count": 0,
+        "error": null
+      },
+      "Nano Letters": {
+        "count": 6,
+        "error": null
+      },
+      "ACS Nano": {
+        "count": 7,
+        "error": null
+      }
+    },
+    "papers": [
+      {
+        "title": "Ultralow-Loss Femtosecond Laser Slicing of Lithium Niobate Enabled by Anisotropic Thermal Dissipation-Guided Vector Scanning",
+        "authors": "Xin Zhang, Yue-Zhang Sun, Derong Sun, Zhi-Yong Hu, Qi‐Dai Chen, Xueqing Liu",
+        "url": "https://doi.org/10.1021/acs.nanolett.6c04565",
+        "source": "Nano Letters",
+        "published": "2026-11-07",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "主题为飞秒激光加工与铌酸锂切片，未涉及超导、STM、拓扑、磁性等实验室方向。",
+        "summary_cn": "本文提出热耗散引导矢量扫描技术，首次实现铌酸锂晶体的飞秒激光切片；通过依据各向异性热耗散调控扫描方向，获得约10微米超薄亚表面损伤层和高质量分离表面；为各向异性晶体低损伤超快激光加工提供新路线。",
+        "abstract_excerpt": "Here, a thermal dissipation-guided vector scanning technology is proposed to realize ultrafast laser slicing of LiNbO3 crystals for the first time. By tailoring the scanning direction according to the anisotropic thermal dissipation, we achieve crystal exfoliation with an ultrathin subsurface damage layer of 10 μm and an exceptionally high-quality separation surface. The results establish vector scanning technology as an innovative route for high-quality femtosecond laser processing and low-damage separation of anisotropic crystals.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Defect-Initiated Anisotropic Oxidation in Two-Dimensional GaSe",
+        "authors": "Hao Song, Kexuan Li, Mingrui Zhou, Changkai Guo, Xingchi Liu, Ziwen Li, Wenjie Xu, Kailong Yu, Zhaoming Liang, Buwei Wang, Xiangyu Xing, Dong Yang, Zailan Zhang, Zhesheng Chen, Tao Xu, Shi‐Jun Liang",
+        "url": "https://doi.org/10.1021/acs.nanolett.6c04301",
+        "source": "Nano Letters",
+        "published": "2026-11-07",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 3,
+        "score_reason": "命中二维层状材料+2、异质结/薄膜+1；非实验室核心方向，未涉及超导、STM/ARPES等。",
+        "summary_cn": "结合光学光谱、截面显微与第一性原理计算，研究GaSe厚度依赖氧化。实验发现顶向下与边缘引发氧化并存，伴随Se再分布和瞬态Ga2Se3。计算表明Se空位促进O2吸附活化，层间扩散势垒低，解释各向异性氧化；氧化可实现p型GaSe到n型Ga2O3转变，器件退火后稳定。",
+        "abstract_excerpt": "Here, we investigate the thickness-dependent oxidation of GaSe using optical spectroscopy, cross-sectional microscopy, and first-principles calculations. Experiments reveal concurrent top-down and edge-initiated oxidation, accompanied by Se redistribution and transient Ga2Se3 formation. Calculations identify Se vacancies as favorable sites for O2 adsorption and activation, which weaken neighboring Ga–Se bonds and promote oxygen incorporation.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Ultrathin SrTiO3 Capping Stabilizes the Surface Chemistry of Brownmillerite Ferrites during Reduction",
+        "authors": "Jiayue Wang, Aarushi Khandelwal, M. Gonzalez, Yidi Liu, Iradwikanari Waluyo, Adrian H. Hunt, Harold Y. Hwang",
+        "url": "https://doi.org/10.1021/acs.nanolett.6c04202",
+        "source": "Nano Letters",
+        "published": "2026-11-07",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 2,
+        "score_reason": "命中薄膜/界面+1；STO帽层稳定氧化物表面氧化还原，与超导、拓扑、STM主线无关。",
+        "summary_cn": "该文利用常压X射线光电子能谱研究1 nm SrTiO3帽层对褐铁矿铁氧体La0.05Sr0.95FeO2.5−δ薄膜H2还原表面稳定性的影响。帽层抑制金属Fe0副相生成，使250和350 °C下Fe0生成速率降低逾6倍。表明超薄帽层可稳定氧化物还原过程中的表面化学。",
+        "abstract_excerpt": "Redox processes in oxides are central to materials synthesis and functionality, but their control is often hindered by surface instabilities. Using ambient-pressure X-ray photoelectron spectroscopy, we show that a nominally 1 nm-thick SrTiO3 (STO) cap markedly enhances the surface stability of La0.05Sr0.95FeO2.5-δ (LSFO) thin films during H2 reduction by suppressing the formation of a secondary metallic Fe0 phase. Kinetic analysis indicates that the STO cap reduces the effective Fe0 formation rates by more than 6-fold at both 250 and 350 °C.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Photoinduced Carrier Doping of α-RuCl3 through Interlayer Charge Transfer",
+        "authors": "Ting Zheng, Neema Rafizadeh, W. L. Chan, Zhenhua Ni, Hui Zhao",
+        "url": "https://doi.org/10.1021/acs.nanolett.6c04835",
+        "source": "Nano Letters",
+        "published": "2026-11-07",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 3,
+        "score_reason": "命中MoS2 TMD（+2）与异质结（+1）；α-RuCl3/Mott掺杂非所列核心，未见STM/超导/涡旋。",
+        "summary_cn": "本文利用MoS2/α-RuCl3异质结中的光致层间电荷转移，实现α-RuCl3的可调电子掺杂；光致发光与瞬态吸收表明电子转移至α-RuCl3、空穴留在MoS2，载流子分离持续逾100 ps，并测得约100 cm² s⁻¹的空穴扩散系数。该工作展示了光控关联电子态掺杂的途径。",
+        "abstract_excerpt": "Here, we demonstrate optically tunable electron doping of the layered Mott insulator α-RuCl3 through photoinduced interlayer charge transfer in MoS2/α-RuCl3 heterostructures. Photoluminescence and transient absorption measurements support electron transfer to α-RuCl3, leaving holes in MoS2. The layer-separated carrier population persists for more than 100 ps with an estimated doping density tunable through the excitation fluence.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Emergent Giant Topological Hall Effect at the van der Waals Ferromagnet/Topological Insulator Interface",
+        "authors": "Devyani Sharma, Gagan Rastogi, Abhinab Mohapatra, R. Ganesan, P. S. Anil Kumar",
+        "url": "https://doi.org/10.1021/acs.nanolett.6c03255",
+        "source": "Nano Letters",
+        "published": "2026-11-07",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 2,
+        "score_reason": "命中Fe3GeTe2/拓扑自旋纹理(+1)与vdW异质结/界面(+1)；无STM、超导、涡旋、铜/铁/镍基等核心方向，故低。",
+        "summary_cn": "文章将二维铁磁体Fe3GeTe2与拓扑绝缘体BiSbTeSe2构建异质界面，在10 K观测到6.9 μΩ·cm的巨大拓扑霍尔电阻率；温度和厚度依赖表明界面Dzyaloshinskii-Moriya相互作用导致该信号，温度-磁场映射揭示相反拓扑荷两相共存，说明vdW铁磁/拓扑绝缘体界面可增强拓扑霍尔效应并用于拓扑自旋电子学。",
+        "abstract_excerpt": "Here, we report an emergent giant topological Hall resistivity of 6.9 μΩ·cm at 10 K by interfacing the 2D ferromagnet Fe3GeTe2 (FGT) with the topological insulator BiSbTeSe2 (BSTS). Systematic temperature- and thickness-dependent studies suggest the origin of this pronounced signal to be the interfacial Dzyaloshinskii–Moriya interaction (DMI). Furthermore, temperature-field mapping reveals the coexistence of two distinct phases that we identify as having opposite topological charge.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Photoluminescence-Driven Quasi-BICs in Photonic Nanomembranes for Active Refractometric Sensing",
+        "authors": "Ya‐Lun Ho, Hsin-Chang Lin, Wei-Che Chang, S.-H. Huang, Yen‐Ju Wu, Jui‐Han Fu, Vincent Tung, Yang‐Chun Lee, Kuniaki Konishi, Masanobu Iwanaga, Chun‐Hao Chiang",
+        "url": "https://doi.org/10.1021/acs.nanolett.6c04599",
+        "source": "Nano Letters",
+        "published": "2026-11-07",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "该文为光子准BIC折射传感研究，与超导、拓扑、STM/ARPES、磁性及量子相变等实验室方向无关，未命中任何加分项。",
+        "summary_cn": "该文将氮化硅自支撑纳米膜的缺陷相关光致发光与准连续域束缚态模式耦合，构建主动折射传感平台。无衬底结构抑制辐射泄漏并维持高Q共振，发光读出避免严格角度对准；空气中线宽0.17 nm，水中0.26 nm，水相传感FOM达250，优于可见光区被动准BIC传感器。",
+        "abstract_excerpt": "\"Here, we demonstrate an active sensing platform that couples the defect-related photoluminescence (PL) of a freestanding silicon nitride nanomembrane to quasi-BIC modes.\" \"The substrate-free architecture suppresses radiation leakage and sustains tightly confined high-Q resonances, while emission-based readout bypasses stringent angular alignment.\" \"In aqueous sensing, the platform achieves a FOM of 250, substantially exceeding representative values reported for passive quasi-BIC sensors in the visible regime.\"",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Quantum Dot Colloidosomes as Triggerable Microlasers",
+        "authors": "Cristian Gonzalez, Saranya Subramanian, Marco Reale, Giuseppe Soligno, Ilia Yu. Geints, Siyuan Yin, ClaireYejin Kang, Ricky Ronquillo, Gary Chen, M. Cannas, Cherie R. Kagan, Alice Sciortino, Michael E",
+        "url": "https://doi.org/10.1021/acsnano.6c16809",
+        "source": "ACS Nano",
+        "published": "2026-11-07",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "未涉及超导、拓扑、磁性、STM/STS、ARPES等实验室方向；主题为量子点自组装微腔激光与刺激响应释放。",
+        "summary_cn": "该文提出量子点胶体囊泡作为可触发微激光器：液相核/固相壳超颗粒自组装，结合回音壁模式反馈与刺激响应结构塌缩。完整囊泡在4.2 mJ/cm²起呈现窄线宽2.2–3.7 nm的WGM激光；壳连续性决定反馈，多孔壳仅宽谱。通过毛细失效、均匀加热和近红外局域激活实现破裂与载荷释放，使光学响应在腔模激光与宽谱发射间切换。",
+        "abstract_excerpt": "Here, we introduce QD colloidosomes, liquid-core/solid-shell supraparticles that combine whispering-gallery-mode (WGM) optical feedback with stimulus-triggered structural collapse. Intact QD colloidosomes exhibit narrow, cavity-defined emission consistent with WGM-assisted lasing from 4.2 mJ/cm2, with line widths of 2.2–3.7 nm, demonstrating light confinement without a solid core. These results establish QD colloidosomes as stimuli-responsive microlasers that couple optical-state switching and triggered release within a single self-assembled platform.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Biscoordinated Strontium–Phenolic Networks for Bidirectional Repair of Dentin Hypersensitivity",
+        "authors": "Q Zhang, Yilin Song, Xinyuan Feng, Aijing Wang, Yingchun Long, Xingmei He, Xiaoyan Wang, Fuxin Liang, Bing Han",
+        "url": "https://doi.org/10.1021/acsnano.6c15303",
+        "source": "ACS Nano",
+        "published": "2026-11-07",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "牙科生物材料与牙本质脱敏研究，未涉及超导、拓扑、磁性、STM/ARPES等实验室方向。",
+        "summary_cn": "文章开发锶–表没食子儿茶素没食子酸酯网络纳米颗粒（Sr-EGCG NPs），经一锅水相法合成，在碱性条件下形成双配位结构，用于牙本质过敏。颗粒借助没食子酰基快速黏附并封闭牙本质小管，模拟口腔挑战后封闭率仍超91.8%，抑菌率超97.5%；同时促原位再矿化并诱导CaSR-MAPK介导的第三期牙本质形成，实现双向修复。",
+        "abstract_excerpt": "Herein, strontium–phenolic network nanoparticles (Sr-EGCG NPs) are developed via a facile, one-pot aqueous process for DH treatment. When applied to exposed dentin, Sr-EGCG NPs exhibit rapid and stable adhesion mediated by abundant galloyl groups, maintaining tubule occlusion ratios exceeding 91.8% after simulated oral challenges, especially surpassing commercial Duraphat in thermocycling (Duraphat: 2.0%), while simultaneously reducing live bacterial coverage by over 97.5% at day 3. Crucially, Sr-EGCG NPs enable bidirectional dentin repair: in situ remineralization (achieving complete minerali",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Self-Dissociating Albumin Nanoclusters for Passive Lymph Node-Targeted Inverse Vaccination in a Rheumatoid Arthritis Model",
+        "authors": "Minjae Kim, Yina Wu, Na-Young Yu, Pil-Jae Song, Gyulim Kim, Dahan Kim, Voradanu Visetvichaporn, Nae-Won Kang, Yu‐Kyoung Oh, Dae‐Duk Kim",
+        "url": "https://doi.org/10.1021/acsnano.6c16289",
+        "source": "ACS Nano",
+        "published": "2026-11-07",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "论文属纳米药物、免疫耐受与类风湿关节炎，未涉及超导、拓扑、磁性、STM/ARPES等本实验室方向。",
+        "summary_cn": "研究构建可尺寸转变的自解离白蛋白纳米簇反向疫苗：瓜氨酸肽抗原偶联人血清白蛋白并共载雷帕霉素，形成200–300 nm纳米簇；皮下注射后解离为亚10 nm单元，被动转运至引流淋巴结并维持抗原–药物共递送。体外诱导耐受性树突状细胞，胶原诱导性关节炎小鼠中每周给药减轻滑膜炎症、自身抗体反应、骨侵蚀和软骨降解，并扩增Foxp3+调节性T细胞。",
+        "abstract_excerpt": "Here, a size-transformable, self-dissociating albumin nanocluster inverse vaccine is introduced to address this materials design trade-off. After subcutaneous injection, the nanoclusters dissociate into sub-10 nm albumin-based units, enabling passive lymphatic transport and accumulation in draining lymph nodes while maintaining coordinated antigen–RAPA codelivery. In a collagen-induced arthritis mouse model, weekly administration attenuates synovial inflammation, humoral autoimmune responses, bone erosion, and cartilage degradation while expanding Foxp3+ regulatory T cells.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Coordinating Photoacid Generators Enable Site-Defined Metal–Oxo Cluster Lithography",
+        "authors": "Yue Liu, Dong Wang, Shuchao Ge, Shicui Xing, Kexin Wang, Wenbing Kang, Qianqian Wang, Xu Wang",
+        "url": "https://doi.org/10.1021/acsnano.6c17157",
+        "source": "ACS Nano",
+        "published": "2026-11-07",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "聚焦光刻胶与金属氧簇图案化，未涉及超导、STM、拓扑、磁性、Kondo或量子相变等方向。",
+        "summary_cn": "文章提出配位光酸产生剂驱动光刻策略，通过精确空间控制酸位点构建锆氧簇光刻胶；利用预配位与簇交联将紫外曝光剂量降低两个数量级，电子束光刻实现亚10 nm线宽；该策略可推广至钛氧、锌氧簇，缓解分辨率、线边缘粗糙度与灵敏度之间的权衡。",
+        "abstract_excerpt": "In this study, we present a coordinating photoacid generator (cPAG)-driven lithography strategy that has achieved a performance breakthrough through precise spatial control of acid sites. The resulting zirconium-oxo cluster photoresists, operating via cPAG-triggered precoordination and cluster cross-linking, demonstrate a two-orders-of-magnitude decrease in UV exposure dose. Furthermore, electron beam lithography has been demonstrated to achieve a sub-10 nm line width, underscoring its suitability for high-resolution and high-sensitivity applications.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Unusual CD-ee Dependence in Self-Assembled Chiral Nanocomposites through Nanoparticle-Mediated Interactions",
+        "authors": "Caikun Cheng, Rongjuan Liu, Zongze Zhang, Jingjing Wei, Fenghua Zhang, Zhijie Yang",
+        "url": "https://doi.org/10.1021/acsnano.6c19623",
+        "source": "ACS Nano",
+        "published": "2026-11-07",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "论文研究手性自组装与金纳米颗粒调控CD-ee关系，与超导、STM、拓扑、磁性、重费米子、量子相变及ARPES等方向均无关。",
+        "summary_cn": "本文研究手性苝二酰亚胺分子与金纳米颗粒共组装中的CD-ee关系。纯PDI呈线性多数规则，引入AuNPs后倾向异手性共聚集：低温负相关、高温正相关，且二者可在同一体系共存并调控。模拟与预组装实验表明，纳米颗粒经烷基链范德华作用重塑手性识别路径，温度调节多数规则行为，为可编程手性材料提供设计策略。",
+        "abstract_excerpt": "In this work, we report an unusual nonlinear CD-ee dependence in a coassembly system comprising chiral perylene diimide molecules and gold nanoparticles (AuNPs). In contrast to the linear majority-rules behavior observed for pure PDI molecules, the introduction of AuNPs induces a tendency toward heterochiral coaggregation, leading to a negative CD-ee correlation at low temperature (278 K) and a positive correlation at high temperature (318 K). Combined molecular dynamics simulations and preassembly control experiments demonstrate that the nanoparticles reshape the chiral recognition pathway of",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Antiambipolar and Bidirectional Photoresponse in Ternary van der Waals Heterostructure Transistors",
+        "authors": "Yan Han, Ruoyi Fan, Yu Zhong, Hongnan Luo, Honghong Li, Tao Zheng, Jingxian Xiong, Zihe Kang, Shuwen Yuan, Zhidong Pan, Jun Liu, Wei Gao, Zuxin Chen",
+        "url": "https://doi.org/10.1021/acsnano.6c12325",
+        "source": "ACS Nano",
+        "published": "2026-11-07",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 3,
+        "score_reason": "命中TMD二维材料(+2)与范德华异质结/薄膜(+1)；未涉及超导、涡旋、STM/ARPES等实验室核心方向。",
+        "summary_cn": "该文构建MoS2/Ta2NiS5/MoTe2双范德华异质结反双极性晶体管，利用中间层形成背靠背I型能带排列，实现超高峰谷比1×10^7、峰值电流1.2 μA；635 nm光照下获得栅压可调双向光电流响应（+2.94/-0.65 A/W），并演示三值逻辑反相器、传感内图像卷积和多模信息编码。",
+        "abstract_excerpt": "Here, we report a multifunctional AAT based on a MoS2/Ta2NiS5/MoTe2 double van der Waals heterostructure (vdWH). The device exhibits outstanding antiambipolar transport characteristics, achieving an ultrahigh PVR of 1 × 107 and a peak current of 1.2 μA, surpassing those of most previously reported 2D AATs. By introducing Ta2NiS5 as an intermediate layer, a back-to-back type-I band alignment is established, enabling efficient modulation and reversal of interfacial band bending under different bias conditions.",
+        "deep_analysis": "",
+        "included": false
+      },
+      {
+        "title": "Vitamin E-Engineered Anti-Inflammatory Lipid Nanoparticles for Safer mRNA Delivery",
+        "authors": "Tingting Song, Ruiming Zhang, Haixing Shi, Yu Zeng, Xing Duan, Yupei Zhang, Ruyue Liu, Xuli Ruan, Xingjie Du, Xiangyu Jiao, Shanhui Jiang, Tian Luo, Weitong Xu, Ju Sun, Yuting Chen, Mengran Guo, Yongm",
+        "url": "https://doi.org/10.1021/acsnano.6c17082",
+        "source": "ACS Nano",
+        "published": "2026-11-07",
+        "arxiv_id": null,
+        "is_stm": false,
+        "is_premium": false,
+        "score": 1,
+        "score_reason": "主题为mRNA脂质纳米颗粒递送与抗炎安全性，未涉及超导、拓扑、磁性、STM/ARPES等方向。",
+        "summary_cn": "文章将内源性维生素E引入可电离脂质尾部，构建W3及优化sW3脂质纳米颗粒用于mRNA递送。结果表明其可降低ROS和氧化应激，抑制NF-κB等炎症通路，减少炎症因子，并保持脾靶向递送与抗肿瘤疗效，提高安全性。",
+        "abstract_excerpt": "Herein, we propose incorporating endogenous vitamin E (VE) into the tail moiety of commercial ionizable lipids to improve biosafety. Following intravenous administration, W3 LNPs markedly decrease the levels of multiple pro-inflammatory cytokines, demonstrating an improved safety profile compared to SM-102 LNPs. Of note, the optimized formulation, sW3 LNPs enable efficient mRNA delivery to the spleen, with stronger antitumor efficacy and higher safety than SM-102 LNPs.",
+        "deep_analysis": "",
+        "included": false
+      }
+    ]
   }
 };
